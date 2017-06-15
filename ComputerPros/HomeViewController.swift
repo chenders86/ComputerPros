@@ -26,17 +26,26 @@ class HomeViewController: UIViewController {
         
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "WebVC") as! WebViewController
         
-//        let url = URL(string: "https://www.apple.com".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)
-//        
-//        let request = URLRequest(url: url!)
-//        print(request)
-//        
-//        controller.webView.loadRequest(request)
+        let url = URL(string: "https://www.apple.com".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)
+        
+        let request = URLRequest(url: url!)
+        
+        controller.webRequest = request
         
         self.present(controller, animated: true, completion: nil)
     }
     
     @IBAction func windowsButton(_ sender: UIButton) {
+        
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "WebVC") as! WebViewController
+        
+        let url = URL(string: "https://www.microsoft.com".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)
+        
+        let request = URLRequest(url: url!)
+        
+        controller.webRequest = request
+        
+        self.present(controller, animated: true, completion: nil)
     }
     
     @IBAction func bookItButton(_ sender: UIButton) {
