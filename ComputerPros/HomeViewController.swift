@@ -12,13 +12,15 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        menuCollectionView.delegate = self
+        menuCollectionView.dataSource = self
+        menuView.layer.shadowOpacity = 1
+        menuView.layer.shadowRadius = 6
+        menuView.layer.shadowOffset = CGSize(width: 0, height: 9)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        menuView.layer.shadowOpacity = 1
-        menuView.layer.shadowRadius = 6
-        menuView.layer.shadowOffset = CGSize(width: 0, height: 9)
     }
     
     // Outlets
