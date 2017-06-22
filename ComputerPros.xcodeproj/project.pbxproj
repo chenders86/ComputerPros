@@ -15,6 +15,7 @@
 		C93E2F451EE258E800A13892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F441EE258E800A13892 /* Assets.xcassets */; };
 		C93E2F481EE258E800A13892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F461EE258E800A13892 /* LaunchScreen.storyboard */; };
 		C9830E121EE25BFE00F683D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */; };
+		C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC37131EFB81BF004B9B5F /* MenuCell.swift */; };
 		FE5211E92AB2A4505085327B /* Pods_ComputerPros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2D96F5E51543B719448A36 /* Pods_ComputerPros.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		C93E2F471EE258E800A13892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C93E2F491EE258E800A13892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C9BC37131EFB81BF004B9B5F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		CA2D96F5E51543B719448A36 /* Pods_ComputerPros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComputerPros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC002E9DA19444530920D530 /* Pods-ComputerPros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComputerPros.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComputerPros/Pods-ComputerPros.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 		C93E2F3C1EE258E800A13892 /* ComputerPros */ = {
 			isa = PBXGroup;
 			children = (
+				C9BC37121EFB8198004B9B5F /* View */,
 				C93E2F3D1EE258E800A13892 /* AppDelegate.swift */,
 				C91E630D1EE9F5EC005E7D97 /* HomeViewController.swift */,
 				C91E630F1EE9FD9F005E7D97 /* WebViewController.swift */,
@@ -86,6 +89,14 @@
 				C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */,
 			);
 			path = ComputerPros;
+			sourceTree = "<group>";
+		};
+		C9BC37121EFB8198004B9B5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9BC37131EFB81BF004B9B5F /* MenuCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		EBE294C06603E9380E8E2297 /* Pods */ = {
@@ -222,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93E2F3E1EE258E800A13892 /* AppDelegate.swift in Sources */,
+				C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */,
 				C91E630C1EE9E7E9005E7D97 /* FirebaseClient.swift in Sources */,
 				C91E630E1EE9F5EC005E7D97 /* HomeViewController.swift in Sources */,
 				C91E63101EE9FD9F005E7D97 /* WebViewController.swift in Sources */,
