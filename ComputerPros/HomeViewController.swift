@@ -37,8 +37,9 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let cellHeight: CGFloat = 50
     
     let settings: [Setting] = {
-        return [Setting(name: "Home", imageName: "Home"), Setting(name: "ProCare Cloud", imageName: "CloudMenu"), Setting(name: "Inventory", imageName: "Inventory"), Setting(name: "On-site", imageName: "OnSiteCalendar"), Setting(name: "Password Keeper", imageName: "PassKey"), Setting(name: "Contact Us", imageName: "ContactUs")]
+        return [Setting(name: .Home, imageName: "Home"), Setting(name: .ProCare, imageName: "CloudMenu"), Setting(name: .Inventory, imageName: "Inventory"), Setting(name: .Onsite, imageName: "OnSiteCalendar"), Setting(name: .Password, imageName: "PassKey"), Setting(name: .Contact, imageName: "ContactUs")]
     }()
+    
     
     // Actions
     @IBAction func hamburgerMenu(_ sender: UIButton) {
@@ -64,59 +65,27 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBAction func appleButton(_ sender: UIButton) {
         
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: "WebVC") as! WebViewController
-        let url = URL(string: "https://www.apple.com".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)
-        let request = URLRequest(url: url!)
-        controller.webRequest = request
-        self.present(controller, animated: true, completion: nil)
+        showAppleCom()
     }
     
     @IBAction func windowsButton(_ sender: UIButton) {
         
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: "WebVC") as! WebViewController
-        let url = URL(string: "https://www.microsoft.com".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)
-        let request = URLRequest(url: url!)
-        controller.webRequest = request
-        self.present(controller, animated: true, completion: nil)
+        showMicrosoftCom()
     }
     
     @IBAction func bookItButton(_ sender: UIButton) {
         
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: "WebVC") as! WebViewController
-        let url = URL(string: "https://my.setmore.com/bookingpage/6e67a3dd-6628-421a-93c0-766663d17287".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)
-        let request = URLRequest(url: url!)
-        controller.webRequest = request
-        self.present(controller, animated: true, completion: nil)
+        showSetmore()
     }
     
     @IBAction func facebookButton(_ sender: UIButton) {
         
-        let fbURL = URL(string: "https://www.facebook.com/nashvillecomputerpros/")!
-        
-        if UIApplication.shared.canOpenURL(fbURL) {
-            UIApplication.shared.open(fbURL, options: [:], completionHandler: nil)
-        } else {
-            let controller = self.storyboard?.instantiateViewController(withIdentifier: "WebVC") as! WebViewController
-            let url = URL(string: "https://www.facebook.com/nashvillecomputerpros/".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)
-            let request = URLRequest(url: url!)
-            controller.webRequest = request
-            self.present(controller, animated: true, completion: nil)
-        }
+        showFacebook()
     }
     
     @IBAction func twitterButton(_ sender: UIButton) {
         
-        let twURL = URL(string: "https://twitter.com/nashvillecpros?lang=en")!
-        
-        if UIApplication.shared.canOpenURL(twURL) {
-            UIApplication.shared.open(twURL, options: [:], completionHandler: nil)
-        } else {
-            let controller = self.storyboard?.instantiateViewController(withIdentifier: "WebVC") as! WebViewController
-            let url = URL(string: "https://twitter.com/nashvillecpros?lang=en".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)
-            let request = URLRequest(url: url!)
-            controller.webRequest = request
-            self.present(controller, animated: true, completion: nil)
-        }
+        showTwitter()
     }
     
     // collectionView Delegates
@@ -138,6 +107,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let setting = settings[indexPath.item]
+        
+        presentViewControllerForName(menuCellName: setting.name)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

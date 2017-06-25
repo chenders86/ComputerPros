@@ -17,6 +17,7 @@
 		C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E02241EFDD6CC004B28AC /* MenuSettings.swift */; };
 		C9830E121EE25BFE00F683D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */; };
 		C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC37131EFB81BF004B9B5F /* MenuCell.swift */; };
+		C9FF1B701EFF8337004C1CB8 /* HomeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */; };
 		FE5211E92AB2A4505085327B /* Pods_ComputerPros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2D96F5E51543B719448A36 /* Pods_ComputerPros.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		C96E02241EFDD6CC004B28AC /* MenuSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSettings.swift; sourceTree = "<group>"; };
 		C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9BC37131EFB81BF004B9B5F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewExtension.swift; sourceTree = "<group>"; };
 		CA2D96F5E51543B719448A36 /* Pods_ComputerPros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComputerPros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC002E9DA19444530920D530 /* Pods-ComputerPros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComputerPros.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComputerPros/Pods-ComputerPros.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				C91E630D1EE9F5EC005E7D97 /* HomeViewController.swift */,
+				C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */,
 				C91E630F1EE9FD9F005E7D97 /* WebViewController.swift */,
 			);
 			name = Controller;
@@ -255,6 +258,7 @@
 				C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */,
 				C91E630C1EE9E7E9005E7D97 /* FirebaseClient.swift in Sources */,
 				C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */,
+				C9FF1B701EFF8337004C1CB8 /* HomeViewExtension.swift in Sources */,
 				C91E630E1EE9F5EC005E7D97 /* HomeViewController.swift in Sources */,
 				C91E63101EE9FD9F005E7D97 /* WebViewController.swift in Sources */,
 			);

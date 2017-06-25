@@ -11,11 +11,21 @@ import UIKit
 
 class Setting: NSObject {
     
-    let name: String
+    let name: MenuCellName
     let imageName: String
     
-    init(name: String, imageName: String) {
+    init(name: MenuCellName, imageName: String) {
         self.name = name
         self.imageName = imageName
     }
+}
+
+enum MenuCellName: String {
+    
+    case Home = "Home"
+    case ProCare = "ProCare Cloud"
+    case Inventory = "Inventory"
+    case Onsite = "On-Site"
+    case Password = "Password Keeper"
+    case Contact = "Contact Us"
 }
