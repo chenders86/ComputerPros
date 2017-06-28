@@ -69,24 +69,61 @@ extension HomeViewController {
         }
     }
     
-    
     func presentViewControllerForName(menuCellName string: MenuCellName) {
         
         switch string {
             
         case .Home:
-            print("Home")
-        case .ProCare:
-            print("ProCare")
-        case .Inventory:
-            print("Inventory")
-        case .Onsite:
-            print("On-Site")
-        case .Password:
-            print("Password")
-        case.Contact:
-            print("Contact Us")
+            self.dismissMenu(self)
             
+        case .ProCare:
+            UIView.animate(withDuration: 0.2, animations: {
+                self.menuLeadingEdge.constant = -228
+                self.hiddenDismissButton.alpha = 0
+                self.view.layoutIfNeeded()
+            }, completion: { (finished) in
+                let proCareCloudVC = self.storyboard?.instantiateViewController(withIdentifier: ControllerIdentifier.ProCareVC.rawValue) as! ProCareCloudVC
+                self.navigationController?.pushViewController(proCareCloudVC, animated: true)
+            })
+            
+        case .Inventory:
+            UIView.animate(withDuration: 0.2, animations: {
+                self.menuLeadingEdge.constant = -228
+                self.hiddenDismissButton.alpha = 0
+                self.view.layoutIfNeeded()
+            }, completion: { (finished) in
+                let inventoryVC = self.storyboard?.instantiateViewController(withIdentifier: ControllerIdentifier.InventoryVC.rawValue) as! InventoryViewController
+                self.navigationController?.pushViewController(inventoryVC, animated: true)
+            })
+            
+        case .Onsite:
+            UIView.animate(withDuration: 0.2, animations: {
+                self.menuLeadingEdge.constant = -228
+                self.hiddenDismissButton.alpha = 0
+                self.view.layoutIfNeeded()
+            }, completion: { (finished) in
+                self.showSetmore()
+            })
+            
+        case .Password:
+            UIView.animate(withDuration: 0.2, animations: {
+                self.menuLeadingEdge.constant = -228
+                self.hiddenDismissButton.alpha = 0
+                self.view.layoutIfNeeded()
+            }, completion: { (finished) in
+                let passwordVC = self.storyboard?.instantiateViewController(withIdentifier: ControllerIdentifier.PassWordVC.rawValue) as! PasswordViewController
+                self.navigationController?.pushViewController(passwordVC, animated: true)
+            })
+            
+        case.Contact:
+            UIView.animate(withDuration: 0.2, animations: {
+                self.menuLeadingEdge.constant = -228
+                self.hiddenDismissButton.alpha = 0
+                self.view.layoutIfNeeded()
+            }, completion: { (finished) in
+                let contactVC = self.storyboard?.instantiateViewController(withIdentifier: ControllerIdentifier.ContactVC.rawValue) as! ContactViewController
+                self.navigationController?.pushViewController(contactVC, animated: true)
+            })
         }
     }
 }

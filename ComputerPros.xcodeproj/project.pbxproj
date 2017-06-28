@@ -17,6 +17,10 @@
 		C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E02241EFDD6CC004B28AC /* MenuSettings.swift */; };
 		C9830E121EE25BFE00F683D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */; };
 		C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC37131EFB81BF004B9B5F /* MenuCell.swift */; };
+		C9EF4AA01F034FF90091E026 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */; };
+		C9EF4AA11F034FF90091E026 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9D1F034FF90091E026 /* InventoryViewController.swift */; };
+		C9EF4AA21F034FF90091E026 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9E1F034FF90091E026 /* PasswordViewController.swift */; };
+		C9EF4AA31F034FF90091E026 /* ProCareCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9F1F034FF90091E026 /* ProCareCloud.swift */; };
 		C9FF1B701EFF8337004C1CB8 /* HomeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */; };
 		FE5211E92AB2A4505085327B /* Pods_ComputerPros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2D96F5E51543B719448A36 /* Pods_ComputerPros.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +39,10 @@
 		C96E02241EFDD6CC004B28AC /* MenuSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSettings.swift; sourceTree = "<group>"; };
 		C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9BC37131EFB81BF004B9B5F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		C9EF4A9D1F034FF90091E026 /* InventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
+		C9EF4A9E1F034FF90091E026 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		C9EF4A9F1F034FF90091E026 /* ProCareCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProCareCloud.swift; sourceTree = "<group>"; };
 		C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewExtension.swift; sourceTree = "<group>"; };
 		CA2D96F5E51543B719448A36 /* Pods_ComputerPros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComputerPros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC002E9DA19444530920D530 /* Pods-ComputerPros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComputerPros.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComputerPros/Pods-ComputerPros.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +114,10 @@
 		C96E02231EFDD69C004B28AC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */,
+				C9EF4A9D1F034FF90091E026 /* InventoryViewController.swift */,
+				C9EF4A9E1F034FF90091E026 /* PasswordViewController.swift */,
+				C9EF4A9F1F034FF90091E026 /* ProCareCloud.swift */,
 				C91E630D1EE9F5EC005E7D97 /* HomeViewController.swift */,
 				C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */,
 				C91E630F1EE9FD9F005E7D97 /* WebViewController.swift */,
@@ -255,7 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93E2F3E1EE258E800A13892 /* AppDelegate.swift in Sources */,
+				C9EF4AA21F034FF90091E026 /* PasswordViewController.swift in Sources */,
+				C9EF4AA11F034FF90091E026 /* InventoryViewController.swift in Sources */,
+				C9EF4AA01F034FF90091E026 /* ContactViewController.swift in Sources */,
 				C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */,
+				C9EF4AA31F034FF90091E026 /* ProCareCloud.swift in Sources */,
 				C91E630C1EE9E7E9005E7D97 /* FirebaseClient.swift in Sources */,
 				C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */,
 				C9FF1B701EFF8337004C1CB8 /* HomeViewExtension.swift in Sources */,

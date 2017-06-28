@@ -21,6 +21,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     // Outlets
@@ -37,16 +38,15 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let cellHeight: CGFloat = 50
     
     let settings: [Setting] = {
-        return [Setting(name: .Home, imageName: "Home"), Setting(name: .ProCare, imageName: "CloudMenu"), Setting(name: .Inventory, imageName: "Inventory"), Setting(name: .Onsite, imageName: "OnSiteCalendar"), Setting(name: .Password, imageName: "PassKey"), Setting(name: .Contact, imageName: "ContactUs")]
+        return [Setting(name: .Home, imageName: "Home"), Setting(name: .ProCare, imageName: "CloudMenu"), Setting(name: .Inventory, imageName: "Inventory"), Setting(name: .Password, imageName: "PassKey"), Setting(name: .Contact, imageName: "ContactUs"), Setting(name: .Onsite, imageName: "OnSiteCalendar")]
     }()
     
     
     // Actions
     @IBAction func hamburgerMenu(_ sender: UIButton) {
         
-        menuLeadingEdge.constant = 0
-        
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            self.menuLeadingEdge.constant = 0
             self.hiddenDismissButton.alpha = 0.25
             self.view.layoutIfNeeded()
         })
@@ -54,9 +54,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBAction func dismissMenu(_ sender: Any) {
         
-        menuLeadingEdge.constant = -228
-        
         UIView.animate(withDuration: 0.2, animations: {
+            self.menuLeadingEdge.constant = -228
             self.hiddenDismissButton.alpha = 0
             self.view.layoutIfNeeded()
         })

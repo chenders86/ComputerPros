@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eQb-Aa-vOO">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,10 +24,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="y7r-sf-va9">
-                                <rect key="frame" x="0.0" y="38" width="414" height="698"/>
+                                <rect key="frame" x="0.0" y="82" width="414" height="654"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zz-zY-15p">
-                                <rect key="frame" x="0.0" y="38" width="414" height="114"/>
+                                <rect key="frame" x="0.0" y="82" width="414" height="114"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtn-Id-YyX" userLabel="HamburgerMenu">
                                         <rect key="frame" x="16" y="23" width="30" height="27"/>
@@ -93,16 +93,16 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnSiteSquare" translatesAutoresizingMaskIntoConstraints="NO" id="MCc-pL-I7S">
-                                <rect key="frame" x="47" y="165" width="320" height="192"/>
+                                <rect key="frame" x="59" y="209.00000000000003" width="296" height="177.66666666666671"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MCc-pL-I7S" secondAttribute="height" multiplier="5:3" id="dNm-sh-sRW"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="NnC-Jd-yc3">
-                                <rect key="frame" x="184" y="184" width="46" height="41"/>
+                                <rect key="frame" x="184" y="228" width="46" height="41"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku9-Dy-MNb">
-                                <rect key="frame" x="129" y="287" width="156" height="41"/>
+                                <rect key="frame" x="129" y="331" width="156" height="26.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="156" id="rOe-eg-kbY"/>
                                 </constraints>
@@ -112,7 +112,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1I-cv-kty">
-                                <rect key="frame" x="101" y="233" width="212" height="41"/>
+                                <rect key="frame" x="101" y="277" width="212" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="s76-EE-Pj9"/>
                                 </constraints>
@@ -123,7 +123,7 @@ Computer PROS tech!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTg-U0-LlN" userLabel="CloudButton">
-                                <rect key="frame" x="46" y="356" width="320" height="195.66666666666663"/>
+                                <rect key="frame" x="58" y="385.66666666666663" width="296" height="180.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eTg-U0-LlN" secondAttribute="height" multiplier="80:49" id="W4h-Fd-bsZ"/>
                                 </constraints>
@@ -131,7 +131,7 @@ Computer PROS tech!</string>
                                 <state key="normal" image="cloud"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sf-aU-GdV">
-                                <rect key="frame" x="149" y="398" width="116" height="41"/>
+                                <rect key="frame" x="149" y="427.66666666666669" width="116" height="41"/>
                                 <string key="text">ProCare Cloud
 Storage:</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
@@ -139,19 +139,19 @@ Storage:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500/1000GB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mh7-KP-vqL">
-                                <rect key="frame" x="158" y="464" width="98" height="21"/>
+                                <rect key="frame" x="158" y="493.66666666666663" width="98" height="20.999999999999886"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProgressBar" translatesAutoresizingMaskIntoConstraints="NO" id="NRU-Vj-6Kh">
-                                <rect key="frame" x="89" y="493" width="236" height="18"/>
+                                <rect key="frame" x="89" y="522.66666666666663" width="236" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NRU-Vj-6Kh" secondAttribute="height" multiplier="118:9" id="cci-sg-YHR"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-9h-jHb">
-                                <rect key="frame" x="46.333333333333343" y="632.66666666666652" width="321.33333333333337" height="95.333333333333371"/>
+                                <rect key="frame" x="59" y="640.33333333333348" width="296" height="87.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yTh-9h-jHb" secondAttribute="height" multiplier="64:19" id="uIg-0F-ZGy"/>
                                 </constraints>
@@ -165,7 +165,7 @@ Storage:</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvA-1R-F4i">
-                                <rect key="frame" x="47" y="553.66666666666663" width="320" height="95"/>
+                                <rect key="frame" x="59" y="568.33333333333337" width="296" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wvA-1R-F4i" secondAttribute="height" multiplier="64:19" id="XSV-F8-488"/>
                                 </constraints>
@@ -187,10 +187,10 @@ Storage:</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHc-ii-Fwc">
-                                <rect key="frame" x="-227" y="38" width="218" height="698"/>
+                                <rect key="frame" x="-227" y="82" width="218" height="654"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NfS-Sk-Urp">
-                                        <rect key="frame" x="0.0" y="0.0" width="218" height="698"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="218" height="654"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0OD-yy-Qr8">
                                             <size key="itemSize" width="218" height="50"/>
@@ -287,6 +287,7 @@ Storage:</string>
                             <constraint firstItem="Y1I-cv-kty" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zM5-TF-6R2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="84L-3R-o4Q"/>
                     <connections>
                         <outlet property="flowLayout" destination="0OD-yy-Qr8" id="gJr-46-Rgo"/>
                         <outlet property="gigabyteLabel" destination="mh7-KP-vqL" id="Nck-cM-TNt"/>
@@ -299,7 +300,7 @@ Storage:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115.94202898550725" y="120.65217391304348"/>
+            <point key="canvasLocation" x="1023.1884057971015" y="120.65217391304348"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="dHx-NM-e9o">
@@ -379,6 +380,96 @@ Storage:</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4la-oe-6UL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="-524"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d0u-Dz-UZl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eQb-Aa-vOO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fqi-0G-XMl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YEB-Es-wvF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6v9-NM-rCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="120.65217391304348"/>
+        </scene>
+        <!--Pro Care CloudVC-->
+        <scene sceneID="o07-fu-MVz">
+            <objects>
+                <viewController storyboardIdentifier="proCareVC" id="QQI-ek-TJP" customClass="ProCareCloudVC" customModule="ComputerPros" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FBx-xB-4ib"/>
+                        <viewControllerLayoutGuide type="bottom" id="qvu-Jz-Oko"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FhY-cr-cXX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PqI-ra-jZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="778"/>
+        </scene>
+        <!--Password View Controller-->
+        <scene sceneID="hoS-Hg-j2J">
+            <objects>
+                <viewController storyboardIdentifier="passwordVC" id="iNw-2p-Ehe" customClass="PasswordViewController" customModule="ComputerPros" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OXL-lB-QFN"/>
+                        <viewControllerLayoutGuide type="bottom" id="0dJ-7p-t8u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ude-bp-cpg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vm8-Pc-BNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="1438"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="w9D-Sv-z1H">
+            <objects>
+                <viewController storyboardIdentifier="contactVC" id="Yz6-Jn-jt9" customClass="ContactViewController" customModule="ComputerPros" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wtT-sf-VhZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="jRi-5S-Vgv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PoG-GJ-w9F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVX-IP-W9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="1437"/>
+        </scene>
+        <!--Inventory View Controller-->
+        <scene sceneID="7hm-w8-1lQ">
+            <objects>
+                <viewController storyboardIdentifier="inventoryVC" id="R0t-86-gSa" customClass="InventoryViewController" customModule="ComputerPros" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T1v-Jh-OMW"/>
+                        <viewControllerLayoutGuide type="bottom" id="01k-zv-Jak"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JCq-Nk-1J1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nij-Zl-dvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="778"/>
         </scene>
     </scenes>
     <resources>
