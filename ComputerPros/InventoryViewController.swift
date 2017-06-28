@@ -11,6 +11,12 @@ import UIKit
 
 class InventoryViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.title = "Inventory"
+    }
+
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: false)

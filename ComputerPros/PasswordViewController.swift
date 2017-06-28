@@ -11,6 +11,12 @@ import UIKit
 
 class PasswordViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.title = "Password Keeper"
+    }
+
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: false)

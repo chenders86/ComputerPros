@@ -93,7 +93,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnSiteSquare" translatesAutoresizingMaskIntoConstraints="NO" id="MCc-pL-I7S">
-                                <rect key="frame" x="59" y="209.00000000000003" width="296" height="177.66666666666671"/>
+                                <rect key="frame" x="59.333333333333343" y="208.99999999999997" width="295.33333333333337" height="177.33333333333329"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MCc-pL-I7S" secondAttribute="height" multiplier="5:3" id="dNm-sh-sRW"/>
                                 </constraints>
@@ -102,7 +102,7 @@
                                 <rect key="frame" x="184" y="228" width="46" height="41"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku9-Dy-MNb">
-                                <rect key="frame" x="129" y="331" width="156" height="26.666666666666686"/>
+                                <rect key="frame" x="129" y="331" width="156" height="26.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="156" id="rOe-eg-kbY"/>
                                 </constraints>
@@ -123,7 +123,7 @@ Computer PROS tech!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTg-U0-LlN" userLabel="CloudButton">
-                                <rect key="frame" x="58" y="385.66666666666663" width="296" height="180.66666666666663"/>
+                                <rect key="frame" x="58.333333333333343" y="385.33333333333337" width="295.33333333333337" height="181.33333333333337"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eTg-U0-LlN" secondAttribute="height" multiplier="80:49" id="W4h-Fd-bsZ"/>
                                 </constraints>
@@ -131,7 +131,7 @@ Computer PROS tech!</string>
                                 <state key="normal" image="cloud"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sf-aU-GdV">
-                                <rect key="frame" x="149" y="427.66666666666669" width="116" height="41"/>
+                                <rect key="frame" x="149" y="427.33333333333331" width="116" height="41"/>
                                 <string key="text">ProCare Cloud
 Storage:</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
@@ -139,19 +139,19 @@ Storage:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500/1000GB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mh7-KP-vqL">
-                                <rect key="frame" x="158" y="493.66666666666663" width="98" height="20.999999999999886"/>
+                                <rect key="frame" x="158" y="493.33333333333337" width="98" height="21.000000000000114"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProgressBar" translatesAutoresizingMaskIntoConstraints="NO" id="NRU-Vj-6Kh">
-                                <rect key="frame" x="89" y="522.66666666666663" width="236" height="18"/>
+                                <rect key="frame" x="89" y="522.33333333333337" width="236" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NRU-Vj-6Kh" secondAttribute="height" multiplier="118:9" id="cci-sg-YHR"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-9h-jHb">
-                                <rect key="frame" x="59" y="640.33333333333348" width="296" height="87.666666666666629"/>
+                                <rect key="frame" x="59.333333333333343" y="640.33333333333348" width="295.33333333333337" height="87.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yTh-9h-jHb" secondAttribute="height" multiplier="64:19" id="uIg-0F-ZGy"/>
                                 </constraints>
@@ -165,7 +165,7 @@ Storage:</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvA-1R-F4i">
-                                <rect key="frame" x="59" y="568.33333333333337" width="296" height="88"/>
+                                <rect key="frame" x="59.333333333333343" y="568.66666666666663" width="295.33333333333337" height="87.666666666666742"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wvA-1R-F4i" secondAttribute="height" multiplier="64:19" id="XSV-F8-488"/>
                                 </constraints>
@@ -410,12 +410,24 @@ Storage:</string>
                     <view key="view" contentMode="scaleToFill" id="FhY-cr-cXX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clouds with Text" translatesAutoresizingMaskIntoConstraints="NO" id="DhS-h4-hhE">
+                                <rect key="frame" x="0.0" y="89" width="414" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DhS-h4-hhE" secondAttribute="trailing" id="RHf-15-9zE"/>
+                            <constraint firstItem="DhS-h4-hhE" firstAttribute="leading" secondItem="FhY-cr-cXX" secondAttribute="leading" id="UCf-1K-vAh"/>
+                            <constraint firstItem="qvu-Jz-Oko" firstAttribute="top" secondItem="DhS-h4-hhE" secondAttribute="bottom" id="tf3-MP-2rs"/>
+                            <constraint firstItem="DhS-h4-hhE" firstAttribute="top" secondItem="FBx-xB-4ib" secondAttribute="bottom" constant="25" id="uoc-gB-F2I"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vDF-Yh-uPE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PqI-ra-jZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="778"/>
+            <point key="canvasLocation" x="1023.1884057971015" y="777.71739130434787"/>
         </scene>
         <!--Password View Controller-->
         <scene sceneID="hoS-Hg-j2J">
@@ -469,7 +481,7 @@ Storage:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nij-Zl-dvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="778"/>
+            <point key="canvasLocation" x="116" y="778"/>
         </scene>
     </scenes>
     <resources>
@@ -477,6 +489,7 @@ Storage:</string>
         <image name="ArrowLeft" width="22" height="38"/>
         <image name="ArrowRight" width="22" height="38"/>
         <image name="BookButton" width="156" height="41"/>
+        <image name="Clouds with Text" width="414" height="647"/>
         <image name="FacebookButton" width="320" height="95"/>
         <image name="Hamburger White" width="30" height="27"/>
         <image name="OnSiteSquare" width="320" height="191"/>

@@ -11,6 +11,11 @@ import UIKit
 
 class ProCareCloudVC: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.title = "ProCare Cloud"
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
