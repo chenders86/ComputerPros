@@ -26,6 +26,7 @@ class MenuCell: UICollectionViewCell {
         didSet {
             
             cellLabel.text = setting?.name.rawValue
+            self.backgroundColor = UIColor.lightGray
             
             if let imageName = setting?.imageName {
                 cellImage.image = UIImage(named: imageName)?.withRenderingMode(.alwaysTemplate)

@@ -36,5 +36,6 @@ enum ControllerIdentifier: String {
     case InventoryVC = "inventoryVC"
     case PassWordVC = "passwordVC"
     case ContactVC = "contactVC"
+    case WebVC = "webVC"
 }
 

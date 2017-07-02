@@ -16,6 +16,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         menuCollectionView.dataSource = self
         menuView.layer.shadowOpacity = 1
         menuView.layer.shadowRadius = 6
+        menuView.backgroundColor = UIColor.lightGray
         menuView.layer.shadowOffset = CGSize(width: 0, height: 9)
     }
     
@@ -76,6 +77,11 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         showSetmore()
     }
+    
+    @IBAction func cloudButtonPressed(_ sender: UIButton) {
+        showProCare()
+    }
+    
     
     @IBAction func facebookButton(_ sender: UIButton) {
         
