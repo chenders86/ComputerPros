@@ -24,6 +24,7 @@
 		C93E2F481EE258E800A13892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F461EE258E800A13892 /* LaunchScreen.storyboard */; };
 		C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E02241EFDD6CC004B28AC /* MenuSettings.swift */; };
 		C9830E121EE25BFE00F683D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */; };
+		C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */; };
 		C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC37131EFB81BF004B9B5F /* MenuCell.swift */; };
 		C9EF4AA01F034FF90091E026 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */; };
 		C9EF4AA11F034FF90091E026 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9D1F034FF90091E026 /* InventoryViewController.swift */; };
@@ -54,6 +55,7 @@
 		C93E2F491EE258E800A13892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C96E02241EFDD6CC004B28AC /* MenuSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSettings.swift; sourceTree = "<group>"; };
 		C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
 		C9BC37131EFB81BF004B9B5F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		C9EF4A9D1F034FF90091E026 /* InventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */,
 				C91E630F1EE9FD9F005E7D97 /* WebViewController.swift */,
 				C935F23A1F0AF338007BC943 /* CoreDataTableViewController.swift */,
+				C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			files = (
 				C93E2F3E1EE258E800A13892 /* AppDelegate.swift in Sources */,
 				C9EF4AA21F034FF90091E026 /* PasswordViewController.swift in Sources */,
+				C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */,
 				C9EF4AA11F034FF90091E026 /* InventoryViewController.swift in Sources */,
 				C935F2161F0ACCF9007BC943 /* CoreDataStack.swift in Sources */,
 				C9EF4AA01F034FF90091E026 /* ContactViewController.swift in Sources */,

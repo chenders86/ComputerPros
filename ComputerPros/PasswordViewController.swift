@@ -33,6 +33,7 @@ class PasswordViewController: CoreDataTableViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
+    
     let cellID = "accountCell"
     
     let hiddenButton: UIButton = {
@@ -44,6 +45,11 @@ class PasswordViewController: CoreDataTableViewController {
     
     func newAccount() {
         
+        let accountVC = self.storyboard?.instantiateViewController(withIdentifier: "addAccountVC") as! AddAccountViewController
+        //self.navigationController?.pushViewController(accountVC, animated: true)
+        
+        
+        self.present(accountVC, animated: true, completion: nil)
         print("addedAccount!")
         
     }
