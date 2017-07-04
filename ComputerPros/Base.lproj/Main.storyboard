@@ -516,7 +516,7 @@ Storage:</string>
                                 </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MKU-Vy-9d9">
-                                <rect key="frame" x="20" y="45" width="374" height="37"/>
+                                <rect key="frame" x="20" y="37" width="374" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MKU-Vy-9d9" secondAttribute="height" multiplier="414:37" constant="-40" id="oZE-dV-dgj"/>
                                 </constraints>
@@ -541,9 +541,9 @@ Storage:</string>
                             <constraint firstAttribute="trailing" secondItem="MKU-Vy-9d9" secondAttribute="trailing" constant="20" id="6vc-4N-Gld"/>
                             <constraint firstItem="nw0-j9-brK" firstAttribute="leading" secondItem="PoG-GJ-w9F" secondAttribute="leadingMargin" id="7b6-Tw-qFH"/>
                             <constraint firstItem="w6B-4Y-lkH" firstAttribute="centerX" secondItem="PoG-GJ-w9F" secondAttribute="centerX" id="9il-a6-3Hp"/>
-                            <constraint firstItem="MKU-Vy-9d9" firstAttribute="top" secondItem="wtT-sf-VhZ" secondAttribute="bottom" constant="25" id="9qC-tP-1TJ"/>
+                            <constraint firstItem="MKU-Vy-9d9" firstAttribute="top" secondItem="wtT-sf-VhZ" secondAttribute="bottom" constant="17" id="9qC-tP-1TJ"/>
                             <constraint firstItem="nw0-j9-brK" firstAttribute="centerX" secondItem="PoG-GJ-w9F" secondAttribute="centerX" id="DDf-vb-1vq"/>
-                            <constraint firstItem="W3i-Vz-kFz" firstAttribute="top" secondItem="MKU-Vy-9d9" secondAttribute="bottom" constant="67" id="QvC-CA-hVi"/>
+                            <constraint firstItem="W3i-Vz-kFz" firstAttribute="top" secondItem="MKU-Vy-9d9" secondAttribute="bottom" constant="75" id="QvC-CA-hVi"/>
                             <constraint firstItem="W3i-Vz-kFz" firstAttribute="centerX" secondItem="PoG-GJ-w9F" secondAttribute="centerX" id="Rgq-GB-MhZ"/>
                             <constraint firstItem="jRi-5S-Vgv" firstAttribute="top" secondItem="nw0-j9-brK" secondAttribute="bottom" constant="129" id="ZFG-yl-kH3"/>
                             <constraint firstItem="MKU-Vy-9d9" firstAttribute="leading" secondItem="PoG-GJ-w9F" secondAttribute="leading" constant="20" id="rBz-e2-LnP"/>
