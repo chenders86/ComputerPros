@@ -2,7 +2,7 @@
 //  Account+CoreDataProperties.swift
 //  ComputerPros
 //
-//  Created by Casey Henderson on 7/3/17.
+//  Created by Casey Henderson on 7/5/17.
 //  Copyright © 2017 Casey Henderson. All rights reserved.
 //
 
@@ -17,6 +17,23 @@ extension Account {
     }
 
     @NSManaged public var accountName: String
-    @NSManaged public var loginCredentials: LoginCredentials?
+    @NSManaged public var loginCredentials: NSSet?
+
+}
+
+// MARK: Generated accessors for loginCredentials
+extension Account {
+
+    @objc(addLoginCredentialsObject:)
+    @NSManaged public func addToLoginCredentials(_ value: LoginCredentials)
+
+    @objc(removeLoginCredentialsObject:)
+    @NSManaged public func removeFromLoginCredentials(_ value: LoginCredentials)
+
+    @objc(addLoginCredentials:)
+    @NSManaged public func addToLoginCredentials(_ values: NSSet)
+
+    @objc(removeLoginCredentials:)
+    @NSManaged public func removeFromLoginCredentials(_ values: NSSet)
 
 }

@@ -16,6 +16,7 @@ class CoreDataTableViewController: UITableViewController, NSFetchedResultsContro
             fetchedResultsController?.delegate = self
             executeSearch()
             tableView.reloadData()
+            print("frc changed")
         }
     }
     
@@ -103,6 +104,10 @@ class CoreDataTableViewController: UITableViewController, NSFetchedResultsContro
             tableView.deleteRows(at: [indexPath!], with: .fade)
             tableView.insertRows(at: [newIndexPath!], with: .fade)
         }
+    }
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.endUpdates()
     }
     
     // Utilities

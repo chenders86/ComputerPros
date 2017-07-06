@@ -2,7 +2,7 @@
 //  LoginCredentials+CoreDataProperties.swift
 //  ComputerPros
 //
-//  Created by Casey Henderson on 7/3/17.
+//  Created by Casey Henderson on 7/5/17.
 //  Copyright © 2017 Casey Henderson. All rights reserved.
 //
 

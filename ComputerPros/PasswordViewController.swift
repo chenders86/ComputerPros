@@ -13,51 +13,33 @@ class PasswordViewController: CoreDataTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Password Keeper"
+        self.navigationItem.title = "Accounts"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newAccount))
-        
-        let delegate = UIApplication.shared.delegate as! AppDelegate
-        let stack = delegate.stack
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Account")
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "accountName", ascending: true)]
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: stack.context, sectionNameKeyPath: nil, cacheName: nil)
-        
-        addHiddenButton()
     }
-
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+        print("view appeared")
     }
     
     
+    let stack = CoreDataStack.sharedInstance()
     let cellID = "accountCell"
-    
-    let hiddenButton: UIButton = {
-        let btn = UIButton(type: .custom)
-        btn.backgroundColor = UIColor.black
-        btn.addTarget(self, action: #selector(dismissNewAccountPopIn), for: .touchUpInside)
-        return btn
-    }()
     
     func newAccount() {
         
         let accountVC = self.storyboard?.instantiateViewController(withIdentifier: "addAccountVC") as! AddAccountViewController
-        //self.navigationController?.pushViewController(accountVC, animated: true)
-        
-        
+
         self.present(accountVC, animated: true, completion: nil)
-        print("addedAccount!")
-        
     }
     
-    func dismissNewAccountPopIn() {
-        
-        print("dismissedPopIn")
-    }
     
     // Data Source
     
@@ -71,9 +53,29 @@ class PasswordViewController: CoreDataTableViewController {
         return cell
     }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let credentialsVC = self.storyboard?.instantiateViewController(withIdentifier: "credentialsVC") as? CredentialsViewController {
+            
+            let fr = NSFetchRequest<NSFetchRequestResult>(entityName: "LoginCredentials")
+            
+            fr.sortDescriptors = [NSSortDescriptor(key: "username", ascending: false)]
+            
+            let indexPath = tableView.indexPathForSelectedRow!
+            
+            let account = fetchedResultsController?.object(at: indexPath) as? Account
+            
+            let pred = NSPredicate(format: "account = %@", argumentArray: [account!])
+            
+            fr.predicate = pred
+            
+            let fc = NSFetchedResultsController(fetchRequest: fr, managedObjectContext: fetchedResultsController!.managedObjectContext, sectionNameKeyPath: "humanReadableAge", cacheName: nil)
+            
+            credentialsVC.fetchedResultsController = fc
+            
+            self.navigationController?.pushViewController(credentialsVC, animated: true)
+        }
+    }
     
     // Action
     
@@ -81,6 +83,7 @@ class PasswordViewController: CoreDataTableViewController {
         
         if let context = fetchedResultsController?.managedObjectContext, let account = fetchedResultsController?.object(at: indexPath) as? Account, editingStyle == .delete {
             context.delete(account)
+            stack.save()
         }
     }
 }

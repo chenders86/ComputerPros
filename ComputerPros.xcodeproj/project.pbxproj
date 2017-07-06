@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90E32AD1F0DDD7D00F92ABA /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E32AC1F0DDD7D00F92ABA /* CredentialsViewController.swift */; };
+		C90E32AF1F0DE8D700F92ABA /* CredentialsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E32AE1F0DE8D700F92ABA /* CredentialsCell.swift */; };
+		C90E32BD1F0DEE4B00F92ABA /* LoginCredentials+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E32B91F0DEE4B00F92ABA /* LoginCredentials+CoreDataClass.swift */; };
+		C90E32BE1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E32BA1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift */; };
+		C90E32BF1F0DEE4B00F92ABA /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E32BB1F0DEE4B00F92ABA /* Account+CoreDataClass.swift */; };
+		C90E32C01F0DEE4B00F92ABA /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E32BC1F0DEE4B00F92ABA /* Account+CoreDataProperties.swift */; };
 		C91E630C1EE9E7E9005E7D97 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E630B1EE9E7E9005E7D97 /* FirebaseClient.swift */; };
 		C91E630E1EE9F5EC005E7D97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E630D1EE9F5EC005E7D97 /* HomeViewController.swift */; };
 		C91E63101EE9FD9F005E7D97 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E630F1EE9FD9F005E7D97 /* WebViewController.swift */; };
 		C935F2161F0ACCF9007BC943 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935F2151F0ACCF9007BC943 /* CoreDataStack.swift */; };
 		C935F2191F0AD5CB007BC943 /* ComputerPros.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C935F2171F0AD5CB007BC943 /* ComputerPros.xcdatamodeld */; };
-		C935F2361F0AEC1C007BC943 /* LoginCredentials+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935F2321F0AEC1C007BC943 /* LoginCredentials+CoreDataClass.swift */; };
-		C935F2371F0AEC1C007BC943 /* LoginCredentials+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935F2331F0AEC1C007BC943 /* LoginCredentials+CoreDataProperties.swift */; };
-		C935F2381F0AEC1C007BC943 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935F2341F0AEC1C007BC943 /* Account+CoreDataClass.swift */; };
-		C935F2391F0AEC1C007BC943 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935F2351F0AEC1C007BC943 /* Account+CoreDataProperties.swift */; };
 		C935F23B1F0AF338007BC943 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935F23A1F0AF338007BC943 /* CoreDataTableViewController.swift */; };
-		C935F23D1F0BFF41007BC943 /* PasswordVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935F23C1F0BFF41007BC943 /* PasswordVCExtension.swift */; };
 		C93E2F3E1EE258E800A13892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E2F3D1EE258E800A13892 /* AppDelegate.swift */; };
 		C93E2F431EE258E800A13892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F411EE258E800A13892 /* Main.storyboard */; };
 		C93E2F451EE258E800A13892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F441EE258E800A13892 /* Assets.xcassets */; };
@@ -36,17 +37,19 @@
 
 /* Begin PBXFileReference section */
 		955CFD9B22BCFC207174F64D /* Pods-ComputerPros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComputerPros.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComputerPros/Pods-ComputerPros.debug.xcconfig"; sourceTree = "<group>"; };
+		C90E32AC1F0DDD7D00F92ABA /* CredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
+		C90E32AE1F0DE8D700F92ABA /* CredentialsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsCell.swift; sourceTree = "<group>"; };
+		C90E32B01F0DEB8300F92ABA /* ComputerPros2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComputerPros2.xcdatamodel; sourceTree = "<group>"; };
+		C90E32B91F0DEE4B00F92ABA /* LoginCredentials+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginCredentials+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C90E32BA1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginCredentials+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C90E32BB1F0DEE4B00F92ABA /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C90E32BC1F0DEE4B00F92ABA /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C91E630B1EE9E7E9005E7D97 /* FirebaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
 		C91E630D1EE9F5EC005E7D97 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C91E630F1EE9FD9F005E7D97 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		C935F2151F0ACCF9007BC943 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C935F2181F0AD5CB007BC943 /* ComputerPros.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ComputerPros.xcdatamodel; sourceTree = "<group>"; };
-		C935F2321F0AEC1C007BC943 /* LoginCredentials+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginCredentials+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C935F2331F0AEC1C007BC943 /* LoginCredentials+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginCredentials+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C935F2341F0AEC1C007BC943 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C935F2351F0AEC1C007BC943 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C935F23A1F0AF338007BC943 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
-		C935F23C1F0BFF41007BC943 /* PasswordVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordVCExtension.swift; sourceTree = "<group>"; };
 		C93E2F3A1EE258E800A13892 /* ComputerPros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComputerPros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93E2F3D1EE258E800A13892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C93E2F421EE258E800A13892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,11 +125,11 @@
 		C96E02221EFDD684004B28AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C90E32BB1F0DEE4B00F92ABA /* Account+CoreDataClass.swift */,
+				C90E32BC1F0DEE4B00F92ABA /* Account+CoreDataProperties.swift */,
+				C90E32B91F0DEE4B00F92ABA /* LoginCredentials+CoreDataClass.swift */,
+				C90E32BA1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift */,
 				C935F2151F0ACCF9007BC943 /* CoreDataStack.swift */,
-				C935F2341F0AEC1C007BC943 /* Account+CoreDataClass.swift */,
-				C935F2351F0AEC1C007BC943 /* Account+CoreDataProperties.swift */,
-				C935F2321F0AEC1C007BC943 /* LoginCredentials+CoreDataClass.swift */,
-				C935F2331F0AEC1C007BC943 /* LoginCredentials+CoreDataProperties.swift */,
 				C96E02241EFDD6CC004B28AC /* MenuSettings.swift */,
 				C91E630B1EE9E7E9005E7D97 /* FirebaseClient.swift */,
 				C935F2171F0AD5CB007BC943 /* ComputerPros.xcdatamodeld */,
@@ -143,11 +146,11 @@
 				C9EF4A9F1F034FF90091E026 /* ProCareCloud.swift */,
 				C9EF4A9D1F034FF90091E026 /* InventoryViewController.swift */,
 				C9EF4A9E1F034FF90091E026 /* PasswordViewController.swift */,
-				C935F23C1F0BFF41007BC943 /* PasswordVCExtension.swift */,
+				C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */,
+				C90E32AC1F0DDD7D00F92ABA /* CredentialsViewController.swift */,
 				C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */,
 				C91E630F1EE9FD9F005E7D97 /* WebViewController.swift */,
 				C935F23A1F0AF338007BC943 /* CoreDataTableViewController.swift */,
-				C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				C9BC37131EFB81BF004B9B5F /* MenuCell.swift */,
+				C90E32AE1F0DE8D700F92ABA /* CredentialsCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -293,23 +297,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90E32C01F0DEE4B00F92ABA /* Account+CoreDataProperties.swift in Sources */,
 				C93E2F3E1EE258E800A13892 /* AppDelegate.swift in Sources */,
 				C9EF4AA21F034FF90091E026 /* PasswordViewController.swift in Sources */,
+				C90E32BD1F0DEE4B00F92ABA /* LoginCredentials+CoreDataClass.swift in Sources */,
 				C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */,
+				C90E32BE1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift in Sources */,
 				C9EF4AA11F034FF90091E026 /* InventoryViewController.swift in Sources */,
 				C935F2161F0ACCF9007BC943 /* CoreDataStack.swift in Sources */,
 				C9EF4AA01F034FF90091E026 /* ContactViewController.swift in Sources */,
 				C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */,
 				C9EF4AA31F034FF90091E026 /* ProCareCloud.swift in Sources */,
-				C935F23D1F0BFF41007BC943 /* PasswordVCExtension.swift in Sources */,
-				C935F2381F0AEC1C007BC943 /* Account+CoreDataClass.swift in Sources */,
 				C935F23B1F0AF338007BC943 /* CoreDataTableViewController.swift in Sources */,
+				C90E32BF1F0DEE4B00F92ABA /* Account+CoreDataClass.swift in Sources */,
+				C90E32AF1F0DE8D700F92ABA /* CredentialsCell.swift in Sources */,
 				C935F2191F0AD5CB007BC943 /* ComputerPros.xcdatamodeld in Sources */,
 				C91E630C1EE9E7E9005E7D97 /* FirebaseClient.swift in Sources */,
-				C935F2391F0AEC1C007BC943 /* Account+CoreDataProperties.swift in Sources */,
 				C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */,
-				C935F2361F0AEC1C007BC943 /* LoginCredentials+CoreDataClass.swift in Sources */,
-				C935F2371F0AEC1C007BC943 /* LoginCredentials+CoreDataProperties.swift in Sources */,
+				C90E32AD1F0DDD7D00F92ABA /* CredentialsViewController.swift in Sources */,
 				C9FF1B701EFF8337004C1CB8 /* HomeViewExtension.swift in Sources */,
 				C91E630E1EE9F5EC005E7D97 /* HomeViewController.swift in Sources */,
 				C91E63101EE9FD9F005E7D97 /* WebViewController.swift in Sources */,
@@ -482,6 +487,7 @@
 		C935F2171F0AD5CB007BC943 /* ComputerPros.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				C90E32B01F0DEB8300F92ABA /* ComputerPros2.xcdatamodel */,
 				C935F2181F0AD5CB007BC943 /* ComputerPros.xcdatamodel */,
 			);
 			currentVersion = C935F2181F0AD5CB007BC943 /* ComputerPros.xcdatamodel */;
