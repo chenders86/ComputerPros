@@ -13,7 +13,6 @@ class CredentialsViewController: CoreDataTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Credentials"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newCredentials))
     }
     
@@ -23,7 +22,15 @@ class CredentialsViewController: CoreDataTableViewController {
     
     func newCredentials() {
         
-        
+        if self.account != nil {
+            
+            let addCredentialsVC = self.storyboard?.instantiateViewController(withIdentifier: "addCredentialsVC") as! AddCredentialsViewController
+            
+            addCredentialsVC.account = account
+            
+            self.present(addCredentialsVC, animated: true, completion: nil)
+            
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

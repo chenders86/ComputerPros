@@ -26,7 +26,6 @@ class PasswordViewController: CoreDataTableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
-        print("view appeared")
     }
     
     
@@ -69,9 +68,13 @@ class PasswordViewController: CoreDataTableViewController {
             
             fr.predicate = pred
             
-            let fc = NSFetchedResultsController(fetchRequest: fr, managedObjectContext: fetchedResultsController!.managedObjectContext, sectionNameKeyPath: "humanReadableAge", cacheName: nil)
+            let fc = NSFetchedResultsController(fetchRequest: fr, managedObjectContext: fetchedResultsController!.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
             
             credentialsVC.fetchedResultsController = fc
+            
+            credentialsVC.navigationItem.title = account?.accountName
+            
+            credentialsVC.account = account
             
             self.navigationController?.pushViewController(credentialsVC, animated: true)
         }

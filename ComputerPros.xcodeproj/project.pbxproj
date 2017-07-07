@@ -23,6 +23,7 @@
 		C93E2F431EE258E800A13892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F411EE258E800A13892 /* Main.storyboard */; };
 		C93E2F451EE258E800A13892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F441EE258E800A13892 /* Assets.xcassets */; };
 		C93E2F481EE258E800A13892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F461EE258E800A13892 /* LaunchScreen.storyboard */; };
+		C956BCBE1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */; };
 		C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E02241EFDD6CC004B28AC /* MenuSettings.swift */; };
 		C9830E121EE25BFE00F683D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */; };
 		C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */; };
@@ -56,6 +57,7 @@
 		C93E2F441EE258E800A13892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C93E2F471EE258E800A13892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C93E2F491EE258E800A13892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCredentialsViewController.swift; sourceTree = "<group>"; };
 		C96E02241EFDD6CC004B28AC /* MenuSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSettings.swift; sourceTree = "<group>"; };
 		C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				C9EF4A9E1F034FF90091E026 /* PasswordViewController.swift */,
 				C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */,
 				C90E32AC1F0DDD7D00F92ABA /* CredentialsViewController.swift */,
+				C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */,
 				C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */,
 				C91E630F1EE9FD9F005E7D97 /* WebViewController.swift */,
 				C935F23A1F0AF338007BC943 /* CoreDataTableViewController.swift */,
@@ -314,6 +317,7 @@
 				C935F2191F0AD5CB007BC943 /* ComputerPros.xcdatamodeld in Sources */,
 				C91E630C1EE9E7E9005E7D97 /* FirebaseClient.swift in Sources */,
 				C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */,
+				C956BCBE1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift in Sources */,
 				C90E32AD1F0DDD7D00F92ABA /* CredentialsViewController.swift in Sources */,
 				C9FF1B701EFF8337004C1CB8 /* HomeViewExtension.swift in Sources */,
 				C91E630E1EE9F5EC005E7D97 /* HomeViewController.swift in Sources */,

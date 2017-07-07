@@ -32,6 +32,7 @@ class AddAccountViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var accountNameTextfield: UITextField!
     
     @IBAction func hiddenButtonPressed(_ sender: UIButton) {
+        accountNameTextfield.resignFirstResponder()
          self.dismiss(animated: true, completion: nil)
     }
     
@@ -48,8 +49,13 @@ class AddAccountViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField.text == "" {
         textField.resignFirstResponder()
+            self.dismiss(animated: true, completion: nil)
+        } else {
+            textField.resignFirstResponder()
+        }
         return true
     }
-    
 }
