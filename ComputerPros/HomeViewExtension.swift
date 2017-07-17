@@ -99,7 +99,7 @@ extension HomeViewController {
                 self.hiddenDismissButton.alpha = 0
                 self.view.layoutIfNeeded()
             }, completion: { (finished) in
-                let inventoryVC = self.storyboard?.instantiateViewController(withIdentifier: ControllerIdentifier.InventoryVC.rawValue) as! InventoryViewController
+                let inventoryVC = self.storyboard?.instantiateViewController(withIdentifier: ControllerIdentifier.InventoryVC.rawValue) as! InventoryTabBarController
                 self.navigationController?.pushViewController(inventoryVC, animated: true)
             })
             

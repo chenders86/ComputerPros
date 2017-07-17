@@ -41,6 +41,7 @@ class CredentialsViewController: CoreDataTableViewController {
         
         cell.userActual.text = credentials.username
         cell.passwordActual.text = credentials.password
+        cell.selectionStyle = .none
         
         return cell
         

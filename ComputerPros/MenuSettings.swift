@@ -33,7 +33,7 @@ enum MenuCellName: String {
 enum ControllerIdentifier: String {
     
     case ProCareVC = "proCareVC"
-    case InventoryVC = "inventoryVC"
+    case InventoryVC = "inventoryTBC"
     case PassWordVC = "passwordVC"
     case ContactVC = "contactVC"
     case WebVC = "webVC"

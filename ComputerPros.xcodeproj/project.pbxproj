@@ -25,11 +25,13 @@
 		C93E2F481EE258E800A13892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F461EE258E800A13892 /* LaunchScreen.storyboard */; };
 		C956BCBE1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */; };
 		C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E02241EFDD6CC004B28AC /* MenuSettings.swift */; };
+		C97408CD1F1D817100A24BFE /* AppleInventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97408CC1F1D817100A24BFE /* AppleInventoryTableViewController.swift */; };
+		C97408CF1F1D81C700A24BFE /* PCInventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */; };
 		C9830E121EE25BFE00F683D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */; };
 		C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */; };
 		C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC37131EFB81BF004B9B5F /* MenuCell.swift */; };
 		C9EF4AA01F034FF90091E026 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */; };
-		C9EF4AA11F034FF90091E026 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9D1F034FF90091E026 /* InventoryViewController.swift */; };
+		C9EF4AA11F034FF90091E026 /* InventoryTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9D1F034FF90091E026 /* InventoryTabBarController.swift */; };
 		C9EF4AA21F034FF90091E026 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9E1F034FF90091E026 /* PasswordViewController.swift */; };
 		C9EF4AA31F034FF90091E026 /* ProCareCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9F1F034FF90091E026 /* ProCareCloud.swift */; };
 		C9FF1B701EFF8337004C1CB8 /* HomeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */; };
@@ -59,11 +61,13 @@
 		C93E2F491EE258E800A13892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCredentialsViewController.swift; sourceTree = "<group>"; };
 		C96E02241EFDD6CC004B28AC /* MenuSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSettings.swift; sourceTree = "<group>"; };
+		C97408CC1F1D817100A24BFE /* AppleInventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleInventoryTableViewController.swift; sourceTree = "<group>"; };
+		C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCInventoryTableViewController.swift; sourceTree = "<group>"; };
 		C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
 		C9BC37131EFB81BF004B9B5F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
-		C9EF4A9D1F034FF90091E026 /* InventoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
+		C9EF4A9D1F034FF90091E026 /* InventoryTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTabBarController.swift; sourceTree = "<group>"; };
 		C9EF4A9E1F034FF90091E026 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		C9EF4A9F1F034FF90091E026 /* ProCareCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProCareCloud.swift; sourceTree = "<group>"; };
 		C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewExtension.swift; sourceTree = "<group>"; };
@@ -127,11 +131,11 @@
 		C96E02221EFDD684004B28AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C935F2151F0ACCF9007BC943 /* CoreDataStack.swift */,
 				C90E32BB1F0DEE4B00F92ABA /* Account+CoreDataClass.swift */,
 				C90E32BC1F0DEE4B00F92ABA /* Account+CoreDataProperties.swift */,
 				C90E32B91F0DEE4B00F92ABA /* LoginCredentials+CoreDataClass.swift */,
 				C90E32BA1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift */,
-				C935F2151F0ACCF9007BC943 /* CoreDataStack.swift */,
 				C96E02241EFDD6CC004B28AC /* MenuSettings.swift */,
 				C91E630B1EE9E7E9005E7D97 /* FirebaseClient.swift */,
 				C935F2171F0AD5CB007BC943 /* ComputerPros.xcdatamodeld */,
@@ -146,7 +150,7 @@
 				C91E630D1EE9F5EC005E7D97 /* HomeViewController.swift */,
 				C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */,
 				C9EF4A9F1F034FF90091E026 /* ProCareCloud.swift */,
-				C9EF4A9D1F034FF90091E026 /* InventoryViewController.swift */,
+				C9EF4A9D1F034FF90091E026 /* InventoryTabBarController.swift */,
 				C9EF4A9E1F034FF90091E026 /* PasswordViewController.swift */,
 				C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */,
 				C90E32AC1F0DDD7D00F92ABA /* CredentialsViewController.swift */,
@@ -154,6 +158,8 @@
 				C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */,
 				C91E630F1EE9FD9F005E7D97 /* WebViewController.swift */,
 				C935F23A1F0AF338007BC943 /* CoreDataTableViewController.swift */,
+				C97408CC1F1D817100A24BFE /* AppleInventoryTableViewController.swift */,
+				C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -305,8 +311,10 @@
 				C9EF4AA21F034FF90091E026 /* PasswordViewController.swift in Sources */,
 				C90E32BD1F0DEE4B00F92ABA /* LoginCredentials+CoreDataClass.swift in Sources */,
 				C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */,
+				C97408CD1F1D817100A24BFE /* AppleInventoryTableViewController.swift in Sources */,
 				C90E32BE1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift in Sources */,
-				C9EF4AA11F034FF90091E026 /* InventoryViewController.swift in Sources */,
+				C97408CF1F1D81C700A24BFE /* PCInventoryTableViewController.swift in Sources */,
+				C9EF4AA11F034FF90091E026 /* InventoryTabBarController.swift in Sources */,
 				C935F2161F0ACCF9007BC943 /* CoreDataStack.swift in Sources */,
 				C9EF4AA01F034FF90091E026 /* ContactViewController.swift in Sources */,
 				C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */,

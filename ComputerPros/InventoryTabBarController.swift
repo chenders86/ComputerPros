@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class InventoryViewController: UIViewController {
+class InventoryTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

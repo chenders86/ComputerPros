@@ -58,7 +58,7 @@ class PasswordViewController: CoreDataTableViewController {
             
             let fr = NSFetchRequest<NSFetchRequestResult>(entityName: "LoginCredentials")
             
-            fr.sortDescriptors = [NSSortDescriptor(key: "username", ascending: false)]
+            fr.sortDescriptors = [NSSortDescriptor(key: "username", ascending: true)]
             
             let indexPath = tableView.indexPathForSelectedRow!
             

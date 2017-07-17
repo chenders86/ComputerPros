@@ -64,17 +64,14 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     
     @IBAction func appleButton(_ sender: UIButton) {
-        
         showAppleCom()
     }
     
     @IBAction func windowsButton(_ sender: UIButton) {
-        
         showMicrosoftCom()
     }
     
     @IBAction func bookItButton(_ sender: UIButton) {
-        
         showSetmore()
     }
     
@@ -84,12 +81,10 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     
     @IBAction func facebookButton(_ sender: UIButton) {
-        
         showFacebook()
     }
     
     @IBAction func twitterButton(_ sender: UIButton) {
-        
         showTwitter()
     }
     
