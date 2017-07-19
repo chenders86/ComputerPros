@@ -79,7 +79,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         showProCare()
     }
     
-    
     @IBAction func facebookButton(_ sender: UIButton) {
         showFacebook()
     }

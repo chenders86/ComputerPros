@@ -316,7 +316,7 @@ Storage:</string>
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L25-q6-kjW" id="ppy-xr-YvZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -342,13 +342,39 @@ Storage:</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gTk-Oa-61u">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="appleTVCell" rowHeight="60" id="gTk-Oa-61u" customClass="AppleTableViewCell" customModule="ComputerPros" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gTk-Oa-61u" id="FrM-yg-UFO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4w-hx-yBz">
+                                            <rect key="frame" x="75.666666666666657" y="19.666666666666671" width="330.33333333333337" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Swl-FZ-A0d">
+                                            <rect key="frame" x="8" y="0.0" width="59.666666666666671" height="59.666666666666664"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Swl-FZ-A0d" secondAttribute="height" multiplier="1:1" id="OOH-eY-f24"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="N4w-hx-yBz" firstAttribute="centerY" secondItem="FrM-yg-UFO" secondAttribute="centerY" id="9Ic-ye-6Re"/>
+                                        <constraint firstItem="N4w-hx-yBz" firstAttribute="trailing" secondItem="FrM-yg-UFO" secondAttribute="trailingMargin" id="Ewg-eF-Ck0"/>
+                                        <constraint firstItem="N4w-hx-yBz" firstAttribute="leading" secondItem="Swl-FZ-A0d" secondAttribute="trailing" constant="8" id="QiH-qZ-jRj"/>
+                                        <constraint firstItem="Swl-FZ-A0d" firstAttribute="leading" secondItem="FrM-yg-UFO" secondAttribute="leading" constant="8" id="dWf-on-BWr"/>
+                                        <constraint firstAttribute="bottom" secondItem="Swl-FZ-A0d" secondAttribute="bottom" id="lfA-9g-FZe"/>
+                                        <constraint firstItem="Swl-FZ-A0d" firstAttribute="centerY" secondItem="FrM-yg-UFO" secondAttribute="centerY" id="xKX-JN-3Ol"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="computerImage" destination="Swl-FZ-A0d" id="AaK-ox-MDo"/>
+                                    <outlet property="computerName" destination="N4w-hx-yBz" id="zsT-6O-NWN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -361,7 +387,7 @@ Storage:</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rv0-iz-ano" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1907" y="448"/>
+            <point key="canvasLocation" x="1905.7971014492755" y="447.554347826087"/>
         </scene>
         <!--Inventory Tab Bar Controller-->
         <scene sceneID="J7h-fg-GaX">

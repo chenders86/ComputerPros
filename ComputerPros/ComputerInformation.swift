@@ -13,6 +13,7 @@ class ComputerInfo: NSObject {
     
     var name: String?
     var computerImage: UIImage?
+    var displayOrder: Int?
     
 }
 
