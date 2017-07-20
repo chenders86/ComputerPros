@@ -18,4 +18,18 @@ class FirebaseClient: NSObject {
         return Singleton.sharedInstance
     }
     
+    func presentSelectedComputerType(computerType: ComputerInfo) {
+        
+        
+        
+    
+    }
+    
+    enum ComputerName: String {
+        
+        case MacBook = "MacBook"
+        case MacBookAir = "MacBook Air"
+        
+    }
+    
 }

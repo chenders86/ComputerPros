@@ -17,5 +17,6 @@ class PCInventoryTVC: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        self.navigationController?.title = "PC"
     }
 }

@@ -14,17 +14,21 @@ class ComputerInfo: NSObject {
     var name: String?
     var computerImage: UIImage?
     var displayOrder: Int?
+    var nodeName: String?
     
 }
 
 class DetailedComputerInfo: NSObject {
     
-    var imageURLString: String?
-    var name: String?
-    var processor: String?
-    var storage: String?
-    var ram: String?
-    var color: String?
-    var price: String?
-    var quantity: String?
+    // variable names are capitalized to match keys on server so to use "setValuesForKeys"
+    
+    var Color: String?
+    var Name: String?
+    var Price: String?
+    var Processor: String?
+    var Quantity: String?
+    var RAM: String?
+    var Storage: String?
+    var DetailedImageURL: String?
+    var ComputerImage: UIImage?
 }
