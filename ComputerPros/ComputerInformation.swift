@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
+
 class ComputerInfo: NSObject {
     
-    var name: String?
     var computerImage: UIImage?
+    var name: String?
     var displayOrder: Int?
     var nodeName: String?
-    
 }
 
 class DetailedComputerInfo: NSObject {

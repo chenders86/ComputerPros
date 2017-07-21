@@ -21,5 +21,4 @@ class AppleTableViewCell: UITableViewCell {
     
     @IBOutlet weak var computerImage: UIImageView!
     @IBOutlet weak var computerName: UILabel!
-    
 }

@@ -16,7 +16,6 @@ class CoreDataTableViewController: UITableViewController, NSFetchedResultsContro
             fetchedResultsController?.delegate = self
             executeSearch()
             tableView.reloadData()
-            print("frc changed")
         }
     }
     

@@ -18,6 +18,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         menuView.layer.shadowRadius = 6
         menuView.backgroundColor = UIColor.lightGray
         menuView.layer.shadowOffset = CGSize(width: 0, height: 9)
+        self.navigationController?.navigationBar.tintColor = UIColor(hue: 0.5361111111, saturation: 1.30, brightness: 0.85, alpha: 1.0)
     }
     
     override func viewWillAppear(_ animated: Bool) {

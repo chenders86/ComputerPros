@@ -10,12 +10,13 @@ import Foundation
 import UIKit
 import Firebase
 
+
+
 class AppleInventoryTVC: UITableViewController { // Would possibly like to update tableView only once the data has finished downloading
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //fetchAppleComputerInfo() // Is this be better? Try caching?
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,11 +26,12 @@ class AppleInventoryTVC: UITableViewController { // Would possibly like to updat
     
     
     var computerInfoArray = [ComputerInfo]()
-
+    
         
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return computerInfoArray.count
     }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -40,6 +42,7 @@ class AppleInventoryTVC: UITableViewController { // Would possibly like to updat
         
         return cell
     }
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -53,12 +56,29 @@ class AppleInventoryTVC: UITableViewController { // Would possibly like to updat
         self.navigationController?.pushViewController(detailsVC, animated: true)
     }
     
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(70)
     }
     
     
-    func fetchAppleComputerInfo() {
+   private func setImageWithCacheOrURL(urlString: String, info: ComputerInfo) {
+        
+        if let cachedImage = imageCache.object(forKey: urlString as NSString) {
+            info.computerImage = cachedImage
+            return
+        } else {
+            let url = URL(string: urlString)
+            if let imageData = NSData(contentsOf: url!) {
+                let downloadedImage = UIImage(data: imageData as Data)
+                info.computerImage = downloadedImage
+                imageCache.setObject(downloadedImage!, forKey: urlString as NSString)
+            }
+        }
+    }
+    
+    
+    private func fetchAppleComputerInfo() {
         
         self.computerInfoArray.removeAll()
         
@@ -71,20 +91,17 @@ class AppleInventoryTVC: UITableViewController { // Would possibly like to updat
                 info.name = dictionary["Name"] as? String
                 
                 if let urlString = dictionary["ComputerImageURL"] as? String {
-                    let url = URL(string: urlString)
-                    
                     DispatchQueue.global(qos: .userInteractive).async {
-                        if let imageData = NSData(contentsOf: url!) {
-                            let computerImage = UIImage(data: imageData as Data)
-                            info.computerImage = computerImage
-                            if let displayOrder = dictionary["DisplayOrder"] as? Int {
-                                info.displayOrder = displayOrder
-                                self.computerInfoArray.append(info) // This crashes 1/50 times: UnsafeMutablePointer.deinitialize with negative count
-                                
-                                DispatchQueue.main.async {
-                                    self.computerInfoArray.sort(by: { $0.displayOrder! < $1.displayOrder!})
-                                    self.tableView.reloadData()
-                                }
+                        
+                        self.setImageWithCacheOrURL(urlString: urlString, info: info)
+                        
+                        if let displayOrder = dictionary["DisplayOrder"] as? Int {
+                            info.displayOrder = displayOrder
+                            self.computerInfoArray.append(info) // This crashes 1/50 times: UnsafeMutablePointer.deinitialize with negative count
+                            
+                            DispatchQueue.main.async {
+                                self.computerInfoArray.sort(by: { $0.displayOrder! < $1.displayOrder!})
+                                self.tableView.reloadData()
                             }
                         }
                     }
