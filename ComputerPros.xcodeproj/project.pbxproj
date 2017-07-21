@@ -32,6 +32,7 @@
 		C97408CF1F1D81C700A24BFE /* PCInventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */; };
 		C9830E121EE25BFE00F683D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */; };
 		C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */; };
+		C9A734D81F210AE300BE8EC8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A734D71F210AE300BE8EC8 /* Extensions.swift */; };
 		C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC37131EFB81BF004B9B5F /* MenuCell.swift */; };
 		C9D064581F1DB2F0002E639C /* ComputerInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D064571F1DB2F0002E639C /* ComputerInformation.swift */; };
 		C9EF4AA01F034FF90091E026 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */; };
@@ -72,6 +73,7 @@
 		C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCInventoryTableViewController.swift; sourceTree = "<group>"; };
 		C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		C9A734D71F210AE300BE8EC8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C9BC37131EFB81BF004B9B5F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C9D064571F1DB2F0002E639C /* ComputerInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerInformation.swift; sourceTree = "<group>"; };
 		C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				C93E2F3D1EE258E800A13892 /* AppDelegate.swift */,
+				C9A734D61F210ACF00BE8EC8 /* Helpers */,
 				C96E02221EFDD684004B28AC /* Model */,
 				C96E02261EFDDB97004B28AC /* View */,
 				C96E02231EFDD69C004B28AC /* Controller */,
@@ -183,6 +186,14 @@
 				C90663781F20588B007ADF27 /* ComputerDetailsCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C9A734D61F210ACF00BE8EC8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C9A734D71F210AE300BE8EC8 /* Extensions.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		EBE294C06603E9380E8E2297 /* Pods */ = {
@@ -325,6 +336,7 @@
 				C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */,
 				C97408CD1F1D817100A24BFE /* AppleInventoryTableViewController.swift in Sources */,
 				C90E32BE1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift in Sources */,
+				C9A734D81F210AE300BE8EC8 /* Extensions.swift in Sources */,
 				C97408CF1F1D81C700A24BFE /* PCInventoryTableViewController.swift in Sources */,
 				C9EF4AA11F034FF90091E026 /* InventoryTabBarController.swift in Sources */,
 				C935F2161F0ACCF9007BC943 /* CoreDataStack.swift in Sources */,
