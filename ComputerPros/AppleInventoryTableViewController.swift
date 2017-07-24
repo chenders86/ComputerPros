@@ -91,15 +91,14 @@ class AppleInventoryTVC: UITableViewController { // Would possibly like to updat
                 info.name = dictionary["Name"] as? String
                 
                 if let urlString = dictionary["ComputerImageURL"] as? String {
+                    
                     DispatchQueue.global(qos: .userInteractive).async {
-                        
                         self.setImageWithCacheOrURL(urlString: urlString, info: info)
-                        
                         if let displayOrder = dictionary["DisplayOrder"] as? Int {
                             info.displayOrder = displayOrder
-                            self.computerInfoArray.append(info) // This crashes 1/50 times: UnsafeMutablePointer.deinitialize with negative count
                             
                             DispatchQueue.main.async {
+                                self.computerInfoArray.append(info)
                                 self.computerInfoArray.sort(by: { $0.displayOrder! < $1.displayOrder!})
                                 self.tableView.reloadData()
                             }

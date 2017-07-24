@@ -15,6 +15,7 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchComputerDetails()
+        self.flowLayout.minimumLineSpacing = 16
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,10 +29,11 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
     
     var computerArray = [DetailedComputerInfo]()
     
-    let sectionInsets = UIEdgeInsets(top: 5.0, left: 12.0, bottom: 5.0, right: 12.0)
-    let itemsPerRow: CGFloat = 2
+    let sectionInsets = UIEdgeInsets(top: 16.0, left: 10.0, bottom: 0.0, right: 10.0)
+    let itemsPerRow: CGFloat = 1
     
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    
     
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -41,7 +43,9 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "computerDetailsCell", for: indexPath) as! ComputerDetailsCell
+        let computerInfo = computerArray[indexPath.row]
         
+        cell.detailedComputerInfo = computerInfo
         return cell
     }
     
@@ -49,14 +53,21 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
         return 1
     }
     
+    // Next session ask mentor about what is throwing this algorithm off by 20...
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
         let availableWidth = view.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
         
-        return CGSize(width: widthPerItem, height: widthPerItem)
+        let verticalPaddingSpace = (self.flowLayout.minimumLineSpacing * 2) + (sectionInsets.top)
+        let availableVerticalSpace = (self.view.frame.height) - (verticalPaddingSpace) - (self.navigationController?.navigationBar.frame.height)! - 30
+        let heightPerItem = availableVerticalSpace / 3
+        
+        return CGSize(width: widthPerItem, height: heightPerItem)
     }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return sectionInsets
@@ -74,9 +85,8 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
                     if let urlString = dictionary["DetailedImageURL"] as? String {
                         let url = URL(string: urlString)
                         
-                        DispatchQueue.global(qos: .userInteractive).async {
+                        DispatchQueue.global(qos: .userInteractive).async { // Need to cache images
                             if let imageData = NSData(contentsOf: url!) {
-                                
                                 let computerImage = UIImage(data: imageData as Data)
                                 let computer = DetailedComputerInfo()
                                 computer.setValuesForKeys(dictionary)
@@ -84,7 +94,8 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
                                 
                                 DispatchQueue.main.async {
                                     self.computerArray.append(computer)
-                                    print(self.computerArray.count)
+                                    self.computerArray.sort(by: { $0.Price! < $1.Price!})
+                                    self.collectionView?.reloadData()
                                 }
                             }
                         }
