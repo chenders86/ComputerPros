@@ -9,7 +9,7 @@
 import CoreData
 import UIKit
 
-class PasswordViewController: CoreDataTableViewController {
+class AccountsViewController: CoreDataTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

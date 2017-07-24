@@ -118,7 +118,7 @@ extension HomeViewController {
                 self.hiddenDismissButton.alpha = 0
                 self.view.layoutIfNeeded()
             }, completion: { (finished) in
-                let passwordVC = self.storyboard?.instantiateViewController(withIdentifier: ControllerIdentifier.PassWordVC.rawValue) as! PasswordViewController
+                let passwordVC = self.storyboard?.instantiateViewController(withIdentifier: ControllerIdentifier.PassWordVC.rawValue) as! AccountsViewController
                 self.navigationController?.pushViewController(passwordVC, animated: true)
             })
             

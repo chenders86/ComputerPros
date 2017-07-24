@@ -37,7 +37,7 @@
 		C9D064581F1DB2F0002E639C /* ComputerInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D064571F1DB2F0002E639C /* ComputerInformation.swift */; };
 		C9EF4AA01F034FF90091E026 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */; };
 		C9EF4AA11F034FF90091E026 /* InventoryTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9D1F034FF90091E026 /* InventoryTabBarController.swift */; };
-		C9EF4AA21F034FF90091E026 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9E1F034FF90091E026 /* PasswordViewController.swift */; };
+		C9EF4AA21F034FF90091E026 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9E1F034FF90091E026 /* AccountsViewController.swift */; };
 		C9EF4AA31F034FF90091E026 /* ProCareCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF4A9F1F034FF90091E026 /* ProCareCloud.swift */; };
 		C9FF1B701EFF8337004C1CB8 /* HomeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */; };
 		FE5211E92AB2A4505085327B /* Pods_ComputerPros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2D96F5E51543B719448A36 /* Pods_ComputerPros.framework */; };
@@ -78,7 +78,7 @@
 		C9D064571F1DB2F0002E639C /* ComputerInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerInformation.swift; sourceTree = "<group>"; };
 		C9EF4A9C1F034FF90091E026 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		C9EF4A9D1F034FF90091E026 /* InventoryTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryTabBarController.swift; sourceTree = "<group>"; };
-		C9EF4A9E1F034FF90091E026 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		C9EF4A9E1F034FF90091E026 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		C9EF4A9F1F034FF90091E026 /* ProCareCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProCareCloud.swift; sourceTree = "<group>"; };
 		C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewExtension.swift; sourceTree = "<group>"; };
 		CA2D96F5E51543B719448A36 /* Pods_ComputerPros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComputerPros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +166,7 @@
 				C97408CC1F1D817100A24BFE /* AppleInventoryTableViewController.swift */,
 				C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */,
 				C90663761F20073E007ADF27 /* ComputerDetailsVC.swift */,
-				C9EF4A9E1F034FF90091E026 /* PasswordViewController.swift */,
+				C9EF4A9E1F034FF90091E026 /* AccountsViewController.swift */,
 				C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */,
 				C90E32AC1F0DDD7D00F92ABA /* CredentialsViewController.swift */,
 				C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */,
@@ -323,7 +323,7 @@
 			files = (
 				C90E32C01F0DEE4B00F92ABA /* Account+CoreDataProperties.swift in Sources */,
 				C93E2F3E1EE258E800A13892 /* AppDelegate.swift in Sources */,
-				C9EF4AA21F034FF90091E026 /* PasswordViewController.swift in Sources */,
+				C9EF4AA21F034FF90091E026 /* AccountsViewController.swift in Sources */,
 				C90E32BD1F0DEE4B00F92ABA /* LoginCredentials+CoreDataClass.swift in Sources */,
 				C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */,
 				C97408CD1F1D817100A24BFE /* AppleInventoryTableViewController.swift in Sources */,

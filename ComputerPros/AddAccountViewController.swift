@@ -42,7 +42,7 @@ class AddAccountViewController: UIViewController, UITextFieldDelegate {
             let _ = Account(accountName: accountNameTextfield.text!, context: stack.context)
             stack.save()
             accountNameTextfield.resignFirstResponder()
-            self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil) // Should automatically move to CredentialsVC
         } else {
             return
         }
