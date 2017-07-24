@@ -35,7 +35,7 @@ class AppleInventoryTVC: UITableViewController { // Would possibly like to updat
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "appleTVCell", for: indexPath) as! AppleTableViewCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "appleCell", for: indexPath) as! AppleTableViewCell
         let info = computerInfoArray[indexPath.row]
         
         cell.computerInfo = info
@@ -59,22 +59,6 @@ class AppleInventoryTVC: UITableViewController { // Would possibly like to updat
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(70)
-    }
-    
-    
-   private func setImageWithCacheOrURL(urlString: String, info: ComputerInfo) {
-        
-        if let cachedImage = imageCache.object(forKey: urlString as NSString) {
-            info.computerImage = cachedImage
-            return
-        } else {
-            let url = URL(string: urlString)
-            if let imageData = NSData(contentsOf: url!) {
-                let downloadedImage = UIImage(data: imageData as Data)
-                info.computerImage = downloadedImage
-                imageCache.setObject(downloadedImage!, forKey: urlString as NSString)
-            }
-        }
     }
     
     
@@ -108,4 +92,20 @@ class AppleInventoryTVC: UITableViewController { // Would possibly like to updat
             }
         }, withCancel: nil)
     }
+    
+    private func setImageWithCacheOrURL(urlString: String, info: ComputerInfo) {
+        
+        if let cachedImage = imageCache.object(forKey: urlString as NSString) {
+            info.computerImage = cachedImage
+            return
+        } else {
+            let url = URL(string: urlString)
+            if let imageData = NSData(contentsOf: url!) {
+                let downloadedImage = UIImage(data: imageData as Data)
+                info.computerImage = downloadedImage
+                imageCache.setObject(downloadedImage!, forKey: urlString as NSString)
+            }
+        }
+    }
+
 }

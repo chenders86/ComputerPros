@@ -79,10 +79,10 @@ class ComputerDetailsCell: UICollectionViewCell {
         
         if quantityLabel.text == "0" {
             quantityLabel.textColor = UIColor.red
-        }
-        
-        if quantityLabel.text == "1" {
+        } else if quantityLabel.text == "1" {
             quantityLabel.textColor = UIColor.orange
+        } else {
+            quantityLabel.textColor = UIColor.blue
         }
     }
 }

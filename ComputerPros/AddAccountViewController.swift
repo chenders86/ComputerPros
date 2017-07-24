@@ -23,6 +23,7 @@ class AddAccountViewController: UIViewController, UITextFieldDelegate {
         accountNameTextfield.becomeFirstResponder()
     }
     
+    
     let stack = CoreDataStack.sharedInstance()
     
     @IBOutlet weak var addAccountView: UIView!
@@ -42,7 +43,7 @@ class AddAccountViewController: UIViewController, UITextFieldDelegate {
             let _ = Account(accountName: accountNameTextfield.text!, context: stack.context)
             stack.save()
             accountNameTextfield.resignFirstResponder()
-            self.dismiss(animated: true, completion: nil) // Should automatically move to CredentialsVC
+            self.dismiss(animated: true, completion: nil)
         } else {
             return
         }

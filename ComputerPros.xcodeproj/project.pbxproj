@@ -26,6 +26,7 @@
 		C93E2F431EE258E800A13892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F411EE258E800A13892 /* Main.storyboard */; };
 		C93E2F451EE258E800A13892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F441EE258E800A13892 /* Assets.xcassets */; };
 		C93E2F481EE258E800A13892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93E2F461EE258E800A13892 /* LaunchScreen.storyboard */; };
+		C9567AEF1F267B4A003C2B43 /* PCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9567AEE1F267B4A003C2B43 /* PCTableViewCell.swift */; };
 		C956BCBE1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */; };
 		C956FBA21F1FC99100EEE896 /* AppleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956FBA11F1FC99100EEE896 /* AppleTableViewCell.swift */; };
 		C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E02241EFDD6CC004B28AC /* MenuSettings.swift */; };
@@ -67,6 +68,7 @@
 		C93E2F441EE258E800A13892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C93E2F471EE258E800A13892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C93E2F491EE258E800A13892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9567AEE1F267B4A003C2B43 /* PCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCTableViewCell.swift; sourceTree = "<group>"; };
 		C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCredentialsViewController.swift; sourceTree = "<group>"; };
 		C956FBA11F1FC99100EEE896 /* AppleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleTableViewCell.swift; sourceTree = "<group>"; };
 		C96E02241EFDD6CC004B28AC /* MenuSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSettings.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				C90E32AE1F0DE8D700F92ABA /* CredentialsCell.swift */,
 				C956FBA11F1FC99100EEE896 /* AppleTableViewCell.swift */,
 				C90663781F20588B007ADF27 /* ComputerDetailsCell.swift */,
+				C9567AEE1F267B4A003C2B43 /* PCTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				C90663771F20073E007ADF27 /* ComputerDetailsVC.swift in Sources */,
 				C90E32BF1F0DEE4B00F92ABA /* Account+CoreDataClass.swift in Sources */,
 				C90663791F20588B007ADF27 /* ComputerDetailsCell.swift in Sources */,
+				C9567AEF1F267B4A003C2B43 /* PCTableViewCell.swift in Sources */,
 				C956FBA21F1FC99100EEE896 /* AppleTableViewCell.swift in Sources */,
 				C90E32AF1F0DE8D700F92ABA /* CredentialsCell.swift in Sources */,
 				C935F2191F0AD5CB007BC943 /* ComputerPros.xcdatamodeld in Sources */,

@@ -8,8 +8,11 @@
 
 import Foundation
 import UIKit
+import Firebase
 
-class PCInventoryTVC: UITableViewController {
+
+
+class PCInventoryTVC: UITableViewController { // Would possibly like to update tableView only once the data has finished downloading
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,5 +21,86 @@ class PCInventoryTVC: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.title = "PC"
+        fetchPCInfo()
+    }
+    
+    var computerInfoArray = [ComputerInfo]()
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return computerInfoArray.count
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "PCCell", for: indexPath) as! PCTableViewCell
+        let info = computerInfoArray[indexPath.row]
+        
+        cell.computerInfo = info
+        
+        return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let infoIndexPath = tableView.indexPathForSelectedRow!
+        let computerNode = computerInfoArray[infoIndexPath.row].nodeName
+        
+        let detailsVC = self.storyboard?.instantiateViewController(withIdentifier: "computerDetailsVC") as! ComputerDetailsVC
+        detailsVC.computerTypeNode = computerNode
+        detailsVC.appleOrPC = "PC"
+        
+        self.navigationController?.pushViewController(detailsVC, animated: true)
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(70)
+    }
+    
+    
+    private func fetchPCInfo() {
+        
+        self.computerInfoArray.removeAll()
+        
+        Database.database().reference().child("Computers").child("PC").observe(.childAdded, with: { (snapshot) in
+            
+            if let dictionary = snapshot.value as? [String: AnyObject] {
+                
+                let info = ComputerInfo()
+                info.nodeName = snapshot.key
+                info.name = dictionary["Name"] as? String
+                
+                if let urlString = dictionary["DetailedImageURL"] as? String {
+                    
+                    DispatchQueue.global(qos: .userInteractive).async {
+                        self.setImageWithCacheOrURL(urlString: urlString, info: info)
+                        
+                        DispatchQueue.main.async {
+                            self.computerInfoArray.append(info)
+                            self.computerInfoArray.sort(by: {$0.name! < $1.name!})
+                            self.tableView.reloadData()
+                            
+                        }
+                    }
+                }
+            }
+        }, withCancel: nil)
+    }
+    
+    private func setImageWithCacheOrURL(urlString: String, info: ComputerInfo) {
+        
+        if let cachedImage = imageCache.object(forKey: urlString as NSString) {
+            info.computerImage = cachedImage
+            return
+        } else {
+            let url = URL(string: urlString)
+            if let imageData = NSData(contentsOf: url!) {
+                let downloadedImage = UIImage(data: imageData as Data)
+                info.computerImage = downloadedImage
+                imageCache.setObject(downloadedImage!, forKey: urlString as NSString)
+            }
+        }
     }
 }

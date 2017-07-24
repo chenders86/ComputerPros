@@ -24,7 +24,7 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
     }
     
     let computerNode = "Computers"
-    var appleOrPC: String!
+    var appleOrPC: String?
     var computerTypeNode: String?
     
     var computerArray = [DetailedComputerInfo]()
@@ -53,7 +53,7 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
         return 1
     }
     
-    // Next session ask mentor about what is throwing this algorithm off by 20...
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
@@ -76,32 +76,74 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
     
     func fetchComputerDetails() {
         
-        if let node = computerTypeNode {
-
-            Database.database().reference().child(computerNode).child(appleOrPC).child(node).observe(.childAdded, with: { (snapshot) in
+        if let brand = appleOrPC, brand == "Apple" {
+            
+            if let node = computerTypeNode {
+                
+                Database.database().reference().child(computerNode).child(appleOrPC!).child(node).observe(.childAdded, with: { (snapshot) in
+                    
+                    if let dictionary = snapshot.value as? [String: AnyObject] {
+                        
+                        if let urlString = dictionary["DetailedImageURL"] as? String {
+                            
+                            DispatchQueue.global(qos: .userInteractive).async {
+                                let computerInfo = DetailedComputerInfo()
+                                computerInfo.setValuesForKeys(dictionary)
+                                self.setImageWithCacheOrURL(urlString: urlString, info: computerInfo)
+                                
+                                DispatchQueue.main.async {
+                                    self.computerArray.append(computerInfo)
+                                    self.computerArray.sort(by: {$0.Price! < $1.Price!})
+                                    self.collectionView?.reloadData()
+                                }
+                            }
+                        }
+                    }
+                }, withCancel: nil)
+            }
+        } else if let brand = appleOrPC, brand == "PC" {
+            
+            Database.database().reference().child(computerNode).observe(.childAdded, with: { (snapshot) in
                 
                 if let dictionary = snapshot.value as? [String: AnyObject] {
                     
-                    if let urlString = dictionary["DetailedImageURL"] as? String {
-                        let url = URL(string: urlString)
+                    if let node = self.computerTypeNode {
                         
-                        DispatchQueue.global(qos: .userInteractive).async { // Need to cache images
-                            if let imageData = NSData(contentsOf: url!) {
-                                let computerImage = UIImage(data: imageData as Data)
-                                let computer = DetailedComputerInfo()
-                                computer.setValuesForKeys(dictionary)
-                                computer.ComputerImage = computerImage
+                        if let computerType = dictionary[node] as? [String: AnyObject] {
+                            
+                            if let urlString = computerType["DetailedImageURL"] as? String {
                                 
-                                DispatchQueue.main.async {
-                                    self.computerArray.append(computer)
-                                    self.computerArray.sort(by: { $0.Price! < $1.Price!})
-                                    self.collectionView?.reloadData()
+                                DispatchQueue.global(qos: .userInteractive).async {
+                                    let computerInfo = DetailedComputerInfo()
+                                    computerInfo.setValuesForKeys(computerType)
+                                    self.setImageWithCacheOrURL(urlString: urlString, info: computerInfo)
+                                    
+                                    DispatchQueue.main.async {
+                                        self.computerArray.append(computerInfo)
+                                        self.collectionView?.reloadData()
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }, withCancel: nil)
+            
+        }
+    }
+    
+    private func setImageWithCacheOrURL(urlString: String, info: DetailedComputerInfo) {
+        
+        if let cachedImage = imageCache.object(forKey: urlString as NSString) {
+            info.ComputerImage = cachedImage
+            return
+        } else {
+            let url = URL(string: urlString)
+            if let imageData = NSData(contentsOf: url!) {
+                let downloadedImage = UIImage(data: imageData as Data)
+                info.ComputerImage = downloadedImage
+                imageCache.setObject(downloadedImage!, forKey: urlString as NSString)
+            }
         }
     }
 }
