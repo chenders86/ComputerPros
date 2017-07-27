@@ -49,7 +49,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
             self.menuLeadingEdge.constant = 0
-            self.hiddenDismissButton.alpha = 0.25
+            self.hiddenDismissButton.alpha = 0.30
             self.view.layoutIfNeeded()
         })
     }

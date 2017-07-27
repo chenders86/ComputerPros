@@ -6,30 +6,28 @@
 //  Copyright © 2017 Casey Henderson. All rights reserved.
 //
 
-import UIKit
-
-class FirebaseClient: NSObject {
-    
-    func sharedInstance() -> FirebaseClient {
-        
-        struct Singleton {
-            static var sharedInstance = FirebaseClient()
-        }
-        return Singleton.sharedInstance
-    }
-    
-    func presentSelectedComputerType(computerType: ComputerInfo) {
-        
-        
-        
-    
-    }
-    
-    enum ComputerName: String {
-        
-        case MacBook = "MacBook"
-        case MacBookAir = "MacBook Air"
-        
-    }
-    
-}
+//import UIKit
+//
+//class FirebaseClient: NSObject {
+//    
+//    func sharedInstance() -> FirebaseClient {
+//        
+//        struct Singleton {
+//            static var sharedInstance = FirebaseClient()
+//        }
+//        return Singleton.sharedInstance
+//    }
+//    
+//    func presentSelectedComputerType(computerType: ComputerInfo) {
+//        
+//    
+//    }
+//    
+//    enum ComputerName: String {
+//        
+//        case MacBook = "MacBook"
+//        case MacBookAir = "MacBook Air"
+//        
+//    }
+//    
+//}
