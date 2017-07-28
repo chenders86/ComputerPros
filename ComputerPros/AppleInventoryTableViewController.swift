@@ -12,7 +12,7 @@ import Firebase
 
 
 
-class AppleInventoryTVC: UITableViewController { // Would possibly like to update tableView only once the data has finished downloading
+class AppleInventoryTVC: UITableViewController {
     
     
     override func viewDidLoad() {
