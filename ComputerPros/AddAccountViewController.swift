@@ -9,7 +9,7 @@
 import CoreData
 import UIKit
 
-class AddAccountViewController: UIViewController, UITextFieldDelegate {
+class AddAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +49,10 @@ class AddAccountViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+}
+
+extension AddAccountViewController: UITextFieldDelegate {
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if textField.text == "" {

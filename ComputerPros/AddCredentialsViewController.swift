@@ -9,7 +9,7 @@
 import CoreData
 import UIKit
 
-class AddCredentialsViewController: UIViewController, UITextFieldDelegate {
+class AddCredentialsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +58,10 @@ class AddCredentialsViewController: UIViewController, UITextFieldDelegate {
             self.dismiss(animated: true, completion: nil)
         }
     }
-    
+}
+
+extension AddCredentialsViewController: UITextFieldDelegate {
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if usernameTextfield.text == "" || passwordTextField.text == "" {

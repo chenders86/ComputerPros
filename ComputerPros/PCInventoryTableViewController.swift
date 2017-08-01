@@ -14,9 +14,6 @@ import Firebase
 
 class PCInventoryTVC: UITableViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -56,11 +53,32 @@ class PCInventoryTVC: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(70)
+        
+        let availableVerticalSpace = view.frame.height
+        let navigationControllerHeight = navigationController?.navigationBar.frame.height
+        let tabBarHeight = tabBarController?.tabBar.frame.height
+        let StatusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
+        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - StatusBarHeight)
+        
+        let cellHeight = visibleTableViewArea / CGFloat(computerInfoArray.count)
+        
+        return cellHeight
     }
     
     
     private func fetchPCInfo() {
+        
+        let activityIndicator: UIActivityIndicatorView = {
+            let indicator = UIActivityIndicatorView()
+            indicator.activityIndicatorViewStyle = .gray
+            indicator.hidesWhenStopped = true
+            indicator.center = CGPoint(x: tableView.center.x, y: ((tableView.center.y) - (tabBarController?.tabBar.frame.height)!))
+            return indicator
+        }()
+        
+        
+        activityIndicator.startAnimating()
+        self.view.addSubview(activityIndicator)
         
         self.computerInfoArray.removeAll()
         
@@ -80,6 +98,7 @@ class PCInventoryTVC: UITableViewController {
                         DispatchQueue.main.async {
                             self.computerInfoArray.append(info)
                             self.computerInfoArray.sort(by: {$0.name! < $1.name!})
+                            self.stopActivityIndicator(snapshot: snapshot, activityIndicator: activityIndicator)
                             self.tableView.reloadData()
                             
                         }
@@ -101,6 +120,13 @@ class PCInventoryTVC: UITableViewController {
                 info.computerImage = downloadedImage
                 imageCache.setObject(downloadedImage!, forKey: urlString as NSString)
             }
+        }
+    }
+    
+    private func stopActivityIndicator(snapshot: DataSnapshot, activityIndicator: UIActivityIndicatorView) {
+        
+        if self.computerInfoArray.count == Int(snapshot.childrenCount) {
+            activityIndicator.stopAnimating()
         }
     }
 }

@@ -15,10 +15,6 @@ import Firebase
 class AppleInventoryTVC: UITableViewController {
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         fetchAppleComputerInfo()
@@ -58,11 +54,32 @@ class AppleInventoryTVC: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(70)
+        
+        let availableVerticalSpace = view.frame.height
+        let navigationControllerHeight = navigationController?.navigationBar.frame.height
+        let tabBarHeight = tabBarController?.tabBar.frame.height
+        let statusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
+        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - statusBarHeight)
+        
+        let cellHeight = visibleTableViewArea / CGFloat(computerInfoArray.count)
+        
+        return cellHeight
     }
     
     
-    private func fetchAppleComputerInfo() {
+    private func fetchAppleComputerInfo() { // Check connection status and load only when finished
+        
+        let activityIndicator: UIActivityIndicatorView = {
+            let indicator = UIActivityIndicatorView()
+            indicator.activityIndicatorViewStyle = .gray
+            indicator.hidesWhenStopped = true
+            indicator.center = CGPoint(x: tableView.center.x, y: ((tableView.center.y) - (tabBarController?.tabBar.frame.height)!))
+            return indicator
+        }()
+        
+        
+        activityIndicator.startAnimating()
+        self.view.addSubview(activityIndicator)
         
         self.computerInfoArray.removeAll()
         
@@ -84,6 +101,7 @@ class AppleInventoryTVC: UITableViewController {
                             DispatchQueue.main.async {
                                 self.computerInfoArray.append(info)
                                 self.computerInfoArray.sort(by: { $0.displayOrder! < $1.displayOrder!})
+                                self.stopActivityIndicator(snapshot: snapshot, activityIndicator: activityIndicator)
                                 self.tableView.reloadData()
                             }
                         }
@@ -107,5 +125,11 @@ class AppleInventoryTVC: UITableViewController {
             }
         }
     }
-
+    
+    private func stopActivityIndicator(snapshot: DataSnapshot, activityIndicator: UIActivityIndicatorView) {
+        
+        if self.computerInfoArray.count == Int(snapshot.childrenCount) {
+            activityIndicator.stopAnimating()
+        }
+    }
 }

@@ -31,43 +31,38 @@ class CoreDataTableViewController: UITableViewController, NSFetchedResultsContro
     // TableView Delegates
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        if let fc = fetchedResultsController {
-            return (fc.sections?.count)!
-        } else {
-            return 0
-        }
+        
+        let fc = fetchedResultsController != nil ? fetchedResultsController?.sections?.count : 0
+        
+        return fc!
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let fc = fetchedResultsController {
-            return fc.sections![section].numberOfObjects
-        } else {
-            return 0
-        }
+        
+        let fc = fetchedResultsController != nil ? fetchedResultsController?.sections?[section].numberOfObjects : 0
+        
+        return fc!
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if let fc = fetchedResultsController {
-            return fc.sections![section].name
-        } else {
-            return nil
-        }
+        
+        let fc = fetchedResultsController != nil ? fetchedResultsController?.sections?[section].name : nil
+        
+        return fc!
     }
     
     override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
-        if let fc = fetchedResultsController {
-            return fc.section(forSectionIndexTitle: title, at: index)
-        } else {
-            return 0
-        }
+        
+        let fc = fetchedResultsController != nil ? fetchedResultsController?.section(forSectionIndexTitle: title, at: index) : 0
+        
+        return fc!
     }
     
     override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        if let fc = fetchedResultsController {
-            return fc.sectionIndexTitles
-        } else {
-            return nil
-        }
+        
+        let fc = fetchedResultsController != nil ? fetchedResultsController?.sectionIndexTitles : nil
+        
+        return fc!
     }
     
     // FetchedResults Delegates

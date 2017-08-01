@@ -15,7 +15,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         webView.delegate = self
         webView.loadRequest(webRequest)
         UIApplication.shared.statusBarStyle = .lightContent
-        self.toolBar.barTintColor = UIColor(hue: 0.5361111111, saturation: 1.00, brightness: 0.85, alpha: 1.0)
+        self.toolBar.barTintColor = toolBarCPColor
         self.toolBar.isTranslucent = false
     }
     
@@ -57,6 +57,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var pageForwardButton: UIBarButtonItem!
     
     var webRequest: URLRequest!
+    let toolBarCPColor = UIColor(hue: 0.5361111111, saturation: 1.00, brightness: 0.85, alpha: 1.0)
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
         if webView.canGoBack {

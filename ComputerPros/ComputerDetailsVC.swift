@@ -61,7 +61,8 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
         let widthPerItem = availableWidth / itemsPerRow
         
         let verticalPaddingSpace = (self.flowLayout.minimumLineSpacing * 2) + (sectionInsets.top)
-        let availableVerticalSpace = (self.view.frame.height) - (verticalPaddingSpace) - (self.navigationController?.navigationBar.frame.height)! - 30
+        let statusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
+        let availableVerticalSpace = (self.view.frame.height) - (verticalPaddingSpace) - (navigationController?.navigationBar.frame.height)! - statusBarHeight
         let heightPerItem = availableVerticalSpace / 3
         
         return CGSize(width: widthPerItem, height: heightPerItem)

@@ -16,7 +16,6 @@
 		C90E32BE1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E32BA1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift */; };
 		C90E32BF1F0DEE4B00F92ABA /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E32BB1F0DEE4B00F92ABA /* Account+CoreDataClass.swift */; };
 		C90E32C01F0DEE4B00F92ABA /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90E32BC1F0DEE4B00F92ABA /* Account+CoreDataProperties.swift */; };
-		C91E630C1EE9E7E9005E7D97 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E630B1EE9E7E9005E7D97 /* FirebaseClient.swift */; };
 		C91E630E1EE9F5EC005E7D97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E630D1EE9F5EC005E7D97 /* HomeViewController.swift */; };
 		C91E63101EE9FD9F005E7D97 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E630F1EE9FD9F005E7D97 /* WebViewController.swift */; };
 		C935F2161F0ACCF9007BC943 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935F2151F0ACCF9007BC943 /* CoreDataStack.swift */; };
@@ -56,7 +55,6 @@
 		C90E32BA1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginCredentials+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C90E32BB1F0DEE4B00F92ABA /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C90E32BC1F0DEE4B00F92ABA /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C91E630B1EE9E7E9005E7D97 /* FirebaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
 		C91E630D1EE9F5EC005E7D97 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C91E630F1EE9FD9F005E7D97 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		C935F2151F0ACCF9007BC943 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 				C90E32B91F0DEE4B00F92ABA /* LoginCredentials+CoreDataClass.swift */,
 				C90E32BA1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift */,
 				C96E02241EFDD6CC004B28AC /* MenuSettings.swift */,
-				C91E630B1EE9E7E9005E7D97 /* FirebaseClient.swift */,
 				C9D064571F1DB2F0002E639C /* ComputerInformation.swift */,
 				C935F2171F0AD5CB007BC943 /* ComputerPros.xcdatamodeld */,
 			);
@@ -346,7 +343,6 @@
 				C956FBA21F1FC99100EEE896 /* AppleTableViewCell.swift in Sources */,
 				C90E32AF1F0DE8D700F92ABA /* CredentialsCell.swift in Sources */,
 				C935F2191F0AD5CB007BC943 /* ComputerPros.xcdatamodeld in Sources */,
-				C91E630C1EE9E7E9005E7D97 /* FirebaseClient.swift in Sources */,
 				C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */,
 				C956BCBE1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift in Sources */,
 				C90E32AD1F0DDD7D00F92ABA /* CredentialsViewController.swift in Sources */,
