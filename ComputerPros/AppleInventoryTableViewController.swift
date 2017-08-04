@@ -6,21 +6,25 @@
 //  Copyright © 2017 Casey Henderson. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import Firebase
-
-
+import ReachabilitySwift
 
 class AppleInventoryTVC: UITableViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        checkConnectionStatus()
         fetchAppleComputerInfo()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        reachability.stopNotifier()
+    }
     
+    let reachability = Reachability()!
     var computerInfoArray = [ComputerInfo]()
     
         
@@ -67,7 +71,7 @@ class AppleInventoryTVC: UITableViewController {
     }
     
     
-    private func fetchAppleComputerInfo() { // Check connection status and load only when finished
+    private func fetchAppleComputerInfo() {
         
         let activityIndicator: UIActivityIndicatorView = {
             let indicator = UIActivityIndicatorView()
@@ -77,13 +81,13 @@ class AppleInventoryTVC: UITableViewController {
             return indicator
         }()
         
-        
-        activityIndicator.startAnimating()
         self.view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
         
         self.computerInfoArray.removeAll()
         
         Database.database().reference().child("Computers").child("Apple").observe(.childAdded, with: { (snapshot) in
+            
             
             if let dictionary = snapshot.value as? [String: AnyObject] {
                 
@@ -100,7 +104,7 @@ class AppleInventoryTVC: UITableViewController {
                             
                             DispatchQueue.main.async {
                                 self.computerInfoArray.append(info)
-                                self.computerInfoArray.sort(by: { $0.displayOrder! < $1.displayOrder!})
+                                self.computerInfoArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
                                 self.stopActivityIndicator(snapshot: snapshot, activityIndicator: activityIndicator)
                                 self.tableView.reloadData()
                             }
@@ -130,6 +134,42 @@ class AppleInventoryTVC: UITableViewController {
         
         if self.computerInfoArray.count == Int(snapshot.childrenCount) {
             activityIndicator.stopAnimating()
+        }
+    }
+    
+    
+    func showAlert() {
+        
+        let alert = UIAlertController(title: "Check Connection", message: "Unable to establish connection with server", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func checkConnectionStatus() {
+        
+        reachability.whenReachable = { reachability in
+            DispatchQueue.main.async {
+                if reachability.isReachableViaWiFi {
+                    print("Reachable via WiFi")
+                } else {
+                    print("Reachable via Cellular")
+                }
+            }
+        }
+        reachability.whenUnreachable = { reachability in
+            DispatchQueue.main.async {
+                self.showAlert()
+            }
+        }
+        
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
         }
     }
 }

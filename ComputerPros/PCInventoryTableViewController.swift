@@ -6,10 +6,9 @@
 //  Copyright © 2017 Casey Henderson. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import Firebase
-
+import ReachabilitySwift
 
 
 class PCInventoryTVC: UITableViewController {
@@ -17,10 +16,16 @@ class PCInventoryTVC: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.navigationController?.title = "PC"
+        checkConnectionStatus()
         fetchPCInfo()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        reachability.stopNotifier()
+    }
+    
+    let reachability = Reachability()!
     var computerInfoArray = [ComputerInfo]()
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,7 +63,7 @@ class PCInventoryTVC: UITableViewController {
         let navigationControllerHeight = navigationController?.navigationBar.frame.height
         let tabBarHeight = tabBarController?.tabBar.frame.height
         let StatusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
-        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - StatusBarHeight)
+        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - StatusBarHeight) // Fix crash when alertView presents
         
         let cellHeight = visibleTableViewArea / CGFloat(computerInfoArray.count)
         
@@ -100,7 +105,6 @@ class PCInventoryTVC: UITableViewController {
                             self.computerInfoArray.sort(by: {$0.name! < $1.name!})
                             self.stopActivityIndicator(snapshot: snapshot, activityIndicator: activityIndicator)
                             self.tableView.reloadData()
-                            
                         }
                     }
                 }
@@ -129,4 +133,40 @@ class PCInventoryTVC: UITableViewController {
             activityIndicator.stopAnimating()
         }
     }
+    
+    func showAlert() {
+        
+        let alert = UIAlertController(title: "Check Connection", message: "Unable to establish connection with server", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func checkConnectionStatus() {
+        
+        reachability.whenReachable = { reachability in
+            DispatchQueue.main.async {
+                if reachability.isReachableViaWiFi {
+                    print("Reachable via WiFi")
+                } else {
+                    print("Reachable via Cellular")
+                }
+            }
+        }
+        reachability.whenUnreachable = { reachability in
+            DispatchQueue.main.async {
+                self.showAlert()
+            }
+        }
+        
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
+    }
+
 }
