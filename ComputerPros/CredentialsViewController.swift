@@ -20,7 +20,7 @@ class CredentialsViewController: CoreDataTableViewController {
     
     let stack = CoreDataStack.sharedInstance()
     
-    func newCredentials() {
+    @objc func newCredentials() {
         
         if self.account != nil {
             

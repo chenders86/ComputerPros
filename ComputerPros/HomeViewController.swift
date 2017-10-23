@@ -18,6 +18,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         menuView.layer.shadowRadius = 6
         menuView.backgroundColor = UIColor.lightGray
         menuView.layer.shadowOffset = CGSize(width: 0, height: 9)
+        addSwipeToMenu()
         navigationController?.navigationBar.tintColor = UIColor(hue: 0.5361111111, saturation: 1.30, brightness: 0.85, alpha: 1.0)
     }
     
@@ -49,7 +50,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
             self.menuLeadingEdge.constant = 0
-            self.hiddenDismissButton.alpha = 0.30
+            self.hiddenDismissButton.alpha = 0.50
             self.view.layoutIfNeeded()
         })
     }

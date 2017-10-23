@@ -10,16 +10,15 @@ import Foundation
 import UIKit
 import MessageUI
 
-class ContactViewController: UIViewController, MFMailComposeViewControllerDelegate, UINavigationControllerDelegate {
+class ContactViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     @IBOutlet weak var mainLogoImageView: UIImageView!
     
-    let mailVC = MFMailComposeViewController()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Contact"
-        mailVC.delegate = self
         setupLogo()
     }
 
@@ -46,8 +45,11 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
     
     @IBAction func mailButtonPressed(_ sender: UIButton) {
         
+        let mailVC = MFMailComposeViewController()
+        mailVC.mailComposeDelegate = self
+        
         if MFMailComposeViewController.canSendMail() {
-            self.mailVC.setToRecipients(["info@nashvillecomputerpros.com"])
+            mailVC.setToRecipients(["info@nashvillecomputerpros.com"])
             self.present(mailVC, animated: true, completion: nil)
         } else {
             return

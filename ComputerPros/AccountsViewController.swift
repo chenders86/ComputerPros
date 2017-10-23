@@ -32,7 +32,7 @@ class AccountsViewController: CoreDataTableViewController {
     let stack = CoreDataStack.sharedInstance()
     let cellID = "accountCell"
     
-    func newAccount() {
+    @objc func newAccount() {
         
         let accountVC = self.storyboard?.instantiateViewController(withIdentifier: "addAccountVC") as! AddAccountViewController
 

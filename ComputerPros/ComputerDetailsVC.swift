@@ -75,7 +75,7 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
     }
     
     
-    func fetchComputerDetails() {
+    @objc func fetchComputerDetails() {
         
         if let brand = appleOrPC, brand == "Apple" {
             

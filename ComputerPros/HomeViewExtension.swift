@@ -133,4 +133,20 @@ extension HomeViewController {
             })
         }
     }
+    
+    func addSwipeToMenu() {
+        let swipeLeft = UISwipeGestureRecognizer()
+        swipeLeft.direction = .left
+        swipeLeft.numberOfTouchesRequired = 1
+        swipeLeft.addTarget(self, action: #selector(handleMenuSlide))
+        self.menuView.addGestureRecognizer(swipeLeft)
+    }
+    
+    @objc private func handleMenuSlide(swipe: UIGestureRecognizer) {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.menuLeadingEdge.constant = -228
+            self.hiddenDismissButton.alpha = 0
+            self.view.layoutIfNeeded()
+        })
+    }
 }

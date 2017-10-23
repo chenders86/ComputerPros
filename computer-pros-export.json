@@ -1,0 +1,318 @@
+{
+  "Computers" : {
+    "Apple" : {
+      "MacBook" : {
+        "ComputerImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmacbook-space-gray.jpg?alt=media&token=24a8ff8f-ff4e-4aee-9eb5-11c920f966fb",
+        "DisplayOrder" : 1,
+        "MacBook-256GB" : {
+          "Color" : "Space Gray",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmacbook-space-gray.jpg?alt=media&token=24a8ff8f-ff4e-4aee-9eb5-11c920f966fb",
+          "Name" : "MacBook 256GB",
+          "Price" : "$1,299.00",
+          "Processor" : "Core m3",
+          "Quantity" : "2",
+          "RAM" : "8GB",
+          "Storage" : "256GB SSD"
+        },
+        "MacBook-512GB" : {
+          "Color" : "Space Gray",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmacbook-space-gray.jpg?alt=media&token=24a8ff8f-ff4e-4aee-9eb5-11c920f966fb",
+          "Name" : "MacBook 512GB",
+          "Price" : "$1,599.00",
+          "Processor" : "1.3GHz Core i5",
+          "Quantity" : "0",
+          "RAM" : "8GGB",
+          "Storage" : "512GB SSD"
+        },
+        "Name" : "MacBook"
+      },
+      "MacBookAir" : {
+        "ComputerImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmacbook-air.jpg?alt=media&token=e3093822-8ae3-4b93-bb20-4ae58bba52fa",
+        "DisplayOrder" : 2,
+        "MacBookAir-128GB" : {
+          "Color" : "Silver",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmacbook-air.jpg?alt=media&token=e3093822-8ae3-4b93-bb20-4ae58bba52fa",
+          "Name" : "MacBook Air 128GB",
+          "Price" : "$999.00",
+          "Processor" : "1.8GHz Core i5",
+          "Quantity" : "2",
+          "RAM" : "8GB",
+          "Storage" : "128GB SSD"
+        },
+        "MacBookAir-256GB" : {
+          "Color" : "Silver",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmacbook-air.jpg?alt=media&token=e3093822-8ae3-4b93-bb20-4ae58bba52fa",
+          "Name" : "MacBook Air 256GB",
+          "Price" : "$1,199.00",
+          "Processor" : "1.8GHz Core i5",
+          "Quantity" : "2",
+          "RAM" : "8GB",
+          "Storage" : "256GB SSD"
+        },
+        "Name" : "MacBook Air"
+      },
+      "MacBookPro-13" : {
+        "ComputerImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmbp13-gray.jpg?alt=media&token=0f8e570c-045c-46b4-8dc9-eb71b77ecc4e",
+        "DisplayOrder" : 3,
+        "MacBookPro-13-128GB" : {
+          "Color" : "Silver, Space Gray",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmbp13touch-gray.jpg?alt=media&token=aafd229b-b858-4a11-833b-6503af01b1b1",
+          "Name" : "MacBook Pro 13-inch 128GB",
+          "Price" : "$1,299.00",
+          "Processor" : "2.3GHz Intel Core i5",
+          "Quantity" : "1",
+          "RAM" : "8GB",
+          "Storage" : "128GB SSD"
+        },
+        "MacBookPro-13-256GB" : {
+          "Color" : "Silver, Space Gray",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmbp13-silver.jpg?alt=media&token=9e0689f1-eb95-47e6-b20d-3f49a1637668",
+          "Name" : "MacBook Pro 13-inch 256GB",
+          "Price" : "$1,499.00",
+          "Processor" : "2.3GHz Intel Core i5",
+          "Quantity" : "1",
+          "RAM" : "8GB",
+          "Storage" : "256GB SSD"
+        },
+        "Name" : "MacBook Pro 13-inch"
+      },
+      "MacBookPro-13-TouchBar" : {
+        "ComputerImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmbp13touch-gray.jpg?alt=media&token=aafd229b-b858-4a11-833b-6503af01b1b1",
+        "DisplayOrder" : 4,
+        "MacBookPro-13-256GB-TouchBar" : {
+          "Color" : "Silver, Space Gray",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmbp13touch-gray.jpg?alt=media&token=aafd229b-b858-4a11-833b-6503af01b1b1",
+          "Name" : "Touch Bar MacBook Pro 13-inch 256GB",
+          "Price" : "$1,799.00",
+          "Processor" : "3.1GHz Intel Core i5",
+          "Quantity" : "4",
+          "RAM" : "8GB",
+          "Storage" : "256GB SSD"
+        },
+        "MacBookPro-13-512GB-TouchBar" : {
+          "Color" : "Silver, Space Gray",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmbp13touch-silver.jpg?alt=media&token=ef6053f5-c980-4601-970e-e8045fd1d56e",
+          "Name" : "Touch Bar MacBook Pro 13-inch 512GB",
+          "Price" : "$1,999.00",
+          "Processor" : "3.1GHz Intel Core i5",
+          "Quantity" : "4",
+          "RAM" : "8GB",
+          "Storage" : "512GB SSD"
+        },
+        "Name" : "MacBook Pro 13-inch Touch Bar"
+      },
+      "MacBookPro-15-TouchBar" : {
+        "ComputerImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmbp15touch-silver.jpg?alt=media&token=602cb9b4-c8f1-471d-87a3-9fbbcc101610",
+        "DisplayOrder" : 5,
+        "MacBookPro-15-256GB-TouchBar" : {
+          "Color" : "Silver, Space Gray",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmbp15touch-gray.jpg?alt=media&token=9a9f0f58-cc66-411c-ad6f-704f92310598",
+          "Name" : "Touch Bar MacBook Pro 15-inch 256GB",
+          "Price" : "$2,399.00",
+          "Processor" : "2.8GHz Intel Core i7",
+          "Quantity" : "3",
+          "RAM" : "16GB",
+          "Storage" : "256GB SSD"
+        },
+        "MacBookPro-15-512GB-TouchBar" : {
+          "Color" : "Silver, Space Gray",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmbp15touch-silver.jpg?alt=media&token=602cb9b4-c8f1-471d-87a3-9fbbcc101610",
+          "Name" : "Touch Bar MacBook Pro 15-inch 512GB",
+          "Price" : "$2,799.00",
+          "Processor" : "2.9GHz Intel Core i7",
+          "Quantity" : "3",
+          "RAM" : "16GB",
+          "Storage" : "512GB SSD"
+        },
+        "Name" : "MacBook Pro 15-inch Touch Bar"
+      },
+      "MacMini" : {
+        "ComputerImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmac-mini.png?alt=media&token=7ee52b20-58fd-4fef-a94b-936b56591376",
+        "DisplayOrder" : 8,
+        "MacMini-1TB" : {
+          "Color" : "Silver",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmac-mini.png?alt=media&token=7ee52b20-58fd-4fef-a94b-936b56591376",
+          "Name" : "Mac Mini 1TB",
+          "Price" : "$699.00",
+          "Processor" : "2.6GHz Intel Core i5",
+          "Quantity" : "1",
+          "RAM" : "8GB",
+          "Storage" : "1TB HDD"
+        },
+        "MacMini-1TB-Fusion" : {
+          "Color" : "Silver",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmac-mini.png?alt=media&token=7ee52b20-58fd-4fef-a94b-936b56591376",
+          "Name" : "Mac Mini 1TB Fusion",
+          "Price" : "$999.00",
+          "Processor" : "2.8GHz Intel Core i5",
+          "Quantity" : "0",
+          "RAM" : "8GB",
+          "Storage" : "1TB Fusion Drive"
+        },
+        "MacMini-500GB" : {
+          "Color" : "Silver",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fmac-mini.png?alt=media&token=7ee52b20-58fd-4fef-a94b-936b56591376",
+          "Name" : "Mac Mini",
+          "Price" : "$499.00",
+          "Processor" : "1.4GHz Intel Core i5",
+          "Quantity" : "0",
+          "RAM" : "4GB",
+          "Storage" : "500GB HDD"
+        },
+        "Name" : "Mac Mini"
+      },
+      "iMac-21inch" : {
+        "ComputerImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fimac-21-retina.jpg?alt=media&token=2c5f6a81-70f8-41dc-ba12-cccfe8d0f631",
+        "DisplayOrder" : 6,
+        "Name" : "iMac 21-inch",
+        "iMac-21inch" : {
+          "Color" : "Silver",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fimac-21-retina.jpg?alt=media&token=2c5f6a81-70f8-41dc-ba12-cccfe8d0f631",
+          "Name" : "iMac 21-inch",
+          "Price" : "$1,099.00",
+          "Processor" : "2.3GHz Intel Core i5",
+          "Quantity" : "1",
+          "RAM" : "8GB",
+          "Storage" : "1TB HDD"
+        },
+        "iMac-21inch-Retina" : {
+          "Color" : "Silver",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fimac-21-retina.jpg?alt=media&token=2c5f6a81-70f8-41dc-ba12-cccfe8d0f631",
+          "Name" : "iMac 21-inch Retina 4k",
+          "Price" : "$1,299.00",
+          "Processor" : "3.0GHz Intel Core i5",
+          "Quantity" : "1",
+          "RAM" : "8GB",
+          "Storage" : "1TB HDD"
+        },
+        "iMac-21inch-Retina-Fusion" : {
+          "Color" : "Silver",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fimac-21-retina.jpg?alt=media&token=2c5f6a81-70f8-41dc-ba12-cccfe8d0f631",
+          "Name" : "iMac 21-inch Retina 4k Fusion",
+          "Price" : "$1,499.00",
+          "Processor" : "3.4GHz Intel Core i5",
+          "Quantity" : "1",
+          "RAM" : "8GB",
+          "Storage" : "1TB Fusion Drive"
+        }
+      },
+      "iMac-27inch" : {
+        "ComputerImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fimac-27-retina.jpg?alt=media&token=681fa713-14fc-455b-aed3-361a582d4403",
+        "DisplayOrder" : 7,
+        "Name" : "iMac 27-inch",
+        "iMac-27inch-34GHz" : {
+          "Color" : "Silver",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fimac-27-retina.jpg?alt=media&token=681fa713-14fc-455b-aed3-361a582d4403",
+          "Name" : "iMac 27-inch 3.4GHz Retina 5k",
+          "Price" : "$1,799.00",
+          "Processor" : "3.4GHz Intel Core i5",
+          "Quantity" : "1",
+          "RAM" : "8GB",
+          "Storage" : "1TB Fusion Drive"
+        },
+        "iMac-27inch-35GHz" : {
+          "Color" : "Silver",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fimac-27-retina.jpg?alt=media&token=681fa713-14fc-455b-aed3-361a582d4403",
+          "Name" : "iMac 27-inch 3.5GHz Retina 5k",
+          "Price" : "$1,999.00",
+          "Processor" : "3.5GHz Intel Core i5",
+          "Quantity" : "1",
+          "RAM" : "8GB",
+          "Storage" : "1TB Fusion Drive"
+        },
+        "iMac-27inch-38GHz" : {
+          "Color" : "Silver",
+          "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fimac-27-retina.jpg?alt=media&token=681fa713-14fc-455b-aed3-361a582d4403",
+          "Name" : "iMac 27-inch 3.8GHz Retina 5k",
+          "Price" : "$2,299.00",
+          "Processor" : "3.8GHz Intel Core i5",
+          "Quantity" : "1",
+          "RAM" : "8GB",
+          "Storage" : "2TB Fusion Drive"
+        }
+      }
+    },
+    "PC" : {
+      "Acer-AXC" : {
+        "Color" : "Black",
+        "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2FAcer-AXC.png?alt=media&token=216665a9-311d-4eb6-8603-67254261a836",
+        "Name" : "Acer AXC",
+        "Price" : "$599.99",
+        "Processor" : "3.6GHz Intel Core i3",
+        "Quantity" : "4",
+        "RAM" : "6GB",
+        "Storage" : "1TB HDD"
+      },
+      "Acer-Aspire-ES15" : {
+        "Color" : "Black",
+        "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Facer-ES15.png?alt=media&token=a984247f-9d30-4a18-be4f-1faa3e2ca4d0",
+        "Name" : "Acer Aspire ES15",
+        "Price" : "$399.99",
+        "Processor" : "2.4GHz Intel Core i3",
+        "Quantity" : "2",
+        "RAM" : "4GB",
+        "Storage" : "1TB HDD"
+      },
+      "Acer-Nitro" : {
+        "Color" : "Black",
+        "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2FAcer-Aspire-V-17-Nitro.png?alt=media&token=fa283e98-51c3-41ff-b54c-1db17a2c7329",
+        "Name" : "Acer Nitro V-17",
+        "Price" : "$1,199.99",
+        "Processor" : "2.5GHz Intel Core i7",
+        "Quantity" : "4",
+        "RAM" : "16GB",
+        "Storage" : "1TB HDD, 256GB SSD"
+      },
+      "Acer-Swift" : {
+        "Color" : "Gold",
+        "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Fswift-7.png?alt=media&token=412d9303-5829-4404-bb82-cd40b457fc46",
+        "Name" : "Acer Swift",
+        "Price" : "$699.99",
+        "Processor" : "2.5GHz Intel Core i5",
+        "Quantity" : "4",
+        "RAM" : "8GB",
+        "Storage" : "256GB SSD"
+      },
+      "Lenovo-720" : {
+        "Color" : "Silver",
+        "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2FLenovo%20-YOGA-720.png?alt=media&token=daad70ce-cfeb-4b45-92e8-9dd35d3710d9",
+        "Name" : "Lenovo Yoga 720",
+        "Price" : "$899.99",
+        "Processor" : "2.5GHz Intel Core i5",
+        "Quantity" : "1",
+        "RAM" : "8GB",
+        "Storage" : "256GB SSD"
+      },
+      "Lenovo-T460" : {
+        "Color" : "Carbon",
+        "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2Flenovo-thinkpad-t460s.png?alt=media&token=35229399-5b60-4b72-8305-2941ba8c1cac",
+        "Name" : "Lenovo T460",
+        "Price" : "$1,199.99",
+        "Processor" : "3.2GHz Intel Core i5",
+        "Quantity" : "1",
+        "RAM" : "8GB",
+        "Storage" : "256GB SSD"
+      },
+      "MicrosoftSurfaceBook" : {
+        "Color" : "Silver",
+        "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2FMicrosoftSurfaceBook.jpg?alt=media&token=d63e9606-f3b9-420d-95c5-7d881eb54ab8",
+        "Name" : "Microsoft Surface Book",
+        "Price" : "$1,699.00",
+        "Processor" : "3.3 GHz Intel Core i5",
+        "Quantity" : "1",
+        "RAM" : "8GB",
+        "Storage" : "256GB SSD"
+      },
+      "MicrosoftSurfacePro4" : {
+        "Color" : "Silver",
+        "DetailedImageURL" : "https://firebasestorage.googleapis.com/v0/b/computer-pros.appspot.com/o/Computer%20Inventory%20Images%2FMicrosoft%20SurfacePro.jpg?alt=media&token=bde2533b-ad55-4716-af00-b5b945f59e31",
+        "Name" : "Microsoft Surface Pro 4",
+        "Price" : "$1,199.00",
+        "Processor" : "2.3GHz Intel Core i5",
+        "Quantity" : "4",
+        "RAM" : "8GB",
+        "Storage" : "256GB SSD"
+      }
+    }
+  }
+}

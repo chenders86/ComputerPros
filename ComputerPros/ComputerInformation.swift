@@ -18,7 +18,7 @@ class ComputerInfo: NSObject {
     var nodeName: String?
 }
 
-class DetailedComputerInfo: NSObject {
+@objcMembers class DetailedComputerInfo: NSObject {
     
     // variable names are capitalized to match keys on server so to use "setValuesForKeys"
     
