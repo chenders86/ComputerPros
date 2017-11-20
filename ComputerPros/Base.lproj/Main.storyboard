@@ -91,17 +91,14 @@
                                     <constraint firstItem="rtn-Id-YyX" firstAttribute="leading" secondItem="9zz-zY-15p" secondAttribute="leading" constant="16" id="z0Q-cJ-dyD"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnSiteSquare" translatesAutoresizingMaskIntoConstraints="NO" id="MCc-pL-I7S">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="On-Site Square" translatesAutoresizingMaskIntoConstraints="NO" id="MCc-pL-I7S">
                                 <rect key="frame" x="45" y="209" width="324" height="194.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MCc-pL-I7S" secondAttribute="height" multiplier="323:194" id="SvP-1W-LFs"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="NnC-Jd-yc3">
-                                <rect key="frame" x="183.66666666666666" y="228" width="46.666666666666657" height="41"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku9-Dy-MNb">
-                                <rect key="frame" x="113" y="329" width="188" height="41"/>
+                                <rect key="frame" x="113" y="331" width="188" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ku9-Dy-MNb" secondAttribute="height" multiplier="188:41" id="zvx-bj-1E3"/>
                                 </constraints>
@@ -110,48 +107,17 @@
                                     <action selector="bookItButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wwx-KQ-Tql"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y1I-cv-kty">
-                                <rect key="frame" x="82" y="269" width="250" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Y1I-cv-kty" secondAttribute="height" multiplier="212:41" constant="-60.243902439024396" id="Wus-rV-Ejq"/>
-                                </constraints>
-                                <string key="text">Schedule an on-site with a
-Computer PROS tech!</string>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTg-U0-LlN" userLabel="CloudButton">
                                 <rect key="frame" x="46" y="415.66666666666669" width="321" height="165.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eTg-U0-LlN" secondAttribute="height" multiplier="321:158" constant="-14.221518987341824" id="5hG-2j-Pyc"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="-12" maxX="0.0" maxY="-10"/>
-                                <state key="normal" image="cloud"/>
+                                <state key="normal" image="PC Storage Cloud"/>
                                 <connections>
                                     <action selector="cloudButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zu2-Jq-Tk2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0sf-aU-GdV">
-                                <rect key="frame" x="149" y="444.66666666666669" width="116" height="41"/>
-                                <string key="text">ProCare Cloud
-Storage:</string>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500/1000GB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="mh7-KP-vqL">
-                                <rect key="frame" x="112" y="513.66666666666663" width="188" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProgressBar" translatesAutoresizingMaskIntoConstraints="NO" id="NRU-Vj-6Kh">
-                                <rect key="frame" x="88" y="540.66666666666663" width="236" height="18"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="NRU-Vj-6Kh" secondAttribute="height" multiplier="118:9" id="ios-jt-49n"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-9h-jHb">
                                 <rect key="frame" x="47" y="671.33333333333337" width="320" height="95"/>
                                 <constraints>
@@ -178,13 +144,6 @@ Storage:</string>
                                 </state>
                                 <connections>
                                     <action selector="facebookButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HC3-jz-6pe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHd-OB-RYf" userLabel="HiddenDismiss">
-                                <rect key="frame" x="-9" y="82" width="423" height="654"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="dismissMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6p-Ul-OKv"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHc-ii-Fwc">
@@ -245,6 +204,13 @@ Storage:</string>
                                     <constraint firstItem="NfS-Sk-Urp" firstAttribute="leading" secondItem="eHc-ii-Fwc" secondAttribute="leading" id="zAd-5K-IBf"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHd-OB-RYf" userLabel="HiddenDismiss">
+                                <rect key="frame" x="-9" y="82" width="423" height="654"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="dismissMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6p-Ul-OKv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -252,28 +218,17 @@ Storage:</string>
                             <constraint firstItem="wvA-1R-F4i" firstAttribute="top" secondItem="eTg-U0-LlN" secondAttribute="bottom" constant="10" id="2dp-ES-qMe"/>
                             <constraint firstItem="eTg-U0-LlN" firstAttribute="top" secondItem="MCc-pL-I7S" secondAttribute="bottom" constant="12" id="3JP-ep-8Af"/>
                             <constraint firstItem="9zz-zY-15p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="3sC-1C-ADs"/>
-                            <constraint firstItem="Y1I-cv-kty" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="62" id="4Co-1W-Yw4"/>
                             <constraint firstItem="yTh-9h-jHb" firstAttribute="top" secondItem="wvA-1R-F4i" secondAttribute="bottom" constant="-14" id="6N3-AX-hQb"/>
-                            <constraint firstItem="Y1I-cv-kty" firstAttribute="top" secondItem="9zz-zY-15p" secondAttribute="bottom" constant="73" id="Dxl-MV-gdk"/>
+                            <constraint firstItem="eTg-U0-LlN" firstAttribute="top" secondItem="Ku9-Dy-MNb" secondAttribute="bottom" constant="42.670000000000002" id="9OW-4E-z56"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yTh-9h-jHb" secondAttribute="trailing" constant="27" id="E9I-6U-4Tn"/>
-                            <constraint firstItem="Ku9-Dy-MNb" firstAttribute="top" secondItem="Y1I-cv-kty" secondAttribute="bottom" id="Ez4-UR-eTR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Y1I-cv-kty" secondAttribute="trailing" constant="62" id="G5r-6i-1ZW"/>
                             <constraint firstItem="Ku9-Dy-MNb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GQj-1t-KvD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y7r-sf-va9" secondAttribute="bottom" id="KVZ-DL-6E8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mh7-KP-vqL" secondAttribute="trailing" constant="94" id="LWQ-E9-3ue"/>
                             <constraint firstItem="MCc-pL-I7S" firstAttribute="top" secondItem="9zz-zY-15p" secondAttribute="bottom" constant="13" id="Pq7-PC-3Ct"/>
-                            <constraint firstItem="0sf-aU-GdV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R1k-1z-VdF"/>
-                            <constraint firstItem="Ku9-Dy-MNb" firstAttribute="top" secondItem="NnC-Jd-yc3" secondAttribute="bottom" constant="60" id="SQ6-XS-IPw"/>
                             <constraint firstItem="wvA-1R-F4i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="SU7-MV-Vct"/>
                             <constraint firstItem="y7r-sf-va9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TJl-CA-pTI"/>
                             <constraint firstAttribute="trailing" secondItem="9zz-zY-15p" secondAttribute="trailing" id="UEn-Z0-RU5"/>
                             <constraint firstItem="Ku9-Dy-MNb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="93" id="WIc-qk-syO"/>
-                            <constraint firstItem="NnC-Jd-yc3" firstAttribute="width" secondItem="MCc-pL-I7S" secondAttribute="height" multiplier="46:195" id="WjG-uX-RAt"/>
-                            <constraint firstItem="eTg-U0-LlN" firstAttribute="top" secondItem="0sf-aU-GdV" secondAttribute="bottom" constant="-70" id="Xpq-73-1pi"/>
                             <constraint firstItem="XHd-OB-RYf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="aS9-Sx-bUX"/>
-                            <constraint firstItem="NnC-Jd-yc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bEo-aQ-s2E"/>
-                            <constraint firstItem="mh7-KP-vqL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="blT-k9-ET5"/>
-                            <constraint firstItem="0sf-aU-GdV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="29:184" id="fzX-Vz-jjk"/>
                             <constraint firstAttribute="trailing" secondItem="y7r-sf-va9" secondAttribute="trailing" id="gPj-cV-87N"/>
                             <constraint firstItem="y7r-sf-va9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="ga1-Rs-dRH"/>
                             <constraint firstItem="9zz-zY-15p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="i6U-Eq-87h"/>
@@ -285,19 +240,13 @@ Storage:</string>
                             <constraint firstItem="MCc-pL-I7S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nAJ-Bv-V1a"/>
                             <constraint firstItem="eHc-ii-Fwc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-227" id="nAt-ZR-ZHt"/>
                             <constraint firstItem="wvA-1R-F4i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nNu-od-rXi"/>
-                            <constraint firstItem="NRU-Vj-6Kh" firstAttribute="bottom" secondItem="eTg-U0-LlN" secondAttribute="bottom" constant="-22" id="oEL-i6-01Q"/>
-                            <constraint firstItem="NRU-Vj-6Kh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="oLd-Lz-q6H"/>
                             <constraint firstItem="eHc-ii-Fwc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="qTA-lF-4b5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eTg-U0-LlN" secondAttribute="trailing" constant="27" id="qnc-mt-6mD"/>
                             <constraint firstAttribute="trailing" secondItem="XHd-OB-RYf" secondAttribute="trailing" id="tSb-1v-KKU"/>
                             <constraint firstItem="MCc-pL-I7S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="vFO-Iy-PXW"/>
-                            <constraint firstItem="NRU-Vj-6Kh" firstAttribute="top" secondItem="mh7-KP-vqL" secondAttribute="bottom" constant="6" id="vj5-Hb-nyd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MCc-pL-I7S" secondAttribute="trailing" constant="25" id="wXv-TC-5HG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NRU-Vj-6Kh" secondAttribute="trailing" constant="70" id="wp2-fV-7oD"/>
-                            <constraint firstItem="mh7-KP-vqL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="92" id="yPh-zO-RGG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eHc-ii-Fwc" secondAttribute="bottom" id="yeR-Sv-Htv"/>
                             <constraint firstItem="eTg-U0-LlN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="zEE-Qz-ski"/>
-                            <constraint firstItem="Y1I-cv-kty" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zM5-TF-6R2"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -319,12 +268,10 @@ Storage:</string>
                     <navigationItem key="navigationItem" id="84L-3R-o4Q"/>
                     <connections>
                         <outlet property="flowLayout" destination="0OD-yy-Qr8" id="gJr-46-Rgo"/>
-                        <outlet property="gigabyteLabel" destination="mh7-KP-vqL" id="Nck-cM-TNt"/>
                         <outlet property="hiddenDismissButton" destination="XHd-OB-RYf" id="LPF-jI-Tdt"/>
                         <outlet property="menuCollectionView" destination="NfS-Sk-Urp" id="uUb-qf-uC7"/>
                         <outlet property="menuLeadingEdge" destination="nAt-ZR-ZHt" id="9be-3G-0iZ"/>
                         <outlet property="menuView" destination="eHc-ii-Fwc" id="fcf-ix-BUZ"/>
-                        <outlet property="progressBar" destination="NRU-Vj-6Kh" id="qvJ-LC-yhr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1151,14 +1098,12 @@ Storage:</string>
         <image name="FacebookButton" width="320" height="95"/>
         <image name="Hamburger White" width="30" height="27"/>
         <image name="Mail Circle" width="160" height="160"/>
-        <image name="OnSiteSquare" width="320" height="191"/>
-        <image name="ProgressBar" width="236" height="18"/>
+        <image name="On-Site Square" width="320" height="191"/>
+        <image name="PC Storage Cloud" width="320" height="196"/>
         <image name="Telephone Circle" width="160" height="160"/>
         <image name="TwitterButton" width="320" height="95"/>
         <image name="Windowsphone" width="28" height="33"/>
         <image name="background" width="414" height="736"/>
-        <image name="calendar" width="46" height="41"/>
-        <image name="cloud" width="320" height="196"/>
         <image name="cpros-logo-large" width="291" height="30"/>
         <image name="logodivider" width="2" height="37"/>
     </resources>
