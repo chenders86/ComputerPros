@@ -48,7 +48,6 @@ class AddAccountViewController: UIViewController {
             return
         }
     }
-    
 }
 
 extension AddAccountViewController: UITextFieldDelegate {

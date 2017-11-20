@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eQb-Aa-vOO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eQb-Aa-vOO">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -91,13 +92,13 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnSiteSquare" translatesAutoresizingMaskIntoConstraints="NO" id="MCc-pL-I7S">
-                                <rect key="frame" x="45" y="209" width="324" height="195"/>
+                                <rect key="frame" x="45" y="209" width="324" height="194.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MCc-pL-I7S" secondAttribute="height" multiplier="323:194" id="SvP-1W-LFs"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="NnC-Jd-yc3">
-                                <rect key="frame" x="184" y="228" width="46" height="41"/>
+                                <rect key="frame" x="183.66666666666666" y="228" width="46.666666666666657" height="41"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku9-Dy-MNb">
                                 <rect key="frame" x="113" y="329" width="188" height="41"/>
@@ -121,7 +122,7 @@ Computer PROS tech!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTg-U0-LlN" userLabel="CloudButton">
-                                <rect key="frame" x="46" y="416" width="321" height="165"/>
+                                <rect key="frame" x="46" y="415.66666666666669" width="321" height="165.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eTg-U0-LlN" secondAttribute="height" multiplier="321:158" constant="-14.221518987341824" id="5hG-2j-Pyc"/>
                                 </constraints>
@@ -132,7 +133,7 @@ Computer PROS tech!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0sf-aU-GdV">
-                                <rect key="frame" x="149" y="445" width="116" height="41"/>
+                                <rect key="frame" x="149" y="444.66666666666669" width="116" height="41"/>
                                 <string key="text">ProCare Cloud
 Storage:</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
@@ -140,19 +141,19 @@ Storage:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500/1000GB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="mh7-KP-vqL">
-                                <rect key="frame" x="112" y="514" width="188" height="21"/>
+                                <rect key="frame" x="112" y="513.66666666666663" width="188" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProgressBar" translatesAutoresizingMaskIntoConstraints="NO" id="NRU-Vj-6Kh">
-                                <rect key="frame" x="88" y="541" width="236" height="18"/>
+                                <rect key="frame" x="88" y="540.66666666666663" width="236" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NRU-Vj-6Kh" secondAttribute="height" multiplier="118:9" id="ios-jt-49n"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-9h-jHb">
-                                <rect key="frame" x="47" y="672" width="320" height="95"/>
+                                <rect key="frame" x="47" y="671.33333333333337" width="320" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yTh-9h-jHb" secondAttribute="height" multiplier="64:19" id="lMn-MV-1gi"/>
                                 </constraints>
@@ -166,7 +167,7 @@ Storage:</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvA-1R-F4i">
-                                <rect key="frame" x="47" y="591" width="321.33333333333331" height="95"/>
+                                <rect key="frame" x="47" y="590.66666666666663" width="320" height="94.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wvA-1R-F4i" secondAttribute="height" multiplier="321:95" id="itS-FE-XRX"/>
                                 </constraints>
@@ -207,14 +208,14 @@ Storage:</string>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UtR-p6-GTb">
-                                                            <rect key="frame" x="16" y="12" width="25" height="25"/>
+                                                            <rect key="frame" x="8" y="12" width="25" height="25"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="25" id="7YR-C2-eZk"/>
                                                                 <constraint firstAttribute="height" constant="25" id="d10-C9-Xam"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbI-Sa-NTI">
-                                                            <rect key="frame" x="49" y="25" width="153" height="0.0"/>
+                                                            <rect key="frame" x="41" y="25" width="169" height="0.0"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -328,7 +329,7 @@ Storage:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020.2898550724639" y="119.83695652173914"/>
+            <point key="canvasLocation" x="1023" y="-78"/>
         </scene>
         <!--PC-->
         <scene sceneID="DRp-0S-rOj">
@@ -353,7 +354,7 @@ Storage:</string>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9K-fK-Y1p">
-                                            <rect key="frame" x="76" y="24" width="330" height="21"/>
+                                            <rect key="frame" x="76" y="24" width="318" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -384,7 +385,7 @@ Storage:</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRn-qJ-nbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905.7971014492755" y="1098.913043478261"/>
+            <point key="canvasLocation" x="1905" y="1270"/>
         </scene>
         <!--Apple-->
         <scene sceneID="Cdk-25-UM0">
@@ -403,7 +404,7 @@ Storage:</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4w-hx-yBz">
-                                            <rect key="frame" x="76" y="24" width="330" height="21"/>
+                                            <rect key="frame" x="76" y="24" width="318" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -497,31 +498,31 @@ Storage:</string>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processor:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcr-6d-aWJ">
-                                            <rect key="frame" x="128" y="32" width="266" height="18"/>
+                                            <rect key="frame" x="128" y="32" width="278" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ram:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvF-ty-9dN">
-                                            <rect key="frame" x="128" y="54" width="266" height="18"/>
+                                            <rect key="frame" x="128" y="54" width="278" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVe-qO-rsp">
-                                            <rect key="frame" x="128" y="77" width="266" height="18"/>
+                                            <rect key="frame" x="128" y="77" width="278" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDR-bU-T6F">
-                                            <rect key="frame" x="128" y="99" width="266" height="18"/>
+                                            <rect key="frame" x="128" y="99" width="278" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfE-nI-dYV">
-                                            <rect key="frame" x="196" y="119" width="198" height="21"/>
+                                            <rect key="frame" x="208" y="119" width="198" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="198" id="828-HI-3Ft"/>
                                             </constraints>
@@ -598,7 +599,7 @@ Storage:</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeD-rv-eoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="774"/>
+            <point key="canvasLocation" x="1023" y="729"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="dHx-NM-e9o">
@@ -677,7 +678,7 @@ Storage:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4la-oe-6UL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="-524"/>
+            <point key="canvasLocation" x="116" y="-671"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d0u-Dz-UZl">
@@ -695,7 +696,7 @@ Storage:</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6v9-NM-rCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115.94202898550725" y="120.65217391304348"/>
+            <point key="canvasLocation" x="116" y="122"/>
         </scene>
         <!--Pro Care CloudVC-->
         <scene sceneID="o07-fu-MVz">
@@ -725,7 +726,7 @@ Storage:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PqI-ra-jZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="774"/>
+            <point key="canvasLocation" x="116" y="922"/>
         </scene>
         <!--Add Account View Controller-->
         <scene sceneID="cTO-C0-fHh">
@@ -825,7 +826,7 @@ Storage:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zbl-NG-xZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="1436"/>
+            <point key="canvasLocation" x="1023" y="1522"/>
         </scene>
         <!--Credentials View Controller-->
         <scene sceneID="ZUw-Wk-dm4">
@@ -887,7 +888,7 @@ Storage:</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQu-bp-xE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="2098"/>
+            <point key="canvasLocation" x="116" y="2523"/>
         </scene>
         <!--Add Credentials View Controller-->
         <scene sceneID="6Mb-86-7sO">
@@ -1000,7 +1001,7 @@ Storage:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNa-og-Zd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="2098"/>
+            <point key="canvasLocation" x="1023" y="2268"/>
         </scene>
         <!--Accounts View Controller-->
         <scene sceneID="kBQ-sM-oV6">
@@ -1019,7 +1020,7 @@ Storage:</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tTz-7s-2n2">
-                                            <rect key="frame" x="20" y="0.0" width="379" height="43.666666666666664"/>
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -1037,7 +1038,7 @@ Storage:</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fjl-cF-oxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="1436"/>
+            <point key="canvasLocation" x="116" y="1725"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="w9D-Sv-z1H">
