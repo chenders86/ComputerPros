@@ -31,8 +31,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBOutlet weak var menuCollectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
-    //@IBOutlet weak var gigabyteLabel: UILabel!
-    //@IBOutlet weak var progressBar: UIImageView!
     @IBOutlet weak var menuView: UIView!
     @IBOutlet weak var menuLeadingEdge: NSLayoutConstraint!
     @IBOutlet weak var hiddenDismissButton: UIButton!
