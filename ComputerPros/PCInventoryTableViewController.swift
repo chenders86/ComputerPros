@@ -20,7 +20,7 @@ class PCInventoryTVC: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         checkConnectionStatus()
-        fetchPCInfo()
+        setupFirebaseObservers()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -79,7 +79,7 @@ class PCInventoryTVC: UITableViewController {
     }
     
     
-    private func fetchPCInfo() {
+    private func fbChildAdded() {
         
         let activityIndicator: UIActivityIndicatorView = {
             let indicator = UIActivityIndicatorView()
@@ -120,6 +120,11 @@ class PCInventoryTVC: UITableViewController {
         }, withCancel: nil)
     }
     
+    private func setupFirebaseObservers() {
+        fbChildAdded()
+        
+    }
+    
     private func setImageWithCacheOrURL(urlString: String, displayProperties: ComputerDisplayProperties) {
         
         if let cachedImage = imageCache.object(forKey: urlString as NSString) {
@@ -150,7 +155,6 @@ class PCInventoryTVC: UITableViewController {
         
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
-        
     }
     
     func checkConnectionStatus() {

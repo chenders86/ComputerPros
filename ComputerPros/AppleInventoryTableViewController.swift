@@ -19,7 +19,7 @@ class AppleInventoryTVC: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         checkConnectionStatus()
-        fetchAppleComputerInfo()
+        setupFirebaseObservers()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -79,7 +79,7 @@ class AppleInventoryTVC: UITableViewController {
     }
     
     
-    private func fetchAppleComputerInfo() {
+    private func fbChildAdded() {
         
         let activityIndicator: UIActivityIndicatorView = {
             let indicator = UIActivityIndicatorView()
@@ -120,6 +120,10 @@ class AppleInventoryTVC: UITableViewController {
                 }
             }
         }, withCancel: nil)
+    }
+    
+    private func setupFirebaseObservers() {
+        fbChildAdded()
     }
     
     private func setImageWithCacheOrURL(urlString: String, displayProperties: ComputerDisplayProperties) {
