@@ -25,7 +25,7 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
     
     let computerNode = "Computers"
     var appleOrPC: String?
-    var computerTypeNode: String?
+    var nodeName: String?
     
     var computerArray = [DetailedComputerInfo]()
     
@@ -79,7 +79,7 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
         
         if let brand = appleOrPC, brand == "Apple" {
             
-            if let node = computerTypeNode {
+            if let node = nodeName {
                 
                 Database.database().reference().child(computerNode).child(appleOrPC!).child(node).observe(.childAdded, with: { (snapshot) in
                     
@@ -108,7 +108,7 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
                 
                 if let dictionary = snapshot.value as? [String: AnyObject] {
                     
-                    if let node = self.computerTypeNode {
+                    if let node = self.nodeName {
                         
                         if let computerType = dictionary[node] as? [String: AnyObject] {
                             

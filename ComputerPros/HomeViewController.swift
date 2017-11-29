@@ -38,8 +38,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let menuCellID = "menuCell"
     let cellHeight: CGFloat = 50
     
-    let settings: [Setting] = {
-        return [Setting(name: .Home, imageName: "Home"), Setting(name: .ProCare, imageName: "CloudMenu"), Setting(name: .Inventory, imageName: "Inventory"), Setting(name: .Password, imageName: "PassKey"), Setting(name: .Contact, imageName: "ContactUs"), Setting(name: .Onsite, imageName: "OnSiteCalendar")]
+    let MenuCellSettingArray: [MenuCellSettings] = {
+        return [MenuCellSettings(name: .Home, imageName: "Home"), MenuCellSettings(name: .ProCare, imageName: "CloudMenu"), MenuCellSettings(name: .Inventory, imageName: "Inventory"), MenuCellSettings(name: .Password, imageName: "PassKey"), MenuCellSettings(name: .Contact, imageName: "ContactUs"), MenuCellSettings(name: .Onsite, imageName: "OnSiteCalendar")]
     }()
     
     
@@ -90,22 +90,22 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     // collectionView Delegates
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return settings.count
+        return MenuCellSettingArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = menuCollectionView.dequeueReusableCell(withReuseIdentifier: menuCellID, for: indexPath) as! MenuCell
         
-        let setting = settings[indexPath.item]
-        cell.setting = setting
+        let cellSettings = MenuCellSettingArray[indexPath.item]
+        cell.setting = cellSettings
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let setting = settings[indexPath.item]
+        let setting = MenuCellSettingArray[indexPath.item]
         
         presentViewControllerForName(menuCellName: setting.name)
     }

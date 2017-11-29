@@ -12,11 +12,11 @@ import UIKit
 
 class PCTableViewCell: UITableViewCell {
 
-    var computerInfo: ComputerInfo? {
+    var displayInfo: ComputerDisplayProperties? {
         didSet {
             
-            self.computerImage.image = computerInfo?.computerImage
-            self.computerName.text = computerInfo?.name
+            self.computerImage.image = displayInfo?.computerImage
+            self.computerName.text = displayInfo?.displayName
         }
     }
     

@@ -26,19 +26,19 @@ class PCInventoryTVC: UITableViewController {
     }
     
     let reachability = Reachability()!
-    var computerInfoArray = [ComputerInfo]()
+    var computerDisplayPropertiesArray = [ComputerDisplayProperties]()
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return computerInfoArray.count
+        return computerDisplayPropertiesArray.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "PCCell", for: indexPath) as! PCTableViewCell
-        let info = computerInfoArray[indexPath.row]
+        let displayInfo = computerDisplayPropertiesArray[indexPath.row]
         
-        cell.computerInfo = info
+        cell.displayInfo = displayInfo
         
         return cell
     }
@@ -47,10 +47,10 @@ class PCInventoryTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let infoIndexPath = tableView.indexPathForSelectedRow!
-        let computerNode = computerInfoArray[infoIndexPath.row].nodeName
+        let nodeName = computerDisplayPropertiesArray[infoIndexPath.row].nodeName
         
         let detailsVC = self.storyboard?.instantiateViewController(withIdentifier: "computerDetailsVC") as! ComputerDetailsVC
-        detailsVC.computerTypeNode = computerNode
+        detailsVC.nodeName = nodeName
         detailsVC.appleOrPC = "PC"
         
         self.navigationController?.pushViewController(detailsVC, animated: true)
@@ -65,7 +65,7 @@ class PCInventoryTVC: UITableViewController {
         let StatusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
         let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - StatusBarHeight) // Fix crash when alertView presents
         
-        let cellHeight = visibleTableViewArea / CGFloat(computerInfoArray.count)
+        let cellHeight = visibleTableViewArea / CGFloat(computerDisplayPropertiesArray.count)
         
         return cellHeight
     }
@@ -85,15 +85,15 @@ class PCInventoryTVC: UITableViewController {
         activityIndicator.startAnimating()
         self.view.addSubview(activityIndicator)
         
-        self.computerInfoArray.removeAll()
+        self.computerDisplayPropertiesArray.removeAll()
         
         Database.database().reference().child("Computers").child("PC").observe(.childAdded, with: { (snapshot) in
             
             if let dictionary = snapshot.value as? [String: AnyObject] {
                 
-                let info = ComputerInfo()
+                let info = ComputerDisplayProperties()
                 info.nodeName = snapshot.key
-                info.name = dictionary["Name"] as? String
+                info.displayName = dictionary["Name"] as? String
                 
                 if let urlString = dictionary["DetailedImageURL"] as? String {
                     
@@ -101,8 +101,8 @@ class PCInventoryTVC: UITableViewController {
                         self.setImageWithCacheOrURL(urlString: urlString, info: info)
                         
                         DispatchQueue.main.async {
-                            self.computerInfoArray.append(info)
-                            self.computerInfoArray.sort(by: {$0.name! < $1.name!})
+                            self.computerDisplayPropertiesArray.append(info)
+                            self.computerDisplayPropertiesArray.sort(by: {$0.displayName! < $1.displayName!})
                             self.stopActivityIndicator(snapshot: snapshot, activityIndicator: activityIndicator)
                             self.tableView.reloadData()
                         }
@@ -112,7 +112,7 @@ class PCInventoryTVC: UITableViewController {
         }, withCancel: nil)
     }
     
-    private func setImageWithCacheOrURL(urlString: String, info: ComputerInfo) {
+    private func setImageWithCacheOrURL(urlString: String, info: ComputerDisplayProperties) {
         
         if let cachedImage = imageCache.object(forKey: urlString as NSString) {
             info.computerImage = cachedImage
@@ -129,7 +129,7 @@ class PCInventoryTVC: UITableViewController {
     
     private func stopActivityIndicator(snapshot: DataSnapshot, activityIndicator: UIActivityIndicatorView) {
         
-        if self.computerInfoArray.count == Int(snapshot.childrenCount) {
+        if self.computerDisplayPropertiesArray.count == Int(snapshot.childrenCount) {
             activityIndicator.stopAnimating()
         }
     }

@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 
-class ComputerInfo: NSObject {
+class ComputerDisplayProperties: NSObject {
     
     var computerImage: UIImage?
-    var name: String?
+    var displayName: String?
     var displayOrder: Int?
     var nodeName: String?
 }

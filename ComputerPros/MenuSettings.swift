@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Setting: NSObject {
+class MenuCellSettings: NSObject {
     
     let name: MenuCellName
     let imageName: String

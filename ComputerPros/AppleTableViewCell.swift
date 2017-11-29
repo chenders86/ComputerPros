@@ -11,11 +11,11 @@ import UIKit
 
 class AppleTableViewCell: UITableViewCell {
     
-    var computerInfo: ComputerInfo? {
+    var displayInfo: ComputerDisplayProperties? {
         didSet{
             
-            computerImage.image = computerInfo?.computerImage
-            computerName.text = computerInfo?.name
+            computerImage.image = displayInfo?.computerImage
+            computerName.text = displayInfo?.displayName
         }
     }
     

@@ -22,7 +22,7 @@ class MenuCell: UICollectionViewCell {
         }
     }
     
-    var setting: Setting? {
+    var setting: MenuCellSettings? {
         didSet {
             
             cellLabel.text = setting?.name.rawValue
