@@ -13,6 +13,9 @@ import ReachabilitySwift
 
 class PCInventoryTVC: UITableViewController {
     
+    let database = Database.database()
+    let pcRef = Database.database().reference().child("Computers").child("PC")
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -23,6 +26,11 @@ class PCInventoryTVC: UITableViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         reachability.stopNotifier()
+    }
+    
+    deinit {
+        pcRef.removeAllObservers()
+        print("PC Inventory deinitialized")
     }
     
     let reachability = Reachability()!
@@ -87,21 +95,21 @@ class PCInventoryTVC: UITableViewController {
         
         self.computerDisplayPropertiesArray.removeAll()
         
-        Database.database().reference().child("Computers").child("PC").observe(.childAdded, with: { (snapshot) in
+        pcRef.observe(.childAdded, with: { (snapshot) in
             
             if let dictionary = snapshot.value as? [String: AnyObject] {
                 
-                let info = ComputerDisplayProperties()
-                info.nodeName = snapshot.key
-                info.displayName = dictionary["Name"] as? String
+                let displayProperties = ComputerDisplayProperties()
+                displayProperties.nodeName = snapshot.key
+                displayProperties.displayName = dictionary["Name"] as? String
                 
                 if let urlString = dictionary["DetailedImageURL"] as? String {
                     
                     DispatchQueue.global(qos: .userInteractive).async {
-                        self.setImageWithCacheOrURL(urlString: urlString, info: info)
+                        self.setImageWithCacheOrURL(urlString: urlString, displayProperties: displayProperties)
                         
                         DispatchQueue.main.async {
-                            self.computerDisplayPropertiesArray.append(info)
+                            self.computerDisplayPropertiesArray.append(displayProperties)
                             self.computerDisplayPropertiesArray.sort(by: {$0.displayName! < $1.displayName!})
                             self.stopActivityIndicator(snapshot: snapshot, activityIndicator: activityIndicator)
                             self.tableView.reloadData()
@@ -112,16 +120,16 @@ class PCInventoryTVC: UITableViewController {
         }, withCancel: nil)
     }
     
-    private func setImageWithCacheOrURL(urlString: String, info: ComputerDisplayProperties) {
+    private func setImageWithCacheOrURL(urlString: String, displayProperties: ComputerDisplayProperties) {
         
         if let cachedImage = imageCache.object(forKey: urlString as NSString) {
-            info.computerImage = cachedImage
+            displayProperties.computerImage = cachedImage
             return
         } else {
             let url = URL(string: urlString)
             if let imageData = NSData(contentsOf: url!) {
                 let downloadedImage = UIImage(data: imageData as Data)
-                info.computerImage = downloadedImage
+                displayProperties.computerImage = downloadedImage
                 imageCache.setObject(downloadedImage!, forKey: urlString as NSString)
             }
         }

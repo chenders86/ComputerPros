@@ -12,6 +12,9 @@ import ReachabilitySwift
 
 class AppleInventoryTVC: UITableViewController {
     
+    let database = Database.database()
+    let appleRef = Database.database().reference().child("Computers").child("Apple")
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -22,6 +25,11 @@ class AppleInventoryTVC: UITableViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
         reachability.stopNotifier()
+    }
+    
+    deinit {
+        appleRef.removeAllObservers()
+        print("Apple Inventory deinitialized")
     }
     
     let reachability = Reachability()!
@@ -86,7 +94,7 @@ class AppleInventoryTVC: UITableViewController {
         
         self.computerDisplayPropertiesArray.removeAll()
         
-        Database.database().reference().child("Computers").child("Apple").observe(.childAdded, with: { (snapshot) in
+        appleRef.observe(.childAdded, with: { (snapshot) in
             
             if let dictionary = snapshot.value as? [String: AnyObject] {
                 
@@ -97,7 +105,7 @@ class AppleInventoryTVC: UITableViewController {
                 if let urlString = dictionary["ComputerImageURL"] as? String {
                     
                     DispatchQueue.global(qos: .userInteractive).async {
-                        self.setImageWithCacheOrURL(urlString: urlString, info: displayProperties)
+                        self.setImageWithCacheOrURL(urlString: urlString, displayProperties: displayProperties)
                         if let displayOrder = dictionary["DisplayOrder"] as? Int {
                             displayProperties.displayOrder = displayOrder
                             
@@ -114,16 +122,16 @@ class AppleInventoryTVC: UITableViewController {
         }, withCancel: nil)
     }
     
-    private func setImageWithCacheOrURL(urlString: String, info: ComputerDisplayProperties) {
+    private func setImageWithCacheOrURL(urlString: String, displayProperties: ComputerDisplayProperties) {
         
         if let cachedImage = imageCache.object(forKey: urlString as NSString) {
-            info.computerImage = cachedImage
+            displayProperties.computerImage = cachedImage
             return
         } else {
             let url = URL(string: urlString)
             if let imageData = NSData(contentsOf: url!) {
                 let downloadedImage = UIImage(data: imageData as Data)
-                info.computerImage = downloadedImage
+                displayProperties.computerImage = downloadedImage
                 imageCache.setObject(downloadedImage!, forKey: urlString as NSString)
             }
         }

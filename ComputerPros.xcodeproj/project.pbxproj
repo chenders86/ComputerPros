@@ -182,8 +182,8 @@
 				C9BC37131EFB81BF004B9B5F /* MenuCell.swift */,
 				C90E32AE1F0DE8D700F92ABA /* CredentialsCell.swift */,
 				C956FBA11F1FC99100EEE896 /* AppleTableViewCell.swift */,
-				C90663781F20588B007ADF27 /* ComputerDetailsCell.swift */,
 				C9567AEE1F267B4A003C2B43 /* PCTableViewCell.swift */,
+				C90663781F20588B007ADF27 /* ComputerDetailsCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";

@@ -12,7 +12,7 @@ import UIKit
 class AppleTableViewCell: UITableViewCell {
     
     var displayInfo: ComputerDisplayProperties? {
-        didSet{
+        didSet {
             
             computerImage.image = displayInfo?.computerImage
             computerName.text = displayInfo?.displayName

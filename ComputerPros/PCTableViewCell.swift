@@ -9,14 +9,13 @@
 import Foundation
 import UIKit
 
-
 class PCTableViewCell: UITableViewCell {
 
     var displayInfo: ComputerDisplayProperties? {
         didSet {
             
-            self.computerImage.image = displayInfo?.computerImage
-            self.computerName.text = displayInfo?.displayName
+            computerImage.image = displayInfo?.computerImage
+            computerName.text = displayInfo?.displayName
         }
     }
     
