@@ -20,5 +20,4 @@ class ProCareCloudVC: UIViewController {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
-    
 }

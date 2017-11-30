@@ -29,7 +29,6 @@ class AppleInventoryTVC: UITableViewController {
     
     deinit {
         appleRef.removeAllObservers()
-        print("Apple Inventory deinitialized")
     }
     
     let reachability = Reachability()!
@@ -67,15 +66,17 @@ class AppleInventoryTVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        let availableVerticalSpace = UIScreen.main.bounds.height
-        let navigationControllerHeight = navigationController?.navigationBar.frame.height
-        let tabBarHeight = tabBarController?.tabBar.frame.height
-        let statusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
-        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - statusBarHeight)
-        
-        let cellHeight = visibleTableViewArea / CGFloat(computerDisplayPropertiesArray.count)
-        
-        return cellHeight
+//        let availableVerticalSpace = UIScreen.main.bounds.height
+//        let navigationControllerHeight = navigationController?.navigationBar.frame.height
+//        let tabBarHeight = tabBarController?.tabBar.frame.height
+//        let statusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
+//        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - statusBarHeight)
+//
+//        let cellHeight = visibleTableViewArea / CGFloat(computerDisplayPropertiesArray.count)
+//        print(cellHeight)
+//
+//        return cellHeight
+        return CGFloat(69.25)
     }
     
     
@@ -92,7 +93,7 @@ class AppleInventoryTVC: UITableViewController {
         self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         
-        self.computerDisplayPropertiesArray.removeAll()
+        self.computerDisplayPropertiesArray.removeAll() //this will be moved to another func
         
         appleRef.observe(.childAdded, with: { (snapshot) in
             
@@ -122,8 +123,38 @@ class AppleInventoryTVC: UITableViewController {
         }, withCancel: nil)
     }
     
+    private func fbChildRemoved() {
+        
+        appleRef.observe(.childRemoved) { (snapshot) in
+            
+            if let nodeName = snapshot.key as String? {
+                for displayProperty in self.computerDisplayPropertiesArray {
+                    if displayProperty.nodeName == nodeName {
+                        let index = self.computerDisplayPropertiesArray.index(of: displayProperty)
+                        
+                        DispatchQueue.main.async {
+                            self.computerDisplayPropertiesArray.remove(at: index!)
+                            self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
+                            self.tableView.reloadData()
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    private func fbChildChanged() {
+        
+        appleRef.observe(.childChanged) { (snapshot) in
+            
+            
+        }
+    }
+    
     private func setupFirebaseObservers() {
         fbChildAdded()
+        fbChildRemoved()
+        fbChildChanged()
     }
     
     private func setImageWithCacheOrURL(urlString: String, displayProperties: ComputerDisplayProperties) {

@@ -30,7 +30,6 @@ class PCInventoryTVC: UITableViewController {
     
     deinit {
         pcRef.removeAllObservers()
-        print("PC Inventory deinitialized")
     }
     
     let reachability = Reachability()!
@@ -67,15 +66,16 @@ class PCInventoryTVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        let availableVerticalSpace = view.frame.height
-        let navigationControllerHeight = navigationController?.navigationBar.frame.height
-        let tabBarHeight = tabBarController?.tabBar.frame.height
-        let StatusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
-        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - StatusBarHeight) // Fix crash when alertView presents
-        
-        let cellHeight = visibleTableViewArea / CGFloat(computerDisplayPropertiesArray.count)
-        
-        return cellHeight
+//        let availableVerticalSpace = view.frame.height
+//        let navigationControllerHeight = navigationController?.navigationBar.frame.height
+//        let tabBarHeight = tabBarController?.tabBar.frame.height
+//        let StatusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
+//        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - StatusBarHeight) // Fix crash when alertView presents
+//
+//        let cellHeight = visibleTableViewArea / CGFloat(computerDisplayPropertiesArray.count)
+//
+//        return cellHeight
+        return CGFloat(69.25)
     }
     
     
