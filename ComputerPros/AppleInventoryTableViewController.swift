@@ -12,9 +12,7 @@ import ReachabilitySwift
 
 class AppleInventoryTVC: UITableViewController {
     
-    let database = Database.database()
     let appleRef = Database.database().reference().child("Computers").child("Apple")
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -93,7 +91,7 @@ class AppleInventoryTVC: UITableViewController {
         self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         
-        self.computerDisplayPropertiesArray.removeAll() //this will be moved to another func
+        self.computerDisplayPropertiesArray.removeAll()
         
         appleRef.observe(.childAdded, with: { (snapshot) in
             
@@ -105,16 +103,18 @@ class AppleInventoryTVC: UITableViewController {
                 
                 if let urlString = dictionary["ComputerImageURL"] as? String {
                     
-                    DispatchQueue.global(qos: .userInteractive).async {
+                    DispatchQueue.global(qos: .userInitiated).async {
+                        
                         self.setImageWithCacheOrURL(urlString: urlString, displayProperties: displayProperties)
                         if let displayOrder = dictionary["DisplayOrder"] as? Int {
                             displayProperties.displayOrder = displayOrder
+                            self.computerDisplayPropertiesArray.append(displayProperties)
+                            self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
                             
                             DispatchQueue.main.async {
-                                self.computerDisplayPropertiesArray.append(displayProperties)
-                                self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
-                                self.stopActivityIndicator(snapshot: snapshot, activityIndicator: activityIndicator)
                                 self.tableView.reloadData()
+                                self.stopActivityIndicator(snapshot: snapshot, activityIndicator: activityIndicator)
+                                print("Array count after addChild reloadData: \(self.computerDisplayPropertiesArray.count)")
                             }
                         }
                     }
@@ -126,35 +126,39 @@ class AppleInventoryTVC: UITableViewController {
     private func fbChildRemoved() {
         
         appleRef.observe(.childRemoved) { (snapshot) in
+            print(snapshot.childrenCount)
             
             if let nodeName = snapshot.key as String? {
+                print("Removed nodeName: \(nodeName)")
                 for displayProperty in self.computerDisplayPropertiesArray {
                     if displayProperty.nodeName == nodeName {
                         let index = self.computerDisplayPropertiesArray.index(of: displayProperty)
+                        self.computerDisplayPropertiesArray.remove(at: index!)
+                        self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
                         
                         DispatchQueue.main.async {
-                            self.computerDisplayPropertiesArray.remove(at: index!)
-                            self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
                             self.tableView.reloadData()
                         }
+                    } else {
+                        print("nodeName doesn't exist!")
                     }
                 }
             }
         }
     }
     
-    private func fbChildChanged() {
-        
-        appleRef.observe(.childChanged) { (snapshot) in
-            
-            
-        }
-    }
+//    private func fbChildChanged() {
+//
+//        appleRef.observe(.childChanged) { (snapshot) in
+//
+//
+//        }
+//    }
     
     private func setupFirebaseObservers() {
         fbChildAdded()
         fbChildRemoved()
-        fbChildChanged()
+        //fbChildChanged()
     }
     
     private func setImageWithCacheOrURL(urlString: String, displayProperties: ComputerDisplayProperties) {
@@ -174,7 +178,7 @@ class AppleInventoryTVC: UITableViewController {
     
     private func stopActivityIndicator(snapshot: DataSnapshot, activityIndicator: UIActivityIndicatorView) {
         
-        if self.computerDisplayPropertiesArray.count == Int(snapshot.childrenCount) {
+        if self.computerDisplayPropertiesArray.count == snapshot.childrenCount {
             activityIndicator.stopAnimating()
         }
     }

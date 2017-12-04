@@ -10,12 +10,9 @@ import UIKit
 import Firebase
 import ReachabilitySwift
 
-
 class PCInventoryTVC: UITableViewController {
-    
-    let database = Database.database()
+
     let pcRef = Database.database().reference().child("Computers").child("PC")
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
