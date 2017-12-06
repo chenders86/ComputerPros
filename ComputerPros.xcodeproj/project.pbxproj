@@ -32,6 +32,8 @@
 		C97408CD1F1D817100A24BFE /* AppleInventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97408CC1F1D817100A24BFE /* AppleInventoryTableViewController.swift */; };
 		C97408CF1F1D81C700A24BFE /* PCInventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */; };
 		C9830E121EE25BFE00F683D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */; };
+		C98EC1161FD796CC000BA450 /* AppleInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EC1151FD796CC000BA450 /* AppleInventoryViewController.swift */; };
+		C98EC1181FD7A54D000BA450 /* PCInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EC1171FD7A54D000BA450 /* PCInventoryViewController.swift */; };
 		C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */; };
 		C9BC37141EFB81BF004B9B5F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BC37131EFB81BF004B9B5F /* MenuCell.swift */; };
 		C9D064581F1DB2F0002E639C /* ComputerInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D064571F1DB2F0002E639C /* ComputerInformation.swift */; };
@@ -73,6 +75,8 @@
 		C97408CC1F1D817100A24BFE /* AppleInventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleInventoryTableViewController.swift; sourceTree = "<group>"; };
 		C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCInventoryTableViewController.swift; sourceTree = "<group>"; };
 		C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C98EC1151FD796CC000BA450 /* AppleInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleInventoryViewController.swift; sourceTree = "<group>"; };
+		C98EC1171FD7A54D000BA450 /* PCInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCInventoryViewController.swift; sourceTree = "<group>"; };
 		C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
 		C9BC37131EFB81BF004B9B5F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C9D064571F1DB2F0002E639C /* ComputerInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerInformation.swift; sourceTree = "<group>"; };
@@ -162,7 +166,9 @@
 				C9FF1B6F1EFF8337004C1CB8 /* HomeViewExtension.swift */,
 				C9EF4A9F1F034FF90091E026 /* ProCareCloud.swift */,
 				C9EF4A9D1F034FF90091E026 /* InventoryTabBarController.swift */,
+				C98EC1151FD796CC000BA450 /* AppleInventoryViewController.swift */,
 				C97408CC1F1D817100A24BFE /* AppleInventoryTableViewController.swift */,
+				C98EC1171FD7A54D000BA450 /* PCInventoryViewController.swift */,
 				C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */,
 				C90663761F20073E007ADF27 /* ComputerDetailsVC.swift */,
 				C9EF4A9E1F034FF90091E026 /* AccountsViewController.swift */,
@@ -353,6 +359,7 @@
 				C9EF4AA31F034FF90091E026 /* ProCareCloud.swift in Sources */,
 				C935F23B1F0AF338007BC943 /* CoreDataTableViewController.swift in Sources */,
 				C90663771F20073E007ADF27 /* ComputerDetailsVC.swift in Sources */,
+				C98EC1161FD796CC000BA450 /* AppleInventoryViewController.swift in Sources */,
 				C90E32BF1F0DEE4B00F92ABA /* Account+CoreDataClass.swift in Sources */,
 				C90663791F20588B007ADF27 /* ComputerDetailsCell.swift in Sources */,
 				C9567AEF1F267B4A003C2B43 /* PCTableViewCell.swift in Sources */,
@@ -360,6 +367,7 @@
 				C90E32AF1F0DE8D700F92ABA /* CredentialsCell.swift in Sources */,
 				C935F2191F0AD5CB007BC943 /* ComputerPros.xcdatamodeld in Sources */,
 				C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */,
+				C98EC1181FD7A54D000BA450 /* PCInventoryViewController.swift in Sources */,
 				C956BCBE1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift in Sources */,
 				C90E32AD1F0DDD7D00F92ABA /* CredentialsViewController.swift in Sources */,
 				C9FF1B701EFF8337004C1CB8 /* HomeViewExtension.swift in Sources */,

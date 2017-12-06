@@ -21,4 +21,10 @@ class InventoryTabBarController: UITabBarController {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        
+        self.removeFromParentViewController()
+    }
 }

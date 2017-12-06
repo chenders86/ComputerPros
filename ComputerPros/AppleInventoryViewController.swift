@@ -1,8 +1,8 @@
 //
-//  AppleInventoryTableViewController.swift
+//  AppleInventoryViewController.swift
 //  ComputerPros
 //
-//  Created by Casey Henderson on 7/17/17.
+//  Created by Casey Henderson on 12/5/17.
 //  Copyright © 2017 Casey Henderson. All rights reserved.
 //
 
@@ -10,14 +10,18 @@ import UIKit
 import Firebase
 import ReachabilitySwift
 
-class AppleInventoryTVC: UITableViewController {
+class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let appleRef = Database.database().reference().child("Computers").child("Apple")
-   
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
-
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -32,19 +36,19 @@ class AppleInventoryTVC: UITableViewController {
     }
     
     deinit {
-        print("Controller Deinit")
+        print("Apple viewController Deinit")
     }
     
     let reachability = Reachability()!
     var computerDisplayPropertiesArray = [ComputerDisplayProperties]()
     
-        
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return computerDisplayPropertiesArray.count
     }
     
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "appleCell", for: indexPath) as! AppleTableViewCell
         let displayInfo = computerDisplayPropertiesArray[indexPath.row]
@@ -55,7 +59,7 @@ class AppleInventoryTVC: UITableViewController {
     }
     
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let infoIndexPath = tableView.indexPathForSelectedRow!
         let nodeName = computerDisplayPropertiesArray[infoIndexPath.row].nodeName
@@ -68,21 +72,21 @@ class AppleInventoryTVC: UITableViewController {
     }
     
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-//        let availableVerticalSpace = UIScreen.main.bounds.height
-//        let navigationControllerHeight = navigationController?.navigationBar.frame.height
-//        let tabBarHeight = tabBarController?.tabBar.frame.height
-//        let statusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
-//        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - statusBarHeight)
-//
-//        let cellHeight = visibleTableViewArea / CGFloat(computerDisplayPropertiesArray.count)
-//        print(cellHeight)
-//
-//        return cellHeight
+        //        let availableVerticalSpace = UIScreen.main.bounds.height
+        //        let navigationControllerHeight = navigationController?.navigationBar.frame.height
+        //        let tabBarHeight = tabBarController?.tabBar.frame.height
+        //        let statusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
+        //        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - statusBarHeight)
+        //
+        //        let cellHeight = visibleTableViewArea / CGFloat(computerDisplayPropertiesArray.count)
+        //        print(cellHeight)
+        //
+        //        return cellHeight
         return CGFloat(69.25)
     }
-
+    
     private func fbChildAdded() {
         
         let activityIndicator: UIActivityIndicatorView = {
@@ -152,13 +156,13 @@ class AppleInventoryTVC: UITableViewController {
         }
     }
     
-//    private func fbChildChanged() {
-//
-//        appleRef.observe(.childChanged) { (snapshot) in
-//
-//
-//        }
-//    }
+    //    private func fbChildChanged() {
+    //
+    //        appleRef.observe(.childChanged) { (snapshot) in
+    //
+    //
+    //        }
+    //    }
     
     private func setupFirebaseObservers() {
         fbChildAdded()
@@ -224,3 +228,4 @@ class AppleInventoryTVC: UITableViewController {
         }
     }
 }
+

@@ -1,8 +1,8 @@
 //
-//  AppleInventoryTableViewController.swift
+//  PCInventoryViewController.swift
 //  ComputerPros
 //
-//  Created by Casey Henderson on 7/17/17.
+//  Created by Casey Henderson on 12/5/17.
 //  Copyright © 2017 Casey Henderson. All rights reserved.
 //
 
@@ -10,14 +10,17 @@ import UIKit
 import Firebase
 import ReachabilitySwift
 
-class AppleInventoryTVC: UITableViewController {
+class PCInventoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let appleRef = Database.database().reference().child("Computers").child("Apple")
-   
+    let pcRef = Database.database().reference().child("Computers").child("PC")
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
-
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -26,27 +29,26 @@ class AppleInventoryTVC: UITableViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewDidDisappear(true)
+        super.viewWillDisappear(true)
         reachability.stopNotifier()
-        appleRef.removeAllObservers()
     }
     
     deinit {
-        print("Controller Deinit")
+        pcRef.removeAllObservers()
+        print("PC TVC Deinit")
     }
     
     let reachability = Reachability()!
     var computerDisplayPropertiesArray = [ComputerDisplayProperties]()
     
-        
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return computerDisplayPropertiesArray.count
     }
     
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "appleCell", for: indexPath) as! AppleTableViewCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "PCCell", for: indexPath) as! PCTableViewCell
         let displayInfo = computerDisplayPropertiesArray[indexPath.row]
         
         cell.displayInfo = displayInfo
@@ -55,34 +57,34 @@ class AppleInventoryTVC: UITableViewController {
     }
     
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let infoIndexPath = tableView.indexPathForSelectedRow!
         let nodeName = computerDisplayPropertiesArray[infoIndexPath.row].nodeName
         
         let detailsVC = self.storyboard?.instantiateViewController(withIdentifier: "computerDetailsVC") as! ComputerDetailsVC
         detailsVC.nodeName = nodeName
-        detailsVC.appleOrPC = "Apple"
+        detailsVC.appleOrPC = "PC"
         
         self.navigationController?.pushViewController(detailsVC, animated: true)
     }
     
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-//        let availableVerticalSpace = UIScreen.main.bounds.height
-//        let navigationControllerHeight = navigationController?.navigationBar.frame.height
-//        let tabBarHeight = tabBarController?.tabBar.frame.height
-//        let statusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
-//        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - statusBarHeight)
-//
-//        let cellHeight = visibleTableViewArea / CGFloat(computerDisplayPropertiesArray.count)
-//        print(cellHeight)
-//
-//        return cellHeight
+        //        let availableVerticalSpace = view.frame.height
+        //        let navigationControllerHeight = navigationController?.navigationBar.frame.height
+        //        let tabBarHeight = tabBarController?.tabBar.frame.height
+        //        let StatusBarHeight = CGFloat(UIApplication.shared.statusBarFrame.size.height)
+        //        let visibleTableViewArea = (availableVerticalSpace - navigationControllerHeight! - tabBarHeight! - StatusBarHeight) // Fix crash when alertView presents
+        //
+        //        let cellHeight = visibleTableViewArea / CGFloat(computerDisplayPropertiesArray.count)
+        //
+        //        return cellHeight
         return CGFloat(69.25)
     }
-
+    
+    
     private func fbChildAdded() {
         
         let activityIndicator: UIActivityIndicatorView = {
@@ -93,12 +95,13 @@ class AppleInventoryTVC: UITableViewController {
             return indicator
         }()
         
-        self.view.addSubview(activityIndicator)
+        
         activityIndicator.startAnimating()
+        self.view.addSubview(activityIndicator)
         
         self.computerDisplayPropertiesArray.removeAll()
         
-        appleRef.observe(.childAdded, with: { (snapshot) in
+        pcRef.observe(.childAdded, with: { (snapshot) in
             
             if let dictionary = snapshot.value as? [String: AnyObject] {
                 
@@ -106,21 +109,16 @@ class AppleInventoryTVC: UITableViewController {
                 displayProperties.nodeName = snapshot.key
                 displayProperties.displayName = dictionary["Name"] as? String
                 
-                if let urlString = dictionary["ComputerImageURL"] as? String {
+                if let urlString = dictionary["DetailedImageURL"] as? String {
                     
-                    DispatchQueue.global(qos: .userInitiated).async {
-                        
+                    DispatchQueue.global(qos: .userInteractive).async {
                         self.setImageWithCacheOrURL(urlString: urlString, displayProperties: displayProperties)
-                        if let displayOrder = dictionary["DisplayOrder"] as? Int {
-                            displayProperties.displayOrder = displayOrder
+                        
+                        DispatchQueue.main.async {
                             self.computerDisplayPropertiesArray.append(displayProperties)
-                            self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
-                            
-                            DispatchQueue.main.async {
-                                self.tableView.reloadData()
-                                self.stopActivityIndicator(snapshot: snapshot, activityIndicator: activityIndicator)
-                                print("Array count after addChild reloadData: \(self.computerDisplayPropertiesArray.count)")
-                            }
+                            self.computerDisplayPropertiesArray.sort(by: {$0.displayName! < $1.displayName!})
+                            self.stopActivityIndicator(snapshot: snapshot, activityIndicator: activityIndicator)
+                            self.tableView.reloadData()
                         }
                     }
                 }
@@ -128,42 +126,9 @@ class AppleInventoryTVC: UITableViewController {
         }, withCancel: nil)
     }
     
-    private func fbChildRemoved() {
-        
-        appleRef.observe(.childRemoved) { (snapshot) in
-            print(snapshot.childrenCount)
-            
-            if let nodeName = snapshot.key as String? {
-                print("Removed nodeName: \(nodeName)")
-                for displayProperty in self.computerDisplayPropertiesArray {
-                    if displayProperty.nodeName == nodeName {
-                        let index = self.computerDisplayPropertiesArray.index(of: displayProperty)
-                        self.computerDisplayPropertiesArray.remove(at: index!)
-                        self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
-                        
-                        DispatchQueue.main.async {
-                            self.tableView.reloadData()
-                        }
-                    } else {
-                        print("nodeName doesn't exist!")
-                    }
-                }
-            }
-        }
-    }
-    
-//    private func fbChildChanged() {
-//
-//        appleRef.observe(.childChanged) { (snapshot) in
-//
-//
-//        }
-//    }
-    
     private func setupFirebaseObservers() {
         fbChildAdded()
-        fbChildRemoved()
-        //fbChildChanged()
+        
     }
     
     private func setImageWithCacheOrURL(urlString: String, displayProperties: ComputerDisplayProperties) {
@@ -183,11 +148,10 @@ class AppleInventoryTVC: UITableViewController {
     
     private func stopActivityIndicator(snapshot: DataSnapshot, activityIndicator: UIActivityIndicatorView) {
         
-        if self.computerDisplayPropertiesArray.count == snapshot.childrenCount {
+        if self.computerDisplayPropertiesArray.count == Int(snapshot.childrenCount) {
             activityIndicator.stopAnimating()
         }
     }
-    
     
     func showAlert() {
         
@@ -197,7 +161,6 @@ class AppleInventoryTVC: UITableViewController {
         
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
-        
     }
     
     func checkConnectionStatus() {

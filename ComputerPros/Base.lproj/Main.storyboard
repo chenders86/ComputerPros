@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eQb-Aa-vOO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eQb-Aa-vOO">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -279,6 +279,76 @@
             <point key="canvasLocation" x="1023" y="-78"/>
         </scene>
         <!--PC-->
+        <scene sceneID="n99-se-nJc">
+            <objects>
+                <viewController id="QzZ-kP-lrK" customClass="PCInventoryViewController" customModule="ComputerPros" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eQ1-0T-eQe"/>
+                        <viewControllerLayoutGuide type="bottom" id="JAU-Pa-TPz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="03C-qT-Cut">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KrP-Sa-VQR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PCCell" rowHeight="70" id="eDm-V6-VBX" customClass="PCTableViewCell" customModule="ComputerPros" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eDm-V6-VBX" id="lNj-9r-hhg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DLJ-Aj-abr" userLabel="Computer Image">
+                                                    <rect key="frame" x="8" y="4" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="DLJ-Aj-abr" secondAttribute="height" multiplier="1:1" id="689-jJ-rQy"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMc-dd-q5j" userLabel="Computer Name">
+                                                    <rect key="frame" x="76" y="24" width="323" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cMc-dd-q5j" firstAttribute="centerY" secondItem="lNj-9r-hhg" secondAttribute="centerY" id="3gW-WC-JQd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cMc-dd-q5j" secondAttribute="trailing" id="JLU-1H-5c0"/>
+                                                <constraint firstItem="DLJ-Aj-abr" firstAttribute="centerY" secondItem="lNj-9r-hhg" secondAttribute="centerY" id="LFl-yz-HPy"/>
+                                                <constraint firstItem="cMc-dd-q5j" firstAttribute="leading" secondItem="DLJ-Aj-abr" secondAttribute="trailing" constant="8" id="Oft-Ub-P5S"/>
+                                                <constraint firstAttribute="bottom" secondItem="DLJ-Aj-abr" secondAttribute="bottom" constant="5" id="R2Z-v7-iO9"/>
+                                                <constraint firstItem="DLJ-Aj-abr" firstAttribute="leading" secondItem="lNj-9r-hhg" secondAttribute="leading" constant="8" id="e3m-vj-KJH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="computerImage" destination="DLJ-Aj-abr" id="DFp-YF-pqW"/>
+                                            <outlet property="computerName" destination="cMc-dd-q5j" id="5Ra-X7-sf4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KrP-Sa-VQR" secondAttribute="trailing" id="2hM-LW-rnr"/>
+                            <constraint firstItem="KrP-Sa-VQR" firstAttribute="leading" secondItem="03C-qT-Cut" secondAttribute="leading" id="IAk-hu-a6y"/>
+                            <constraint firstItem="JAU-Pa-TPz" firstAttribute="top" secondItem="KrP-Sa-VQR" secondAttribute="bottom" id="KFS-ff-RxC"/>
+                            <constraint firstItem="KrP-Sa-VQR" firstAttribute="top" secondItem="03C-qT-Cut" secondAttribute="top" id="gTg-3v-nNL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PC" image="Windowsphone" id="eTN-gO-uX2"/>
+                    <connections>
+                        <outlet property="tableView" destination="KrP-Sa-VQR" id="7Lg-qf-Y1e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPv-xK-fXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905.7971014492755" y="1095.6521739130435"/>
+        </scene>
+        <!--PC-->
         <scene sceneID="DRp-0S-rOj">
             <objects>
                 <tableViewController storyboardIdentifier="pcInventoryTVC" id="ntu-zp-2uh" customClass="PCInventoryTVC" customModule="ComputerPros" customModuleProvider="target" sceneMemberID="viewController">
@@ -287,7 +357,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PCCell" rowHeight="70" id="L25-q6-kjW" customClass="PCTableViewCell" customModule="ComputerPros" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="L25-q6-kjW" customClass="PCTableViewCell" customModule="ComputerPros" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L25-q6-kjW" id="ppy-xr-YvZ">
@@ -316,10 +386,6 @@
                                         <constraint firstItem="07T-1A-MGI" firstAttribute="leading" secondItem="ppy-xr-YvZ" secondAttribute="leading" constant="8" id="x3H-6u-BdO"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="computerImage" destination="07T-1A-MGI" id="DXK-Ph-lvX"/>
-                                    <outlet property="computerName" destination="S9K-fK-Y1p" id="jWp-fN-Cpr"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -332,7 +398,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRn-qJ-nbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905" y="1270"/>
+            <point key="canvasLocation" x="2564" y="1096"/>
         </scene>
         <!--Apple-->
         <scene sceneID="Cdk-25-UM0">
@@ -343,7 +409,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="appleCell" rowHeight="70" id="gTk-Oa-61u" customClass="AppleTableViewCell" customModule="ComputerPros" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="gTk-Oa-61u" customClass="AppleTableViewCell" customModule="ComputerPros" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gTk-Oa-61u" id="FrM-yg-UFO">
@@ -372,10 +438,6 @@
                                         <constraint firstItem="Swl-FZ-A0d" firstAttribute="centerY" secondItem="FrM-yg-UFO" secondAttribute="centerY" id="xKX-JN-3Ol"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="computerImage" destination="Swl-FZ-A0d" id="AaK-ox-MDo"/>
-                                    <outlet property="computerName" destination="N4w-hx-yBz" id="zsT-6O-NWN"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -388,7 +450,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rv0-iz-ano" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905.7971014492755" y="447.554347826087"/>
+            <point key="canvasLocation" x="2564" y="449"/>
         </scene>
         <!--Computer DetailsVC-->
         <scene sceneID="I8R-gF-1rx">
@@ -528,7 +590,77 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWq-gG-YPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2666.666666666667" y="773.64130434782612"/>
+            <point key="canvasLocation" x="3297" y="835"/>
+        </scene>
+        <!--Apple-->
+        <scene sceneID="djg-JH-LQO">
+            <objects>
+                <viewController id="tRe-Ab-swF" customClass="AppleInventoryViewController" customModule="ComputerPros" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oi8-Eb-xoa"/>
+                        <viewControllerLayoutGuide type="bottom" id="1yp-YK-fh0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gKO-OI-8zC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hgY-6L-HxF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="appleCell" rowHeight="70" id="FsK-CY-reZ" customClass="AppleTableViewCell" customModule="ComputerPros" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FsK-CY-reZ" id="rab-KD-GmG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcb-gQ-glu" userLabel="Computer Name">
+                                                    <rect key="frame" x="73" y="24" width="326" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0HS-uK-cpV" userLabel="Computer Image">
+                                                    <rect key="frame" x="8" y="4" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="0HS-uK-cpV" secondAttribute="height" multiplier="1:1" id="cb3-Oy-PeH"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Dcb-gQ-glu" secondAttribute="trailing" id="4wB-Cj-dw6"/>
+                                                <constraint firstItem="0HS-uK-cpV" firstAttribute="centerY" secondItem="rab-KD-GmG" secondAttribute="centerY" id="AI5-6x-dUH"/>
+                                                <constraint firstItem="Dcb-gQ-glu" firstAttribute="leading" secondItem="0HS-uK-cpV" secondAttribute="trailing" constant="5" id="Cf2-a4-Wtz"/>
+                                                <constraint firstItem="0HS-uK-cpV" firstAttribute="leading" secondItem="rab-KD-GmG" secondAttribute="leading" constant="8" id="DtR-vH-qBX"/>
+                                                <constraint firstItem="Dcb-gQ-glu" firstAttribute="centerY" secondItem="rab-KD-GmG" secondAttribute="centerY" id="I8o-yj-shi"/>
+                                                <constraint firstAttribute="bottom" secondItem="0HS-uK-cpV" secondAttribute="bottom" constant="5" id="a4Y-Ix-mmO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="computerImage" destination="0HS-uK-cpV" id="1r9-9D-uLo"/>
+                                            <outlet property="computerName" destination="Dcb-gQ-glu" id="O6r-Vp-tg8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1yp-YK-fh0" firstAttribute="top" secondItem="hgY-6L-HxF" secondAttribute="bottom" id="2WG-1c-Cbj"/>
+                            <constraint firstAttribute="trailing" secondItem="hgY-6L-HxF" secondAttribute="trailing" id="LCS-FR-gyi"/>
+                            <constraint firstItem="hgY-6L-HxF" firstAttribute="top" secondItem="gKO-OI-8zC" secondAttribute="top" id="aFa-pV-ctZ"/>
+                            <constraint firstItem="hgY-6L-HxF" firstAttribute="leading" secondItem="gKO-OI-8zC" secondAttribute="leading" id="fc4-gK-hmU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Apple" image="Apple" id="m1a-JD-YYT"/>
+                    <connections>
+                        <outlet property="tableView" destination="hgY-6L-HxF" id="UEM-Be-d7J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bn4-4S-v8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="448"/>
         </scene>
         <!--Inventory Tab Bar Controller-->
         <scene sceneID="J7h-fg-GaX">
@@ -540,8 +672,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="piV-5W-zSz" kind="relationship" relationship="viewControllers" id="lew-X2-Dst"/>
-                        <segue destination="ntu-zp-2uh" kind="relationship" relationship="viewControllers" id="Io5-ti-g97"/>
+                        <segue destination="tRe-Ab-swF" kind="relationship" relationship="viewControllers" id="nHi-74-NmR"/>
+                        <segue destination="QzZ-kP-lrK" kind="relationship" relationship="viewControllers" id="GNL-dE-GjU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeD-rv-eoW" userLabel="First Responder" sceneMemberID="firstResponder"/>

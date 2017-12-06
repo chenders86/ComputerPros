@@ -27,6 +27,7 @@ class PCInventoryTVC: UITableViewController {
     
     deinit {
         pcRef.removeAllObservers()
+        print("PC TVC Deinit")
     }
     
     let reachability = Reachability()!

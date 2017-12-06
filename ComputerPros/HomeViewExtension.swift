@@ -101,6 +101,7 @@ extension HomeViewController {
             }, completion: { (finished) in
                 let inventoryVC = self.storyboard?.instantiateViewController(withIdentifier: ControllerIdentifier.InventoryVC.rawValue) as! InventoryTabBarController
                 self.navigationController?.pushViewController(inventoryVC, animated: true)
+                //self.present(inventoryVC, animated: true, completion: nil)
             })
             
         case .Onsite:
