@@ -29,8 +29,6 @@
 		C956BCBE1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */; };
 		C956FBA21F1FC99100EEE896 /* AppleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956FBA11F1FC99100EEE896 /* AppleTableViewCell.swift */; };
 		C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E02241EFDD6CC004B28AC /* MenuSettings.swift */; };
-		C97408CD1F1D817100A24BFE /* AppleInventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97408CC1F1D817100A24BFE /* AppleInventoryTableViewController.swift */; };
-		C97408CF1F1D81C700A24BFE /* PCInventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */; };
 		C9830E121EE25BFE00F683D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */; };
 		C98EC1161FD796CC000BA450 /* AppleInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EC1151FD796CC000BA450 /* AppleInventoryViewController.swift */; };
 		C98EC1181FD7A54D000BA450 /* PCInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EC1171FD7A54D000BA450 /* PCInventoryViewController.swift */; };
@@ -72,8 +70,6 @@
 		C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCredentialsViewController.swift; sourceTree = "<group>"; };
 		C956FBA11F1FC99100EEE896 /* AppleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleTableViewCell.swift; sourceTree = "<group>"; };
 		C96E02241EFDD6CC004B28AC /* MenuSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSettings.swift; sourceTree = "<group>"; };
-		C97408CC1F1D817100A24BFE /* AppleInventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleInventoryTableViewController.swift; sourceTree = "<group>"; };
-		C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCInventoryTableViewController.swift; sourceTree = "<group>"; };
 		C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C98EC1151FD796CC000BA450 /* AppleInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleInventoryViewController.swift; sourceTree = "<group>"; };
 		C98EC1171FD7A54D000BA450 /* PCInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCInventoryViewController.swift; sourceTree = "<group>"; };
@@ -167,9 +163,7 @@
 				C9EF4A9F1F034FF90091E026 /* ProCareCloud.swift */,
 				C9EF4A9D1F034FF90091E026 /* InventoryTabBarController.swift */,
 				C98EC1151FD796CC000BA450 /* AppleInventoryViewController.swift */,
-				C97408CC1F1D817100A24BFE /* AppleInventoryTableViewController.swift */,
 				C98EC1171FD7A54D000BA450 /* PCInventoryViewController.swift */,
-				C97408CE1F1D81C700A24BFE /* PCInventoryTableViewController.swift */,
 				C90663761F20073E007ADF27 /* ComputerDetailsVC.swift */,
 				C9EF4A9E1F034FF90091E026 /* AccountsViewController.swift */,
 				C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */,
@@ -348,9 +342,7 @@
 				C9EF4AA21F034FF90091E026 /* AccountsViewController.swift in Sources */,
 				C90E32BD1F0DEE4B00F92ABA /* LoginCredentials+CoreDataClass.swift in Sources */,
 				C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */,
-				C97408CD1F1D817100A24BFE /* AppleInventoryTableViewController.swift in Sources */,
 				C90E32BE1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift in Sources */,
-				C97408CF1F1D81C700A24BFE /* PCInventoryTableViewController.swift in Sources */,
 				C9EF4AA11F034FF90091E026 /* InventoryTabBarController.swift in Sources */,
 				C935F2161F0ACCF9007BC943 /* CoreDataStack.swift in Sources */,
 				C9EF4AA01F034FF90091E026 /* ContactViewController.swift in Sources */,

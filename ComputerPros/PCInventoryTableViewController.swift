@@ -178,5 +178,4 @@ class PCInventoryTVC: UITableViewController {
             print("Unable to start notifier")
         }
     }
-
 }
