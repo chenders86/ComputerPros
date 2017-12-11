@@ -11,22 +11,36 @@ import Firebase
 import ReachabilitySwift
 
 class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
     let appleRef = Database.database().reference().child("Computers").child("Apple")
+    var activityIndicator: UIActivityIndicatorView!
+    let reachability = Reachability()!
+    var computerDisplayPropertiesArray = [ComputerDisplayProperties]()
     
     @IBOutlet weak var tableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        setNavBar()
+        navigationController?.navigationBar.tintColor = UIColor(hue: 0.5361111111, saturation: 1.30, brightness: 0.85, alpha: 1.0)
+        let aI: UIActivityIndicatorView = {
+            let indicator = UIActivityIndicatorView()
+            indicator.activityIndicatorViewStyle = .gray
+            indicator.hidesWhenStopped = true
+            indicator.center = CGPoint(x: (self.view.bounds.width / 2), y: ((tableView.center.y)))
+            return indicator
+        }()
+        activityIndicator = aI
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         checkConnectionStatus()
         setupFirebaseObservers()
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -34,13 +48,6 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
         reachability.stopNotifier()
         appleRef.removeAllObservers()
     }
-    
-    deinit {
-        print("Apple viewController Deinit")
-    }
-    
-    let reachability = Reachability()!
-    var computerDisplayPropertiesArray = [ComputerDisplayProperties]()
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -68,6 +75,8 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
         detailsVC.nodeName = nodeName
         detailsVC.appleOrPC = "Apple"
         
+        self.tabBarController?.tabBar.isHidden = true
+        
         self.navigationController?.pushViewController(detailsVC, animated: true)
     }
     
@@ -88,41 +97,27 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     private func fbChildAdded() {
-        
-        let activityIndicator: UIActivityIndicatorView = {
-            let indicator = UIActivityIndicatorView()
-            indicator.activityIndicatorViewStyle = .gray
-            indicator.hidesWhenStopped = true
-            indicator.center = CGPoint(x: tableView.center.x, y: ((tableView.center.y) - (tabBarController?.tabBar.frame.height)!))
-            return indicator
-        }()
-        
+
         self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         
         self.computerDisplayPropertiesArray.removeAll()
         
-        appleRef.observe(.childAdded, with: { (snapshot) in
-            
+       appleRef.observe(.childAdded, with: { (snapshot) in
             if let dictionary = snapshot.value as? [String: AnyObject] {
-                
                 let displayProperties = ComputerDisplayProperties()
                 displayProperties.nodeName = snapshot.key
                 displayProperties.displayName = dictionary["Name"] as? String
-                
                 if let urlString = dictionary["ComputerImageURL"] as? String {
-                    
-                    DispatchQueue.global(qos: .userInitiated).async {
-                        
+                    DispatchQueue.global(qos: .userInteractive).async {
                         self.setImageWithCacheOrURL(urlString: urlString, displayProperties: displayProperties)
                         if let displayOrder = dictionary["DisplayOrder"] as? Int {
                             displayProperties.displayOrder = displayOrder
                             self.computerDisplayPropertiesArray.append(displayProperties)
                             self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
-                            
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
-                                self.stopActivityIndicator(snapshot: snapshot, activityIndicator: activityIndicator)
+                                self.activityIndicator.stopAnimating()
                                 print("Array count after addChild reloadData: \(self.computerDisplayPropertiesArray.count)")
                             }
                         }
@@ -166,7 +161,7 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
     
     private func setupFirebaseObservers() {
         fbChildAdded()
-        fbChildRemoved()
+        //fbChildRemoved()
         //fbChildChanged()
     }
     
@@ -184,14 +179,6 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
             }
         }
     }
-    
-    private func stopActivityIndicator(snapshot: DataSnapshot, activityIndicator: UIActivityIndicatorView) {
-        
-        if self.computerDisplayPropertiesArray.count == snapshot.childrenCount {
-            activityIndicator.stopAnimating()
-        }
-    }
-    
     
     func showAlert() {
         
@@ -226,6 +213,17 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
         } catch {
             print("Unable to start notifier")
         }
+    }
+    
+    private func setNavBar() {
+        let navItem = UINavigationItem(title: "Apple")
+        let doneItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(done))
+        navItem.leftBarButtonItem = doneItem
+        self.navigationController?.navigationBar.setItems([navItem], animated: false)
+    }
+    
+    @objc private func done() {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

@@ -278,7 +278,7 @@
             </objects>
             <point key="canvasLocation" x="1023" y="-78"/>
         </scene>
-        <!--PC-->
+        <!--Inventory View Controller-->
         <scene sceneID="n99-se-nJc">
             <objects>
                 <viewController id="QzZ-kP-lrK" customClass="PCInventoryViewController" customModule="ComputerPros" customModuleProvider="target" sceneMemberID="viewController">
@@ -301,7 +301,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DLJ-Aj-abr" userLabel="Computer Image">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DLJ-Aj-abr" userLabel="Computer Image">
                                                     <rect key="frame" x="8" y="4" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="DLJ-Aj-abr" secondAttribute="height" multiplier="1:1" id="689-jJ-rQy"/>
@@ -339,14 +339,14 @@
                             <constraint firstItem="KrP-Sa-VQR" firstAttribute="top" secondItem="03C-qT-Cut" secondAttribute="top" id="gTg-3v-nNL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="PC" image="Windowsphone" id="eTN-gO-uX2"/>
+                    <navigationItem key="navigationItem" id="Z6Y-Ci-cab"/>
                     <connections>
                         <outlet property="tableView" destination="KrP-Sa-VQR" id="7Lg-qf-Y1e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPv-xK-fXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905.7971014492755" y="1095.6521739130435"/>
+            <point key="canvasLocation" x="2646" y="1096"/>
         </scene>
         <!--Computer DetailsVC-->
         <scene sceneID="I8R-gF-1rx">
@@ -486,9 +486,9 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWq-gG-YPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2575" y="763"/>
+            <point key="canvasLocation" x="3357" y="729"/>
         </scene>
-        <!--Apple-->
+        <!--Apple Inventory View Controller-->
         <scene sceneID="djg-JH-LQO">
             <objects>
                 <viewController id="tRe-Ab-swF" customClass="AppleInventoryViewController" customModule="ComputerPros" customModuleProvider="target" sceneMemberID="viewController">
@@ -549,14 +549,14 @@
                             <constraint firstItem="hgY-6L-HxF" firstAttribute="leading" secondItem="gKO-OI-8zC" secondAttribute="leading" id="fc4-gK-hmU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Apple" image="Apple" id="m1a-JD-YYT"/>
+                    <navigationItem key="navigationItem" id="Pyz-Et-Zle"/>
                     <connections>
                         <outlet property="tableView" destination="hgY-6L-HxF" id="UEM-Be-d7J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bn4-4S-v8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1906" y="448"/>
+            <point key="canvasLocation" x="2645" y="448"/>
         </scene>
         <!--Inventory Tab Bar Controller-->
         <scene sceneID="J7h-fg-GaX">
@@ -568,8 +568,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="tRe-Ab-swF" kind="relationship" relationship="viewControllers" id="nHi-74-NmR"/>
-                        <segue destination="QzZ-kP-lrK" kind="relationship" relationship="viewControllers" id="GNL-dE-GjU"/>
+                        <segue destination="3Pj-cf-T84" kind="relationship" relationship="viewControllers" id="nHi-74-NmR"/>
+                        <segue destination="pFA-vG-4Or" kind="relationship" relationship="viewControllers" id="GNL-dE-GjU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeD-rv-eoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1115,6 +1115,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nVX-IP-W9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1906" y="1863"/>
+        </scene>
+        <!--Apple-->
+        <scene sceneID="Jj2-st-PW0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Pj-cf-T84" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Apple" image="Apple" id="m1a-JD-YYT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sv9-bf-ifS">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tRe-Ab-swF" kind="relationship" relationship="rootViewController" id="fQY-Xg-7vN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3iX-zC-sjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905.7971014492755" y="447.554347826087"/>
+        </scene>
+        <!--PC-->
+        <scene sceneID="lWj-j7-21I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pFA-vG-4Or" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="PC" image="Windowsphone" id="eTN-gO-uX2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Giq-Hi-l8d">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QzZ-kP-lrK" kind="relationship" relationship="rootViewController" id="Xk6-0B-zXO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhk-aH-aQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="1096"/>
         </scene>
     </scenes>
     <resources>
