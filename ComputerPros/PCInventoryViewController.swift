@@ -24,7 +24,7 @@ class PCInventoryViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.delegate = self
         tableView.dataSource = self
         setNavBar()
-         navigationController?.navigationBar.tintColor = UIColor(hue: 0.5361111111, saturation: 1.30, brightness: 0.85, alpha: 1.0)
+        navigationController?.navigationBar.tintColor = UIColor(hue: 0.5361111111, saturation: 1.30, brightness: 0.85, alpha: 1.0)
         let aI: UIActivityIndicatorView = {
             let indicator = UIActivityIndicatorView()
             indicator.activityIndicatorViewStyle = .gray
@@ -40,6 +40,7 @@ class PCInventoryViewController: UIViewController, UITableViewDelegate, UITableV
         checkConnectionStatus()
         setupFirebaseObservers()
         self.tabBarController?.tabBar.isHidden = false
+        print("PC VA")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -114,8 +115,8 @@ class PCInventoryViewController: UIViewController, UITableViewDelegate, UITableV
                         DispatchQueue.main.async {
                             self.computerDisplayPropertiesArray.append(displayProperties)
                             self.computerDisplayPropertiesArray.sort(by: {$0.displayName! < $1.displayName!})
-                            self.stopActivityIndicator(snapshot: snapshot, activityIndicator: self.activityIndicator)
                             self.tableView.reloadData()
+                            self.activityIndicator.stopAnimating()
                         }
                     }
                 }
@@ -125,7 +126,6 @@ class PCInventoryViewController: UIViewController, UITableViewDelegate, UITableV
     
     private func setupFirebaseObservers() {
         fbChildAdded()
-        
     }
     
     private func setImageWithCacheOrURL(urlString: String, displayProperties: ComputerDisplayProperties) {
@@ -140,13 +140,6 @@ class PCInventoryViewController: UIViewController, UITableViewDelegate, UITableV
                 displayProperties.computerImage = downloadedImage
                 imageCache.setObject(downloadedImage!, forKey: urlString as NSString)
             }
-        }
-    }
-    
-    private func stopActivityIndicator(snapshot: DataSnapshot, activityIndicator: UIActivityIndicatorView) {
-        
-        if self.computerDisplayPropertiesArray.count == Int(snapshot.childrenCount) {
-            activityIndicator.stopAnimating()
         }
     }
     

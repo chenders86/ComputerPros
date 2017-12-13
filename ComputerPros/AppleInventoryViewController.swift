@@ -41,6 +41,7 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
         checkConnectionStatus()
         setupFirebaseObservers()
         self.tabBarController?.tabBar.isHidden = false
+        print("Mac VA")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -114,8 +115,8 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
                         if let displayOrder = dictionary["DisplayOrder"] as? Int {
                             displayProperties.displayOrder = displayOrder
                             self.computerDisplayPropertiesArray.append(displayProperties)
-                            self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
                             DispatchQueue.main.async {
+                                self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
                                 self.tableView.reloadData()
                                 self.activityIndicator.stopAnimating()
                                 print("Array count after addChild reloadData: \(self.computerDisplayPropertiesArray.count)")
