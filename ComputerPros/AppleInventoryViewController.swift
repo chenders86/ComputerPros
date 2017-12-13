@@ -13,27 +13,26 @@ import ReachabilitySwift
 class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let appleRef = Database.database().reference().child("Computers").child("Apple")
-    var activityIndicator: UIActivityIndicatorView!
     let reachability = Reachability()!
     var computerDisplayPropertiesArray = [ComputerDisplayProperties]()
     
     @IBOutlet weak var tableView: UITableView!
     
+    lazy var activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView()
+        indicator.activityIndicatorViewStyle = .gray
+        indicator.hidesWhenStopped = true
+        indicator.center = CGPoint(x: (self.view.bounds.width / 2), y: ((tableView.center.y)))
+        return indicator
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         setNavBar()
+        self.view.addSubview(activityIndicator)
         navigationController?.navigationBar.tintColor = UIColor(hue: 0.5361111111, saturation: 1.30, brightness: 0.85, alpha: 1.0)
-        let aI: UIActivityIndicatorView = {
-            let indicator = UIActivityIndicatorView()
-            indicator.activityIndicatorViewStyle = .gray
-            indicator.hidesWhenStopped = true
-            indicator.center = CGPoint(x: (self.view.bounds.width / 2), y: ((tableView.center.y)))
-            return indicator
-        }()
-        activityIndicator = aI
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,7 +40,6 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
         checkConnectionStatus()
         setupFirebaseObservers()
         self.tabBarController?.tabBar.isHidden = false
-        print("Mac VA")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -99,28 +97,25 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
     
     private func fbChildAdded() {
 
-        self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         
         self.computerDisplayPropertiesArray.removeAll()
         
-       appleRef.observe(.childAdded, with: { (snapshot) in
+        appleRef.observe(.childAdded, with: { (snapshot) in
             if let dictionary = snapshot.value as? [String: AnyObject] {
                 let displayProperties = ComputerDisplayProperties()
                 displayProperties.nodeName = snapshot.key
                 displayProperties.displayName = dictionary["Name"] as? String
                 if let urlString = dictionary["ComputerImageURL"] as? String {
-                    DispatchQueue.global(qos: .userInteractive).async {
+                    DispatchQueue.main.async {
                         self.setImageWithCacheOrURL(urlString: urlString, displayProperties: displayProperties)
                         if let displayOrder = dictionary["DisplayOrder"] as? Int {
                             displayProperties.displayOrder = displayOrder
                             self.computerDisplayPropertiesArray.append(displayProperties)
-                            DispatchQueue.main.async {
-                                self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
-                                self.tableView.reloadData()
-                                self.activityIndicator.stopAnimating()
-                                print("Array count after addChild reloadData: \(self.computerDisplayPropertiesArray.count)")
-                            }
+                            self.computerDisplayPropertiesArray.sort(by: {$0.displayOrder! < $1.displayOrder!})
+                            self.tableView.reloadData()
+                            self.activityIndicator.stopAnimating()
+                            print("Apple array count after addChild reloadData: \(self.computerDisplayPropertiesArray.count)")
                         }
                     }
                 }
@@ -182,14 +177,10 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func showAlert() {
-        
         let alert = UIAlertController(title: "Check Connection", message: "Unable to establish connection with server", preferredStyle: .alert)
-        
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
-        
     }
     
     func checkConnectionStatus() {
@@ -208,7 +199,6 @@ class AppleInventoryViewController: UIViewController, UITableViewDelegate, UITab
                 self.showAlert()
             }
         }
-        
         do {
             try reachability.startNotifier()
         } catch {

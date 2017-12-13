@@ -13,26 +13,26 @@ import ReachabilitySwift
 class PCInventoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let pcRef = Database.database().reference().child("Computers").child("PC")
-    var activityIndicator: UIActivityIndicatorView!
     let reachability = Reachability()!
     var computerDisplayPropertiesArray = [ComputerDisplayProperties]()
     
     @IBOutlet weak var tableView: UITableView!
+    
+    lazy var activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView()
+        indicator.activityIndicatorViewStyle = .gray
+        indicator.hidesWhenStopped = true
+        indicator.center = CGPoint(x: (self.view.bounds.width / 2), y: ((tableView.center.y)))
+        return indicator
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         setNavBar()
+        self.view.addSubview(activityIndicator)
         navigationController?.navigationBar.tintColor = UIColor(hue: 0.5361111111, saturation: 1.30, brightness: 0.85, alpha: 1.0)
-        let aI: UIActivityIndicatorView = {
-            let indicator = UIActivityIndicatorView()
-            indicator.activityIndicatorViewStyle = .gray
-            indicator.hidesWhenStopped = true
-            indicator.center = CGPoint(x: (self.view.bounds.width / 2), y: ((tableView.center.y)))
-            return indicator
-        }()
-        activityIndicator = aI
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +40,6 @@ class PCInventoryViewController: UIViewController, UITableViewDelegate, UITableV
         checkConnectionStatus()
         setupFirebaseObservers()
         self.tabBarController?.tabBar.isHidden = false
-        print("PC VA")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -98,7 +97,6 @@ class PCInventoryViewController: UIViewController, UITableViewDelegate, UITableV
     
     private func fbChildAdded() {
         
-        self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         
         self.computerDisplayPropertiesArray.removeAll()
@@ -110,14 +108,13 @@ class PCInventoryViewController: UIViewController, UITableViewDelegate, UITableV
                 displayProperties.nodeName = snapshot.key
                 displayProperties.displayName = dictionary["Name"] as? String
                 if let urlString = dictionary["DetailedImageURL"] as? String {
-                    DispatchQueue.global(qos: .userInteractive).async {
+                    DispatchQueue.main.async {
                         self.setImageWithCacheOrURL(urlString: urlString, displayProperties: displayProperties)
-                        DispatchQueue.main.async {
-                            self.computerDisplayPropertiesArray.append(displayProperties)
-                            self.computerDisplayPropertiesArray.sort(by: {$0.displayName! < $1.displayName!})
-                            self.tableView.reloadData()
-                            self.activityIndicator.stopAnimating()
-                        }
+                        self.computerDisplayPropertiesArray.append(displayProperties)
+                        self.computerDisplayPropertiesArray.sort(by: {$0.displayName! < $1.displayName!})
+                        self.tableView.reloadData()
+                        self.activityIndicator.stopAnimating()
+                        print("PC array count after addChild reloadData: \(self.computerDisplayPropertiesArray.count)")
                     }
                 }
             }
@@ -169,7 +166,6 @@ class PCInventoryViewController: UIViewController, UITableViewDelegate, UITableV
                 self.showAlert()
             }
         }
-        
         do {
             try reachability.startNotifier()
         } catch {

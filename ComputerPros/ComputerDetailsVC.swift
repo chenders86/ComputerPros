@@ -16,6 +16,7 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
         super.viewDidLoad()
         fetchComputerDetails()
         self.flowLayout.minimumLineSpacing = 16
+        self.flowLayout.collectionView?.alwaysBounceVertical = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +34,6 @@ class ComputerDetailsVC: UICollectionViewController, UICollectionViewDelegateFlo
     let itemsPerRow: CGFloat = 1
     
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
-    
     
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
