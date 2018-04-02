@@ -1,0 +1,321 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PCTableViewCell"
+provides-nominal:
+- "12ComputerPros15PCTableViewCellC"
+provides-member:
+- ["12ComputerPros15PCTableViewCellC", ""]
+provides-dynamic-lookup:
+- "computerImage"
+- "computerName"
+depends-top-level:
+- "AssignmentPrecedence"
+- "ComputerDisplayProperties"
+- "PCTableViewCell"
+- "UIImageView"
+- "UILabel"
+- "UITableViewCell"
+depends-member:
+- !private ["So15CALayerDelegateP", "computerImage"]
+- !private ["So15CALayerDelegateP", "computerName"]
+- !private ["So15CALayerDelegateP", "displayInfo"]
+- !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "text"]
+- ["So15CALayerDelegateP", ""]
+- !private ["s7CVarArgP", "computerImage"]
+- !private ["s7CVarArgP", "computerName"]
+- !private ["s7CVarArgP", "displayInfo"]
+- !private ["s7CVarArgP", "displayName"]
+- !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "text"]
+- ["s7CVarArgP", ""]
+- !private ["12ComputerPros0A17DisplayPropertiesC", "computerImage"]
+- !private ["12ComputerPros0A17DisplayPropertiesC", "displayName"]
+- !private ["s28CustomDebugStringConvertibleP", "computerImage"]
+- !private ["s28CustomDebugStringConvertibleP", "computerName"]
+- !private ["s28CustomDebugStringConvertibleP", "displayInfo"]
+- !private ["s28CustomDebugStringConvertibleP", "displayName"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "computerImage"]
+- !private ["s23CustomStringConvertibleP", "computerName"]
+- !private ["s23CustomStringConvertibleP", "displayInfo"]
+- !private ["s23CustomStringConvertibleP", "displayName"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "computerImage"]
+- !private ["s9EquatableP", "computerName"]
+- !private ["s9EquatableP", "displayInfo"]
+- !private ["s9EquatableP", "displayName"]
+- !private ["s9EquatableP", "image"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "text"]
+- ["s9EquatableP", ""]
+- !private ["s8HashableP", "computerImage"]
+- !private ["s8HashableP", "computerName"]
+- !private ["s8HashableP", "displayInfo"]
+- !private ["s8HashableP", "displayName"]
+- !private ["s8HashableP", "image"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "text"]
+- ["s8HashableP", ""]
+- !private ["So8NSCodingP", "computerImage"]
+- !private ["So8NSCodingP", "computerName"]
+- !private ["So8NSCodingP", "displayInfo"]
+- !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "text"]
+- ["So8NSCodingP", ""]
+- ["So8NSObjectC", "ComputerDisplayProperties"]
+- ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "computerImage"]
+- ["So8NSObjectC", "computerName"]
+- ["So8NSObjectC", "displayInfo"]
+- !private ["So8NSObjectC", "displayName"]
+- !private ["So8NSObjectC", "image"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So16NSObjectProtocolP", "computerImage"]
+- !private ["So16NSObjectProtocolP", "computerName"]
+- !private ["So16NSObjectProtocolP", "displayInfo"]
+- !private ["So16NSObjectProtocolP", "displayName"]
+- !private ["So16NSObjectProtocolP", "image"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "text"]
+- ["So16NSObjectProtocolP", ""]
+- ["12ComputerPros15PCTableViewCellC", "ComputerDisplayProperties"]
+- ["12ComputerPros15PCTableViewCellC", "UIImageView"]
+- ["12ComputerPros15PCTableViewCellC", "UILabel"]
+- ["12ComputerPros15PCTableViewCellC", "computerImage"]
+- ["12ComputerPros15PCTableViewCellC", "computerName"]
+- ["12ComputerPros15PCTableViewCellC", "deinit"]
+- ["12ComputerPros15PCTableViewCellC", "displayInfo"]
+- ["12ComputerPros15PCTableViewCellC", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "computerImage"]
+- !private ["So29UIAccessibilityIdentificationP", "computerName"]
+- !private ["So29UIAccessibilityIdentificationP", "displayInfo"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So12UIAppearanceP", "computerImage"]
+- !private ["So12UIAppearanceP", "computerName"]
+- !private ["So12UIAppearanceP", "displayInfo"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "text"]
+- ["So12UIAppearanceP", ""]
+- !private ["So21UIAppearanceContainerP", "computerImage"]
+- !private ["So21UIAppearanceContainerP", "computerName"]
+- !private ["So21UIAppearanceContainerP", "displayInfo"]
+- !private ["So21UIAppearanceContainerP", "image"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "computerImage"]
+- !private ["So17UICoordinateSpaceP", "computerName"]
+- !private ["So17UICoordinateSpaceP", "displayInfo"]
+- !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So13UIDynamicItemP", "computerImage"]
+- !private ["So13UIDynamicItemP", "computerName"]
+- !private ["So13UIDynamicItemP", "displayInfo"]
+- !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "text"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So18UIFocusEnvironmentP", "computerImage"]
+- !private ["So18UIFocusEnvironmentP", "computerName"]
+- !private ["So18UIFocusEnvironmentP", "displayInfo"]
+- !private ["So18UIFocusEnvironmentP", "image"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "computerImage"]
+- !private ["So11UIFocusItemP", "computerName"]
+- !private ["So11UIFocusItemP", "displayInfo"]
+- !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "text"]
+- ["So11UIFocusItemP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "computerImage"]
+- !private ["So27UIGestureRecognizerDelegateP", "computerName"]
+- !private ["So27UIGestureRecognizerDelegateP", "displayInfo"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So11UIImageViewC", "image"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "computerImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "computerName"]
+- !private ["So30UIPasteConfigurationSupportingP", "displayInfo"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "ComputerDisplayProperties"]
+- ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "computerImage"]
+- ["So11UIResponderC", "computerName"]
+- ["So11UIResponderC", "displayInfo"]
+- !private ["So11UIResponderC", "image"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "computerImage"]
+- !private ["So30UIResponderStandardEditActionsP", "computerName"]
+- !private ["So30UIResponderStandardEditActionsP", "displayInfo"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- ["So15UITableViewCellC", "ComputerDisplayProperties"]
+- ["So15UITableViewCellC", "UIImageView"]
+- ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", "computerImage"]
+- ["So15UITableViewCellC", "computerName"]
+- ["So15UITableViewCellC", "displayInfo"]
+- ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", ""]
+- !private ["So18UITraitEnvironmentP", "computerImage"]
+- !private ["So18UITraitEnvironmentP", "computerName"]
+- !private ["So18UITraitEnvironmentP", "displayInfo"]
+- !private ["So18UITraitEnvironmentP", "image"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So6UIViewC", "ComputerDisplayProperties"]
+- ["So6UIViewC", "UIImageView"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "computerImage"]
+- ["So6UIViewC", "computerName"]
+- ["So6UIViewC", "displayInfo"]
+- !private ["So6UIViewC", "image"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "computerImage"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "computerName"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "displayInfo"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "computerImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "computerName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "displayInfo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "displayName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+depends-nominal:
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "12ComputerPros0A17DisplayPropertiesC"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "12ComputerPros15PCTableViewCellC"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So27UIGestureRecognizerDelegateP"
+- !private "So11UIImageViewC"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So15UITableViewCellC"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Modules/ReachabilitySwift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Headers/ReachabilitySwift-umbrella.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Headers/ReachabilitySwift-Swift.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Modules/module.modulemap"
+interface-hash: "6b27b877b166c57dfaba65472a677336"

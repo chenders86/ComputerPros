@@ -8,6 +8,7 @@
 
 import CoreData
 import UIKit
+import LocalAuthentication
 
 class AccountsViewController: CoreDataTableViewController {
     

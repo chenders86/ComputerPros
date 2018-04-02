@@ -1,0 +1,302 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MenuCellSettings"
+- "MenuCellName"
+- "ControllerIdentifier"
+provides-nominal:
+- "12ComputerPros16MenuCellSettingsC"
+- "12ComputerPros12MenuCellNameO"
+- "12ComputerPros20ControllerIdentifierO"
+provides-member:
+- ["12ComputerPros16MenuCellSettingsC", ""]
+- ["12ComputerPros12MenuCellNameO", ""]
+- ["12ComputerPros20ControllerIdentifierO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "AssignmentPrecedence"
+- "ControllerIdentifier"
+- "MenuCellName"
+- "MenuCellSettings"
+- "NSObject"
+- "String"
+- "StringLiteralType"
+- !private "~="
+depends-member:
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s13BinaryIntegerP", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "hashValue"]
+- !private ["s7CVarArgP", "imageName"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "name"]
+- ["s7CVarArgP", ""]
+- ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "hashValue"]
+- ["s10ComparableP", "init"]
+- ["12ComputerPros20ControllerIdentifierO", "ContactVC"]
+- ["12ComputerPros20ControllerIdentifierO", "InventoryVC"]
+- ["12ComputerPros20ControllerIdentifierO", "PassWordVC"]
+- ["12ComputerPros20ControllerIdentifierO", "ProCareVC"]
+- ["12ComputerPros20ControllerIdentifierO", "RawValue"]
+- ["12ComputerPros20ControllerIdentifierO", "WebVC"]
+- ["12ComputerPros20ControllerIdentifierO", "deinit"]
+- ["12ComputerPros20ControllerIdentifierO", "hashValue"]
+- ["12ComputerPros20ControllerIdentifierO", "init"]
+- ["12ComputerPros20ControllerIdentifierO", "rawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "imageName"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "imageName"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "hashValue"]
+- ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "hashValue"]
+- ["s9EncodableP", "init"]
+- ["s9EquatableP", "RawValue"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- ["s9EquatableP", "hashValue"]
+- !private ["s9EquatableP", "imageName"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "name"]
+- ["s9EquatableP", "rawValue"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
+- ["s8HashableP", "RawValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- ["s8HashableP", "hashValue"]
+- !private ["s8HashableP", "imageName"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "name"]
+- ["s8HashableP", "rawValue"]
+- ["s8HashableP", ""]
+- !private ["Si", "hashValue"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["12ComputerPros12MenuCellNameO", "Contact"]
+- ["12ComputerPros12MenuCellNameO", "Home"]
+- ["12ComputerPros12MenuCellNameO", "Inventory"]
+- ["12ComputerPros12MenuCellNameO", "Onsite"]
+- ["12ComputerPros12MenuCellNameO", "Password"]
+- ["12ComputerPros12MenuCellNameO", "ProCare"]
+- ["12ComputerPros12MenuCellNameO", "RawValue"]
+- ["12ComputerPros12MenuCellNameO", "deinit"]
+- ["12ComputerPros12MenuCellNameO", "hashValue"]
+- ["12ComputerPros12MenuCellNameO", "init"]
+- ["12ComputerPros12MenuCellNameO", "rawValue"]
+- ["12ComputerPros16MenuCellSettingsC", "MenuCellName"]
+- ["12ComputerPros16MenuCellSettingsC", "String"]
+- ["12ComputerPros16MenuCellSettingsC", "deinit"]
+- ["12ComputerPros16MenuCellSettingsC", "imageName"]
+- ["12ComputerPros16MenuCellSettingsC", "init"]
+- ["12ComputerPros16MenuCellSettingsC", "name"]
+- !private ["s10MirrorPathP", "hashValue"]
+- ["s10MirrorPathP", "init"]
+- ["So8NSCodingP", "init"]
+- ["So9NSCopyingP", "init"]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "MenuCellName"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "imageName"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "name"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "imageName"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "name"]
+- ["So16NSObjectProtocolP", ""]
+- ["So14NSSecureCodingP", "init"]
+- ["So8NSStringC", "init"]
+- !private ["s7NumericP", "hashValue"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "RawValue"]
+- ["s16RawRepresentableP", "hashValue"]
+- ["s16RawRepresentableP", "init"]
+- ["s16RawRepresentableP", "rawValue"]
+- ["s16RawRepresentableP", ""]
+- ["s8SequenceP", "init"]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "hashValue"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageName"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "hashValue"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "12ComputerPros20ControllerIdentifierO"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "Si"
+- "s25LosslessStringConvertibleP"
+- "12ComputerPros12MenuCellNameO"
+- "12ComputerPros16MenuCellSettingsC"
+- "s10MirrorPathP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- !private "s7NumericP"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Modules/ReachabilitySwift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Headers/ReachabilitySwift-umbrella.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Headers/ReachabilitySwift-Swift.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Modules/module.modulemap"
+interface-hash: "b16afd6cd292ba1d0d43c7ca0911669b"

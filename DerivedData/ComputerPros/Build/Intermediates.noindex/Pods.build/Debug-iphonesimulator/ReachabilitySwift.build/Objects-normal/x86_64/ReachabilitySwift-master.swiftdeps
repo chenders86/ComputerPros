@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "07ffb59816af424680f550cc43070242"
+build_time: [1522296408, 477154000]
+inputs:
+  "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/ReachabilitySwift/Reachability/Reachability.swift": [1501728094, 0]

@@ -1,0 +1,788 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ComputerDetailsCell"
+provides-nominal:
+- "12ComputerPros0A11DetailsCellC"
+provides-member:
+- ["12ComputerPros0A11DetailsCellC", ""]
+provides-dynamic-lookup:
+- "colorLabel"
+- "computerImageView"
+- "nameLabel"
+- "priceLabel"
+- "processorLabel"
+- "quantityLabel"
+- "ramLabel"
+- "storageLabel"
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "ComputerDetailsCell"
+- "DetailedComputerInfo"
+- !private "StringLiteralType"
+- "UICollectionViewCell"
+- !private "UIColor"
+- "UIImageView"
+- "UILabel"
+- !private "UnicodeScalarType"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "UIColor"]
+- !private ["So15CALayerDelegateP", "checkQuantity"]
+- !private ["So15CALayerDelegateP", "colorLabel"]
+- !private ["So15CALayerDelegateP", "computerImageView"]
+- !private ["So15CALayerDelegateP", "detailedComputerInfo"]
+- !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "nameLabel"]
+- !private ["So15CALayerDelegateP", "priceLabel"]
+- !private ["So15CALayerDelegateP", "processorLabel"]
+- !private ["So15CALayerDelegateP", "quantityLabel"]
+- !private ["So15CALayerDelegateP", "ramLabel"]
+- !private ["So15CALayerDelegateP", "setOptionalText"]
+- !private ["So15CALayerDelegateP", "storageLabel"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "textColor"]
+- ["So15CALayerDelegateP", ""]
+- !private ["s7CVarArgP", "Color"]
+- !private ["s7CVarArgP", "ComputerImage"]
+- !private ["s7CVarArgP", "Name"]
+- !private ["s7CVarArgP", "Price"]
+- !private ["s7CVarArgP", "Processor"]
+- !private ["s7CVarArgP", "Quantity"]
+- !private ["s7CVarArgP", "RAM"]
+- !private ["s7CVarArgP", "Storage"]
+- !private ["s7CVarArgP", "UIColor"]
+- !private ["s7CVarArgP", "blue"]
+- !private ["s7CVarArgP", "checkQuantity"]
+- !private ["s7CVarArgP", "colorLabel"]
+- !private ["s7CVarArgP", "computerImageView"]
+- !private ["s7CVarArgP", "detailedComputerInfo"]
+- !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "nameLabel"]
+- !private ["s7CVarArgP", "orange"]
+- !private ["s7CVarArgP", "priceLabel"]
+- !private ["s7CVarArgP", "processorLabel"]
+- !private ["s7CVarArgP", "quantityLabel"]
+- !private ["s7CVarArgP", "ramLabel"]
+- !private ["s7CVarArgP", "red"]
+- !private ["s7CVarArgP", "setOptionalText"]
+- !private ["s7CVarArgP", "storageLabel"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "textColor"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- ["12ComputerPros0A11DetailsCellC", "DetailedComputerInfo"]
+- !private ["12ComputerPros0A11DetailsCellC", "UIColor"]
+- ["12ComputerPros0A11DetailsCellC", "UIImageView"]
+- ["12ComputerPros0A11DetailsCellC", "UILabel"]
+- !private ["12ComputerPros0A11DetailsCellC", "checkQuantity"]
+- ["12ComputerPros0A11DetailsCellC", "colorLabel"]
+- ["12ComputerPros0A11DetailsCellC", "computerImageView"]
+- ["12ComputerPros0A11DetailsCellC", "deinit"]
+- ["12ComputerPros0A11DetailsCellC", "detailedComputerInfo"]
+- ["12ComputerPros0A11DetailsCellC", "init"]
+- ["12ComputerPros0A11DetailsCellC", "nameLabel"]
+- ["12ComputerPros0A11DetailsCellC", "priceLabel"]
+- ["12ComputerPros0A11DetailsCellC", "processorLabel"]
+- ["12ComputerPros0A11DetailsCellC", "quantityLabel"]
+- ["12ComputerPros0A11DetailsCellC", "ramLabel"]
+- !private ["12ComputerPros0A11DetailsCellC", "setOptionalText"]
+- ["12ComputerPros0A11DetailsCellC", "storageLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "Color"]
+- !private ["s28CustomDebugStringConvertibleP", "ComputerImage"]
+- !private ["s28CustomDebugStringConvertibleP", "Name"]
+- !private ["s28CustomDebugStringConvertibleP", "Price"]
+- !private ["s28CustomDebugStringConvertibleP", "Processor"]
+- !private ["s28CustomDebugStringConvertibleP", "Quantity"]
+- !private ["s28CustomDebugStringConvertibleP", "RAM"]
+- !private ["s28CustomDebugStringConvertibleP", "Storage"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "blue"]
+- !private ["s28CustomDebugStringConvertibleP", "checkQuantity"]
+- !private ["s28CustomDebugStringConvertibleP", "colorLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "computerImageView"]
+- !private ["s28CustomDebugStringConvertibleP", "detailedComputerInfo"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "nameLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "orange"]
+- !private ["s28CustomDebugStringConvertibleP", "priceLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "processorLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "quantityLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "ramLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "red"]
+- !private ["s28CustomDebugStringConvertibleP", "setOptionalText"]
+- !private ["s28CustomDebugStringConvertibleP", "storageLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "textColor"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Color"]
+- !private ["s23CustomStringConvertibleP", "ComputerImage"]
+- !private ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "Price"]
+- !private ["s23CustomStringConvertibleP", "Processor"]
+- !private ["s23CustomStringConvertibleP", "Quantity"]
+- !private ["s23CustomStringConvertibleP", "RAM"]
+- !private ["s23CustomStringConvertibleP", "Storage"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "blue"]
+- !private ["s23CustomStringConvertibleP", "checkQuantity"]
+- !private ["s23CustomStringConvertibleP", "colorLabel"]
+- !private ["s23CustomStringConvertibleP", "computerImageView"]
+- !private ["s23CustomStringConvertibleP", "detailedComputerInfo"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "nameLabel"]
+- !private ["s23CustomStringConvertibleP", "orange"]
+- !private ["s23CustomStringConvertibleP", "priceLabel"]
+- !private ["s23CustomStringConvertibleP", "processorLabel"]
+- !private ["s23CustomStringConvertibleP", "quantityLabel"]
+- !private ["s23CustomStringConvertibleP", "ramLabel"]
+- !private ["s23CustomStringConvertibleP", "red"]
+- !private ["s23CustomStringConvertibleP", "setOptionalText"]
+- !private ["s23CustomStringConvertibleP", "storageLabel"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "textColor"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["12ComputerPros08DetailedA4InfoC", "Color"]
+- !private ["12ComputerPros08DetailedA4InfoC", "ComputerImage"]
+- !private ["12ComputerPros08DetailedA4InfoC", "Name"]
+- !private ["12ComputerPros08DetailedA4InfoC", "Price"]
+- !private ["12ComputerPros08DetailedA4InfoC", "Processor"]
+- !private ["12ComputerPros08DetailedA4InfoC", "Quantity"]
+- !private ["12ComputerPros08DetailedA4InfoC", "RAM"]
+- !private ["12ComputerPros08DetailedA4InfoC", "Storage"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Color"]
+- !private ["s9EquatableP", "ComputerImage"]
+- !private ["s9EquatableP", "Name"]
+- !private ["s9EquatableP", "Price"]
+- !private ["s9EquatableP", "Processor"]
+- !private ["s9EquatableP", "Quantity"]
+- !private ["s9EquatableP", "RAM"]
+- !private ["s9EquatableP", "Storage"]
+- !private ["s9EquatableP", "UIColor"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "blue"]
+- !private ["s9EquatableP", "checkQuantity"]
+- !private ["s9EquatableP", "colorLabel"]
+- !private ["s9EquatableP", "computerImageView"]
+- !private ["s9EquatableP", "detailedComputerInfo"]
+- !private ["s9EquatableP", "image"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "nameLabel"]
+- !private ["s9EquatableP", "orange"]
+- !private ["s9EquatableP", "priceLabel"]
+- !private ["s9EquatableP", "processorLabel"]
+- !private ["s9EquatableP", "quantityLabel"]
+- !private ["s9EquatableP", "ramLabel"]
+- !private ["s9EquatableP", "red"]
+- !private ["s9EquatableP", "setOptionalText"]
+- !private ["s9EquatableP", "storageLabel"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "textColor"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "Color"]
+- !private ["s8HashableP", "ComputerImage"]
+- !private ["s8HashableP", "Name"]
+- !private ["s8HashableP", "Price"]
+- !private ["s8HashableP", "Processor"]
+- !private ["s8HashableP", "Quantity"]
+- !private ["s8HashableP", "RAM"]
+- !private ["s8HashableP", "Storage"]
+- !private ["s8HashableP", "UIColor"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "blue"]
+- !private ["s8HashableP", "checkQuantity"]
+- !private ["s8HashableP", "colorLabel"]
+- !private ["s8HashableP", "computerImageView"]
+- !private ["s8HashableP", "detailedComputerInfo"]
+- !private ["s8HashableP", "image"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "nameLabel"]
+- !private ["s8HashableP", "orange"]
+- !private ["s8HashableP", "priceLabel"]
+- !private ["s8HashableP", "processorLabel"]
+- !private ["s8HashableP", "quantityLabel"]
+- !private ["s8HashableP", "ramLabel"]
+- !private ["s8HashableP", "red"]
+- !private ["s8HashableP", "setOptionalText"]
+- !private ["s8HashableP", "storageLabel"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "textColor"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "UIColor"]
+- !private ["So8NSCodingP", "blue"]
+- !private ["So8NSCodingP", "checkQuantity"]
+- !private ["So8NSCodingP", "colorLabel"]
+- !private ["So8NSCodingP", "computerImageView"]
+- !private ["So8NSCodingP", "detailedComputerInfo"]
+- !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "nameLabel"]
+- !private ["So8NSCodingP", "orange"]
+- !private ["So8NSCodingP", "priceLabel"]
+- !private ["So8NSCodingP", "processorLabel"]
+- !private ["So8NSCodingP", "quantityLabel"]
+- !private ["So8NSCodingP", "ramLabel"]
+- !private ["So8NSCodingP", "red"]
+- !private ["So8NSCodingP", "setOptionalText"]
+- !private ["So8NSCodingP", "storageLabel"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "textColor"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "blue"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "orange"]
+- !private ["So9NSCopyingP", "red"]
+- !private ["So21NSItemProviderReadingP", "blue"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "orange"]
+- !private ["So21NSItemProviderReadingP", "red"]
+- !private ["So21NSItemProviderWritingP", "blue"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "orange"]
+- !private ["So21NSItemProviderWritingP", "red"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "Color"]
+- !private ["So8NSObjectC", "ComputerImage"]
+- ["So8NSObjectC", "DetailedComputerInfo"]
+- !private ["So8NSObjectC", "Name"]
+- !private ["So8NSObjectC", "Price"]
+- !private ["So8NSObjectC", "Processor"]
+- !private ["So8NSObjectC", "Quantity"]
+- !private ["So8NSObjectC", "RAM"]
+- !private ["So8NSObjectC", "Storage"]
+- !private ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UILabel"]
+- !private ["So8NSObjectC", "blue"]
+- ["So8NSObjectC", "checkQuantity"]
+- ["So8NSObjectC", "colorLabel"]
+- ["So8NSObjectC", "computerImageView"]
+- ["So8NSObjectC", "detailedComputerInfo"]
+- !private ["So8NSObjectC", "image"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "nameLabel"]
+- !private ["So8NSObjectC", "orange"]
+- ["So8NSObjectC", "priceLabel"]
+- ["So8NSObjectC", "processorLabel"]
+- ["So8NSObjectC", "quantityLabel"]
+- ["So8NSObjectC", "ramLabel"]
+- !private ["So8NSObjectC", "red"]
+- ["So8NSObjectC", "setOptionalText"]
+- ["So8NSObjectC", "storageLabel"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "textColor"]
+- !private ["So16NSObjectProtocolP", "Color"]
+- !private ["So16NSObjectProtocolP", "ComputerImage"]
+- !private ["So16NSObjectProtocolP", "Name"]
+- !private ["So16NSObjectProtocolP", "Price"]
+- !private ["So16NSObjectProtocolP", "Processor"]
+- !private ["So16NSObjectProtocolP", "Quantity"]
+- !private ["So16NSObjectProtocolP", "RAM"]
+- !private ["So16NSObjectProtocolP", "Storage"]
+- !private ["So16NSObjectProtocolP", "UIColor"]
+- !private ["So16NSObjectProtocolP", "blue"]
+- !private ["So16NSObjectProtocolP", "checkQuantity"]
+- !private ["So16NSObjectProtocolP", "colorLabel"]
+- !private ["So16NSObjectProtocolP", "computerImageView"]
+- !private ["So16NSObjectProtocolP", "detailedComputerInfo"]
+- !private ["So16NSObjectProtocolP", "image"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "nameLabel"]
+- !private ["So16NSObjectProtocolP", "orange"]
+- !private ["So16NSObjectProtocolP", "priceLabel"]
+- !private ["So16NSObjectProtocolP", "processorLabel"]
+- !private ["So16NSObjectProtocolP", "quantityLabel"]
+- !private ["So16NSObjectProtocolP", "ramLabel"]
+- !private ["So16NSObjectProtocolP", "red"]
+- !private ["So16NSObjectProtocolP", "setOptionalText"]
+- !private ["So16NSObjectProtocolP", "storageLabel"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "textColor"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "blue"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "orange"]
+- !private ["So14NSSecureCodingP", "red"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "UIColor"]
+- !private ["So29UIAccessibilityIdentificationP", "checkQuantity"]
+- !private ["So29UIAccessibilityIdentificationP", "colorLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "computerImageView"]
+- !private ["So29UIAccessibilityIdentificationP", "detailedComputerInfo"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "nameLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "priceLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "processorLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "quantityLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "ramLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "setOptionalText"]
+- !private ["So29UIAccessibilityIdentificationP", "storageLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "textColor"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So12UIAppearanceP", "UIColor"]
+- !private ["So12UIAppearanceP", "checkQuantity"]
+- !private ["So12UIAppearanceP", "colorLabel"]
+- !private ["So12UIAppearanceP", "computerImageView"]
+- !private ["So12UIAppearanceP", "detailedComputerInfo"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "nameLabel"]
+- !private ["So12UIAppearanceP", "priceLabel"]
+- !private ["So12UIAppearanceP", "processorLabel"]
+- !private ["So12UIAppearanceP", "quantityLabel"]
+- !private ["So12UIAppearanceP", "ramLabel"]
+- !private ["So12UIAppearanceP", "setOptionalText"]
+- !private ["So12UIAppearanceP", "storageLabel"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "textColor"]
+- ["So12UIAppearanceP", ""]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
+- !private ["So21UIAppearanceContainerP", "checkQuantity"]
+- !private ["So21UIAppearanceContainerP", "colorLabel"]
+- !private ["So21UIAppearanceContainerP", "computerImageView"]
+- !private ["So21UIAppearanceContainerP", "detailedComputerInfo"]
+- !private ["So21UIAppearanceContainerP", "image"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "nameLabel"]
+- !private ["So21UIAppearanceContainerP", "priceLabel"]
+- !private ["So21UIAppearanceContainerP", "processorLabel"]
+- !private ["So21UIAppearanceContainerP", "quantityLabel"]
+- !private ["So21UIAppearanceContainerP", "ramLabel"]
+- !private ["So21UIAppearanceContainerP", "setOptionalText"]
+- !private ["So21UIAppearanceContainerP", "storageLabel"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "textColor"]
+- ["So21UIAppearanceContainerP", ""]
+- ["So24UICollectionReusableViewC", "DetailedComputerInfo"]
+- !private ["So24UICollectionReusableViewC", "UIColor"]
+- ["So24UICollectionReusableViewC", "UIImageView"]
+- ["So24UICollectionReusableViewC", "UILabel"]
+- ["So24UICollectionReusableViewC", "checkQuantity"]
+- ["So24UICollectionReusableViewC", "colorLabel"]
+- ["So24UICollectionReusableViewC", "computerImageView"]
+- ["So24UICollectionReusableViewC", "detailedComputerInfo"]
+- ["So24UICollectionReusableViewC", "init"]
+- ["So24UICollectionReusableViewC", "nameLabel"]
+- ["So24UICollectionReusableViewC", "priceLabel"]
+- ["So24UICollectionReusableViewC", "processorLabel"]
+- ["So24UICollectionReusableViewC", "quantityLabel"]
+- ["So24UICollectionReusableViewC", "ramLabel"]
+- ["So24UICollectionReusableViewC", "setOptionalText"]
+- ["So24UICollectionReusableViewC", "storageLabel"]
+- ["So20UICollectionViewCellC", "DetailedComputerInfo"]
+- !private ["So20UICollectionViewCellC", "UIColor"]
+- ["So20UICollectionViewCellC", "UIImageView"]
+- ["So20UICollectionViewCellC", "UILabel"]
+- ["So20UICollectionViewCellC", "checkQuantity"]
+- ["So20UICollectionViewCellC", "colorLabel"]
+- ["So20UICollectionViewCellC", "computerImageView"]
+- ["So20UICollectionViewCellC", "detailedComputerInfo"]
+- ["So20UICollectionViewCellC", "init"]
+- ["So20UICollectionViewCellC", "nameLabel"]
+- ["So20UICollectionViewCellC", "priceLabel"]
+- ["So20UICollectionViewCellC", "processorLabel"]
+- ["So20UICollectionViewCellC", "quantityLabel"]
+- ["So20UICollectionViewCellC", "ramLabel"]
+- ["So20UICollectionViewCellC", "setOptionalText"]
+- ["So20UICollectionViewCellC", "storageLabel"]
+- ["So20UICollectionViewCellC", ""]
+- !private ["So7UIColorC", "blue"]
+- !private ["So7UIColorC", "orange"]
+- !private ["So7UIColorC", "red"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "textColor"]
+- !private ["So17UICoordinateSpaceP", "UIColor"]
+- !private ["So17UICoordinateSpaceP", "checkQuantity"]
+- !private ["So17UICoordinateSpaceP", "colorLabel"]
+- !private ["So17UICoordinateSpaceP", "computerImageView"]
+- !private ["So17UICoordinateSpaceP", "detailedComputerInfo"]
+- !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "nameLabel"]
+- !private ["So17UICoordinateSpaceP", "priceLabel"]
+- !private ["So17UICoordinateSpaceP", "processorLabel"]
+- !private ["So17UICoordinateSpaceP", "quantityLabel"]
+- !private ["So17UICoordinateSpaceP", "ramLabel"]
+- !private ["So17UICoordinateSpaceP", "setOptionalText"]
+- !private ["So17UICoordinateSpaceP", "storageLabel"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "textColor"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So13UIDynamicItemP", "UIColor"]
+- !private ["So13UIDynamicItemP", "checkQuantity"]
+- !private ["So13UIDynamicItemP", "colorLabel"]
+- !private ["So13UIDynamicItemP", "computerImageView"]
+- !private ["So13UIDynamicItemP", "detailedComputerInfo"]
+- !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "nameLabel"]
+- !private ["So13UIDynamicItemP", "priceLabel"]
+- !private ["So13UIDynamicItemP", "processorLabel"]
+- !private ["So13UIDynamicItemP", "quantityLabel"]
+- !private ["So13UIDynamicItemP", "ramLabel"]
+- !private ["So13UIDynamicItemP", "setOptionalText"]
+- !private ["So13UIDynamicItemP", "storageLabel"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "textColor"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
+- !private ["So18UIFocusEnvironmentP", "checkQuantity"]
+- !private ["So18UIFocusEnvironmentP", "colorLabel"]
+- !private ["So18UIFocusEnvironmentP", "computerImageView"]
+- !private ["So18UIFocusEnvironmentP", "detailedComputerInfo"]
+- !private ["So18UIFocusEnvironmentP", "image"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "nameLabel"]
+- !private ["So18UIFocusEnvironmentP", "priceLabel"]
+- !private ["So18UIFocusEnvironmentP", "processorLabel"]
+- !private ["So18UIFocusEnvironmentP", "quantityLabel"]
+- !private ["So18UIFocusEnvironmentP", "ramLabel"]
+- !private ["So18UIFocusEnvironmentP", "setOptionalText"]
+- !private ["So18UIFocusEnvironmentP", "storageLabel"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "textColor"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "UIColor"]
+- !private ["So11UIFocusItemP", "checkQuantity"]
+- !private ["So11UIFocusItemP", "colorLabel"]
+- !private ["So11UIFocusItemP", "computerImageView"]
+- !private ["So11UIFocusItemP", "detailedComputerInfo"]
+- !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "nameLabel"]
+- !private ["So11UIFocusItemP", "priceLabel"]
+- !private ["So11UIFocusItemP", "processorLabel"]
+- !private ["So11UIFocusItemP", "quantityLabel"]
+- !private ["So11UIFocusItemP", "ramLabel"]
+- !private ["So11UIFocusItemP", "setOptionalText"]
+- !private ["So11UIFocusItemP", "storageLabel"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "textColor"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIImageViewC", "image"]
+- !private ["So7UILabelC", "text"]
+- !private ["So7UILabelC", "textColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "checkQuantity"]
+- !private ["So30UIPasteConfigurationSupportingP", "colorLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "computerImageView"]
+- !private ["So30UIPasteConfigurationSupportingP", "detailedComputerInfo"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "nameLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "priceLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "processorLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "quantityLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "ramLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "setOptionalText"]
+- !private ["So30UIPasteConfigurationSupportingP", "storageLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "textColor"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "DetailedComputerInfo"]
+- !private ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "checkQuantity"]
+- ["So11UIResponderC", "colorLabel"]
+- ["So11UIResponderC", "computerImageView"]
+- ["So11UIResponderC", "detailedComputerInfo"]
+- !private ["So11UIResponderC", "image"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "nameLabel"]
+- ["So11UIResponderC", "priceLabel"]
+- ["So11UIResponderC", "processorLabel"]
+- ["So11UIResponderC", "quantityLabel"]
+- ["So11UIResponderC", "ramLabel"]
+- ["So11UIResponderC", "setOptionalText"]
+- ["So11UIResponderC", "storageLabel"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So11UIResponderC", "textColor"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- !private ["So30UIResponderStandardEditActionsP", "checkQuantity"]
+- !private ["So30UIResponderStandardEditActionsP", "colorLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "computerImageView"]
+- !private ["So30UIResponderStandardEditActionsP", "detailedComputerInfo"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "nameLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "priceLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "processorLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "quantityLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "ramLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "setOptionalText"]
+- !private ["So30UIResponderStandardEditActionsP", "storageLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "textColor"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
+- !private ["So18UITraitEnvironmentP", "checkQuantity"]
+- !private ["So18UITraitEnvironmentP", "colorLabel"]
+- !private ["So18UITraitEnvironmentP", "computerImageView"]
+- !private ["So18UITraitEnvironmentP", "detailedComputerInfo"]
+- !private ["So18UITraitEnvironmentP", "image"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "nameLabel"]
+- !private ["So18UITraitEnvironmentP", "priceLabel"]
+- !private ["So18UITraitEnvironmentP", "processorLabel"]
+- !private ["So18UITraitEnvironmentP", "quantityLabel"]
+- !private ["So18UITraitEnvironmentP", "ramLabel"]
+- !private ["So18UITraitEnvironmentP", "setOptionalText"]
+- !private ["So18UITraitEnvironmentP", "storageLabel"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "textColor"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So6UIViewC", "DetailedComputerInfo"]
+- !private ["So6UIViewC", "UIColor"]
+- ["So6UIViewC", "UIImageView"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "checkQuantity"]
+- ["So6UIViewC", "colorLabel"]
+- ["So6UIViewC", "computerImageView"]
+- ["So6UIViewC", "detailedComputerInfo"]
+- !private ["So6UIViewC", "image"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "nameLabel"]
+- ["So6UIViewC", "priceLabel"]
+- ["So6UIViewC", "processorLabel"]
+- ["So6UIViewC", "quantityLabel"]
+- ["So6UIViewC", "ramLabel"]
+- ["So6UIViewC", "setOptionalText"]
+- ["So6UIViewC", "storageLabel"]
+- !private ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "textColor"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "checkQuantity"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "colorLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "computerImageView"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "detailedComputerInfo"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "nameLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "priceLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "processorLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "quantityLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "ramLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setOptionalText"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "storageLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "blue"]
+- !private ["s26_ExpressibleByColorLiteralP", "orange"]
+- !private ["s26_ExpressibleByColorLiteralP", "red"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Color"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ComputerImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Price"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Processor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Quantity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "RAM"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Storage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "blue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "checkQuantity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "colorLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "computerImageView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "detailedComputerInfo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "nameLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "orange"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "priceLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "processorLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "quantityLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ramLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "red"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setOptionalText"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "storageLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "12ComputerPros0A11DetailsCellC"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "12ComputerPros08DetailedA4InfoC"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So24UICollectionReusableViewC"
+- "So20UICollectionViewCellC"
+- !private "So7UIColorC"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- !private "So11UIImageViewC"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- !private "s23_BidirectionalIndexableP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Modules/ReachabilitySwift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Headers/ReachabilitySwift-umbrella.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Headers/ReachabilitySwift-Swift.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Modules/module.modulemap"
+interface-hash: "150525df98b37b3335cde6e2c7e5854b"

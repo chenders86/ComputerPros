@@ -9,7 +9,6 @@
 import CoreData
 
 
-
 struct CoreDataStack {
     
     // Properties
@@ -21,6 +20,8 @@ struct CoreDataStack {
     internal let persistingContext: NSManagedObjectContext
     internal let backgroundContext: NSManagedObjectContext
     let context: NSManagedObjectContext
+    
+    let options = [NSInferMappingModelAutomaticallyOption: true, NSMigratePersistentStoresAutomaticallyOption: true]
     
     
     // Initializer
@@ -60,7 +61,7 @@ struct CoreDataStack {
         // Add a SQLite store located in the documents folder (aka choosing file location to store data)
         let fm = FileManager.default
         
-        guard let docURL = fm.urls(for: .documentDirectory, in: .userDomainMask).first else { // Can we choose downloads folder instead?
+        guard let docURL = fm.urls(for: .documentDirectory, in: .userDomainMask).first else {
             print("Unable to reach documents folder")
             return nil
         }
@@ -68,7 +69,7 @@ struct CoreDataStack {
         self.dbURL = docURL.appendingPathComponent("model.sqlite")
         
         // Migration Options
-        let options = [NSInferMappingModelAutomaticallyOption: true, NSMigratePersistentStoresAutomaticallyOption: true]
+        // let options = [NSInferMappingModelAutomaticallyOption: true, NSMigratePersistentStoresAutomaticallyOption: true]
         
         do {
             try addStoreCoordinator(NSSQLiteStoreType, configuration: nil, storeURL: dbURL, options: options as [NSObject:AnyObject]?)
@@ -79,7 +80,7 @@ struct CoreDataStack {
     
     // Utilities
     func addStoreCoordinator(_ storeType: String, configuration: String?, storeURL: URL, options : [NSObject:AnyObject]?) throws {
-        try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: dbURL, options: options)
+        try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: options)
     }
     
     // Save function
@@ -111,7 +112,7 @@ struct CoreDataStack {
     func dropAllData() throws {
         // delete all the objects in the db.
         try coordinator.destroyPersistentStore(at: dbURL, ofType: NSSQLiteStoreType , options: nil)
-        try addStoreCoordinator(NSSQLiteStoreType, configuration: nil, storeURL: dbURL, options: nil)
+        try addStoreCoordinator(NSSQLiteStoreType, configuration: nil, storeURL: dbURL, options: options as [NSObject:AnyObject])
     }
     
     static func sharedInstance() -> CoreDataStack  {

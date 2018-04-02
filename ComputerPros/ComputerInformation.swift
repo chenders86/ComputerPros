@@ -1,5 +1,5 @@
 //
-//  ComputerInformationStruct.swift
+//  ComputerInformation.swift
 //  ComputerPros
 //
 //  Created by Casey Henderson on 7/17/17.

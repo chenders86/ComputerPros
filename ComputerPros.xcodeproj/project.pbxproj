@@ -28,7 +28,7 @@
 		C9567AEF1F267B4A003C2B43 /* PCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9567AEE1F267B4A003C2B43 /* PCTableViewCell.swift */; };
 		C956BCBE1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */; };
 		C956FBA21F1FC99100EEE896 /* AppleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956FBA11F1FC99100EEE896 /* AppleTableViewCell.swift */; };
-		C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E02241EFDD6CC004B28AC /* MenuSettings.swift */; };
+		C96E02251EFDD6CC004B28AC /* MenuCellSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E02241EFDD6CC004B28AC /* MenuCellSettings.swift */; };
 		C9830E121EE25BFE00F683D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */; };
 		C98EC1161FD796CC000BA450 /* AppleInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EC1151FD796CC000BA450 /* AppleInventoryViewController.swift */; };
 		C98EC1181FD7A54D000BA450 /* PCInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EC1171FD7A54D000BA450 /* PCInventoryViewController.swift */; };
@@ -69,7 +69,7 @@
 		C9567AEE1F267B4A003C2B43 /* PCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCTableViewCell.swift; sourceTree = "<group>"; };
 		C956BCBD1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCredentialsViewController.swift; sourceTree = "<group>"; };
 		C956FBA11F1FC99100EEE896 /* AppleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleTableViewCell.swift; sourceTree = "<group>"; };
-		C96E02241EFDD6CC004B28AC /* MenuSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSettings.swift; sourceTree = "<group>"; };
+		C96E02241EFDD6CC004B28AC /* MenuCellSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCellSettings.swift; sourceTree = "<group>"; };
 		C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C98EC1151FD796CC000BA450 /* AppleInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleInventoryViewController.swift; sourceTree = "<group>"; };
 		C98EC1171FD7A54D000BA450 /* PCInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCInventoryViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				C90E32BC1F0DEE4B00F92ABA /* Account+CoreDataProperties.swift */,
 				C90E32B91F0DEE4B00F92ABA /* LoginCredentials+CoreDataClass.swift */,
 				C90E32BA1F0DEE4B00F92ABA /* LoginCredentials+CoreDataProperties.swift */,
-				C96E02241EFDD6CC004B28AC /* MenuSettings.swift */,
+				C96E02241EFDD6CC004B28AC /* MenuCellSettings.swift */,
 				C9D064571F1DB2F0002E639C /* ComputerInformation.swift */,
 				C935F2171F0AD5CB007BC943 /* ComputerPros.xcdatamodeld */,
 			);
@@ -358,7 +358,7 @@
 				C956FBA21F1FC99100EEE896 /* AppleTableViewCell.swift in Sources */,
 				C90E32AF1F0DE8D700F92ABA /* CredentialsCell.swift in Sources */,
 				C935F2191F0AD5CB007BC943 /* ComputerPros.xcdatamodeld in Sources */,
-				C96E02251EFDD6CC004B28AC /* MenuSettings.swift in Sources */,
+				C96E02251EFDD6CC004B28AC /* MenuCellSettings.swift in Sources */,
 				C98EC1181FD7A54D000BA450 /* PCInventoryViewController.swift in Sources */,
 				C956BCBE1F0E8CFC00FA0A3B /* AddCredentialsViewController.swift in Sources */,
 				C90E32AD1F0DDD7D00F92ABA /* CredentialsViewController.swift in Sources */,
@@ -418,6 +418,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -473,6 +474,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -499,12 +501,15 @@
 			baseConfigurationReference = 955CFD9B22BCFC207174F64D /* Pods-ComputerPros.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMN9FE36G7;
 				INFOPLIST_FILE = ComputerPros/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CWH.ComputerPros;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -515,12 +520,15 @@
 			baseConfigurationReference = EC002E9DA19444530920D530 /* Pods-ComputerPros.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMN9FE36G7;
 				INFOPLIST_FILE = ComputerPros/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CWH.ComputerPros;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
