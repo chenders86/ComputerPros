@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ReachabilitySwift-Swift.h</key>
 		<data>
-		Y4oV8jvdUz0+ewuXscU3/2GP2YQ=
+		4JrMCLHUmbK4fkMAHsA2cTBapuE=
 		</data>
 		<key>Headers/ReachabilitySwift-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WwbKvtaAaqut5DXheBjUkVNLv3A=
+		xqbFiGa68X/YDNQQoSTM9c7VeHc=
 		</data>
 		<key>Modules/ReachabilitySwift.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		fooyYlbAqVSDppvSvvNIqOOZi2E=
+		w/51/N2bz1Hp3603vOVNhBt+i68=
 		</data>
 		<key>Modules/ReachabilitySwift.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		nzvLx4kIrSolKAJNz/iVpbxXbUU=
+		BTt4VP/RUvYkq1NcqtbJLU/xCkQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y4oV8jvdUz0+ewuXscU3/2GP2YQ=
+			4JrMCLHUmbK4fkMAHsA2cTBapuE=
 			</data>
 			<key>hash2</key>
 			<data>
-			e7KlwkU9Mz2Q2cXJiZhdAjDoojudl2S0Y7L0b35lEYM=
+			n07AnQ6fDi4JvXvjIFSPM00FtCGqo4Tpz6XcoPZuGtQ=
 			</data>
 		</dict>
 		<key>Headers/ReachabilitySwift-umbrella.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fooyYlbAqVSDppvSvvNIqOOZi2E=
+			w/51/N2bz1Hp3603vOVNhBt+i68=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pyt636d9ao7e0rQETnEoTnEDbB1JvaTbtiwkEwNHOrg=
+			fzoAo9vFNQhQET9zERjn1qA0iNMVXD+9FLBjEqXqDnE=
 			</data>
 		</dict>
 		<key>Modules/ReachabilitySwift.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nzvLx4kIrSolKAJNz/iVpbxXbUU=
+			BTt4VP/RUvYkq1NcqtbJLU/xCkQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			arY8/hYB1yMOywh4tFNv97G21iJ8/441YE/0EmMXg/s=
+			lxoRMfT7YSDmHxql/h/3jH57mEHFa7WAnb7Mu3Bxuck=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -34,6 +34,7 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So6BundleC", "main"]
 - !private ["So6BundleC", "url"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addPersistentStore"]
 - !private ["s7CVarArgP", "default"]
 - !private ["s7CVarArgP", "destroyPersistentStore"]
@@ -130,6 +131,7 @@ depends-member:
 - !private ["s9EquatableP", "default"]
 - !private ["s9EquatableP", "destroyPersistentStore"]
 - !private ["s9EquatableP", "documentDirectory"]
+- !private ["s9EquatableP", "first"]
 - !private ["s9EquatableP", "hasChanges"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "main"]
@@ -182,8 +184,6 @@ depends-member:
 - !private ["So8NSCodingP", "save"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So17NSFastEnumerationP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So9NSLockingP", "addPersistentStore"]
 - !private ["So9NSLockingP", "destroyPersistentStore"]
 - !private ["So9NSLockingP", "hasChanges"]
@@ -203,7 +203,6 @@ depends-member:
 - !private ["SC37NSManagedObjectContextConcurrencyTypeO", "mainQueueConcurrencyType"]
 - !private ["SC37NSManagedObjectContextConcurrencyTypeO", "privateQueueConcurrencyType"]
 - !private ["So20NSManagedObjectModelC", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "addPersistentStore"]
 - !private ["So8NSObjectC", "default"]
 - !private ["So8NSObjectC", "destroyPersistentStore"]
@@ -233,8 +232,6 @@ depends-member:
 - !private ["So28NSPersistentStoreCoordinatorC", "addPersistentStore"]
 - !private ["So28NSPersistentStoreCoordinatorC", "destroyPersistentStore"]
 - !private ["So28NSPersistentStoreCoordinatorC", "init"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["s9OptionSetP", "userDomainMask"]
 - !private ["s22RandomAccessCollectionP", "first"]
 - !private ["s26RangeReplaceableCollectionP", "first"]
@@ -256,8 +253,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["10Foundation3URLV", "appendingPathComponent"]
 - !private ["s14_ArrayProtocolP", "first"]
-- !private ["s23_BidirectionalIndexableP", "first"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "first"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -266,11 +261,6 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathComponent"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "first"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "first"]
-- !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addPersistentStore"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "destroyPersistentStore"]
@@ -284,14 +274,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "url"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "urls"]
-- !private ["s17_MutableIndexableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "appendingPathComponent"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "first"]
-- !private ["s26_RangeReplaceableIndexableP", "first"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
@@ -322,18 +308,13 @@ depends-nominal:
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So17NSFastEnumerationP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
 - !private "So9NSLockingP"
 - !private "So22NSManagedObjectContextC"
 - !private "SC37NSManagedObjectContextConcurrencyTypeO"
 - !private "So20NSManagedObjectModelC"
-- !private "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
 - !private "So16NSObjectProtocolP"
 - !private "So28NSPersistentStoreCoordinatorC"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "s9OptionSetP"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
@@ -350,7 +331,6 @@ depends-nominal:
 - !private "s20TextOutputStreamableP"
 - !private "10Foundation3URLV"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -359,14 +339,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -436,4 +410,17 @@ depends-external:
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Modules/module.modulemap"
-interface-hash: "b2ee46347615758f27f815ac98b688fc"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "64c09b05bb856998794a7e4e6aba697f"

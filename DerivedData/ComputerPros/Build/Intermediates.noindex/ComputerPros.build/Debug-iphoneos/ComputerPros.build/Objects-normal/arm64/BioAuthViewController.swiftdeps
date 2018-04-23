@@ -1,0 +1,461 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BioAuthViewController"
+provides-nominal:
+- "12ComputerPros21BioAuthViewControllerC"
+provides-member:
+- ["12ComputerPros21BioAuthViewControllerC", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "visualEffectView"
+depends-top-level:
+- "AssignmentPrecedence"
+- "BioAuthViewController"
+- "BooleanLiteralType"
+- !private "DispatchQueue"
+- "LAContext"
+- !private "StringLiteralType"
+- !private "UIBlurEffect"
+- "UIViewController"
+- "UIVisualEffectView"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["12ComputerPros21BioAuthViewControllerC", "DispatchQueue"]
+- ["12ComputerPros21BioAuthViewControllerC", "LAContext"]
+- !private ["12ComputerPros21BioAuthViewControllerC", "UIBlurEffect"]
+- ["12ComputerPros21BioAuthViewControllerC", "UIVisualEffectView"]
+- ["12ComputerPros21BioAuthViewControllerC", "deinit"]
+- !private ["12ComputerPros21BioAuthViewControllerC", "dismiss"]
+- ["12ComputerPros21BioAuthViewControllerC", "init"]
+- ["12ComputerPros21BioAuthViewControllerC", "laContext"]
+- ["12ComputerPros21BioAuthViewControllerC", "viewDidLoad"]
+- ["12ComputerPros21BioAuthViewControllerC", "visualEffectView"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "effect"]
+- !private ["s7CVarArgP", "DispatchQueue"]
+- ["s7CVarArgP", "LAContext"]
+- !private ["s7CVarArgP", "UIBlurEffect"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "effect"]
+- !private ["s7CVarArgP", "evaluatePolicy"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "laContext"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "visualEffectView"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
+- ["s28CustomDebugStringConvertibleP", "LAContext"]
+- !private ["s28CustomDebugStringConvertibleP", "UIBlurEffect"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "effect"]
+- !private ["s28CustomDebugStringConvertibleP", "evaluatePolicy"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "laContext"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "visualEffectView"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "DispatchQueue"]
+- ["s23CustomStringConvertibleP", "LAContext"]
+- !private ["s23CustomStringConvertibleP", "UIBlurEffect"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "effect"]
+- !private ["s23CustomStringConvertibleP", "evaluatePolicy"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "laContext"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "visualEffectView"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["So14DispatchObjectC", "async"]
+- !private ["So14DispatchObjectC", "main"]
+- !private ["So13DispatchQueueC", "async"]
+- !private ["So13DispatchQueueC", "main"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "DispatchQueue"]
+- ["s9EquatableP", "LAContext"]
+- !private ["s9EquatableP", "UIBlurEffect"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "async"]
+- !private ["s9EquatableP", "deviceOwnerAuthentication"]
+- !private ["s9EquatableP", "dismiss"]
+- !private ["s9EquatableP", "effect"]
+- !private ["s9EquatableP", "evaluatePolicy"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "laContext"]
+- !private ["s9EquatableP", "light"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s9EquatableP", "visualEffectView"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "DispatchQueue"]
+- ["s8HashableP", "LAContext"]
+- !private ["s8HashableP", "UIBlurEffect"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "async"]
+- !private ["s8HashableP", "deviceOwnerAuthentication"]
+- !private ["s8HashableP", "dismiss"]
+- !private ["s8HashableP", "effect"]
+- !private ["s8HashableP", "evaluatePolicy"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "laContext"]
+- !private ["s8HashableP", "light"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "viewDidLoad"]
+- !private ["s8HashableP", "visualEffectView"]
+- !private ["So9LAContextC", "evaluatePolicy"]
+- ["So9LAContextC", "init"]
+- !private ["SC8LAPolicyO", "deviceOwnerAuthentication"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "DispatchQueue"]
+- ["So8NSCodingP", "LAContext"]
+- !private ["So8NSCodingP", "UIBlurEffect"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "dismiss"]
+- !private ["So8NSCodingP", "effect"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "laContext"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "visualEffectView"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "DispatchQueue"]
+- ["So26NSExtensionRequestHandlingP", "LAContext"]
+- !private ["So26NSExtensionRequestHandlingP", "UIBlurEffect"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "laContext"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "visualEffectView"]
+- !private ["So8NSObjectC", "DispatchQueue"]
+- ["So8NSObjectC", "LAContext"]
+- !private ["So8NSObjectC", "UIBlurEffect"]
+- ["So8NSObjectC", "UIVisualEffectView"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "dismiss"]
+- !private ["So8NSObjectC", "effect"]
+- !private ["So8NSObjectC", "evaluatePolicy"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "laContext"]
+- !private ["So8NSObjectC", "main"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "visualEffectView"]
+- !private ["So16NSObjectProtocolP", "DispatchQueue"]
+- ["So16NSObjectProtocolP", "LAContext"]
+- !private ["So16NSObjectProtocolP", "UIBlurEffect"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "async"]
+- !private ["So16NSObjectProtocolP", "dismiss"]
+- !private ["So16NSObjectProtocolP", "effect"]
+- !private ["So16NSObjectProtocolP", "evaluatePolicy"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "laContext"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "visualEffectView"]
+- !private ["So14NSSecureCodingP", "effect"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "main"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "deviceOwnerAuthentication"]
+- !private ["s16RawRepresentableP", "light"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "effect"]
+- !private ["So12UIAppearanceP", "effect"]
+- !private ["So21UIAppearanceContainerP", "DispatchQueue"]
+- ["So21UIAppearanceContainerP", "LAContext"]
+- !private ["So21UIAppearanceContainerP", "UIBlurEffect"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
+- !private ["So21UIAppearanceContainerP", "effect"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "laContext"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "visualEffectView"]
+- !private ["So12UIBlurEffectC", "init"]
+- !private ["SC17UIBlurEffectStyleO", "light"]
+- !private ["So18UIContentContainerP", "DispatchQueue"]
+- ["So18UIContentContainerP", "LAContext"]
+- !private ["So18UIContentContainerP", "UIBlurEffect"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "dismiss"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "laContext"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "visualEffectView"]
+- !private ["So17UICoordinateSpaceP", "effect"]
+- !private ["So13UIDynamicItemP", "effect"]
+- !private ["So18UIFocusEnvironmentP", "DispatchQueue"]
+- ["So18UIFocusEnvironmentP", "LAContext"]
+- !private ["So18UIFocusEnvironmentP", "UIBlurEffect"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
+- !private ["So18UIFocusEnvironmentP", "effect"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "laContext"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "visualEffectView"]
+- !private ["So11UIFocusItemP", "effect"]
+- !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
+- ["So30UIPasteConfigurationSupportingP", "LAContext"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIBlurEffect"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "effect"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "laContext"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "visualEffectView"]
+- !private ["So11UIResponderC", "DispatchQueue"]
+- ["So11UIResponderC", "LAContext"]
+- !private ["So11UIResponderC", "UIBlurEffect"]
+- ["So11UIResponderC", "UIVisualEffectView"]
+- !private ["So11UIResponderC", "dismiss"]
+- !private ["So11UIResponderC", "effect"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "laContext"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "visualEffectView"]
+- !private ["So30UIResponderStandardEditActionsP", "DispatchQueue"]
+- ["So30UIResponderStandardEditActionsP", "LAContext"]
+- !private ["So30UIResponderStandardEditActionsP", "UIBlurEffect"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "effect"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "laContext"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "visualEffectView"]
+- !private ["So16UIStateRestoringP", "DispatchQueue"]
+- ["So16UIStateRestoringP", "LAContext"]
+- !private ["So16UIStateRestoringP", "UIBlurEffect"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "dismiss"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "laContext"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "visualEffectView"]
+- !private ["So18UITraitEnvironmentP", "DispatchQueue"]
+- ["So18UITraitEnvironmentP", "LAContext"]
+- !private ["So18UITraitEnvironmentP", "UIBlurEffect"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
+- !private ["So18UITraitEnvironmentP", "effect"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "laContext"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "visualEffectView"]
+- !private ["So6UIViewC", "effect"]
+- !private ["So16UIViewControllerC", "DispatchQueue"]
+- ["So16UIViewControllerC", "LAContext"]
+- !private ["So16UIViewControllerC", "UIBlurEffect"]
+- ["So16UIViewControllerC", "UIVisualEffectView"]
+- ["So16UIViewControllerC", ""]
+- !private ["So16UIViewControllerC", "dismiss"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "laContext"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "visualEffectView"]
+- !private ["So14UIVisualEffectC", "init"]
+- !private ["So18UIVisualEffectViewC", "effect"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "effect"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "LAContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBlurEffect"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "effect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "evaluatePolicy"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "laContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "visualEffectView"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- "12ComputerPros21BioAuthViewControllerC"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "So14DispatchObjectC"
+- !private "So13DispatchQueueC"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "So9LAContextC"
+- !private "SC8LAPolicyO"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So9OS_objectC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So12UIBlurEffectC"
+- !private "SC17UIBlurEffectStyleO"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "So14UIVisualEffectC"
+- !private "So18UIVisualEffectViewC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphoneos/ReachabilitySwift/ReachabilitySwift.framework/Modules/ReachabilitySwift.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphoneos/ReachabilitySwift/ReachabilitySwift.framework/Headers/ReachabilitySwift-umbrella.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphoneos/ReachabilitySwift/ReachabilitySwift.framework/Headers/ReachabilitySwift-Swift.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRCoreSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphoneos/ReachabilitySwift/ReachabilitySwift.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "6dfcf00cc5d5c354761a02225d4a6b58"

@@ -30,6 +30,7 @@
 		C956FBA21F1FC99100EEE896 /* AppleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956FBA11F1FC99100EEE896 /* AppleTableViewCell.swift */; };
 		C96E02251EFDD6CC004B28AC /* MenuCellSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E02241EFDD6CC004B28AC /* MenuCellSettings.swift */; };
 		C9830E121EE25BFE00F683D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */; };
+		C98DA8D1208D686D00866D6C /* BioAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98DA8D0208D686D00866D6C /* BioAuthViewController.swift */; };
 		C98EC1161FD796CC000BA450 /* AppleInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EC1151FD796CC000BA450 /* AppleInventoryViewController.swift */; };
 		C98EC1181FD7A54D000BA450 /* PCInventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98EC1171FD7A54D000BA450 /* PCInventoryViewController.swift */; };
 		C99D3A851F0C49CF0091350F /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */; };
@@ -71,6 +72,7 @@
 		C956FBA11F1FC99100EEE896 /* AppleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleTableViewCell.swift; sourceTree = "<group>"; };
 		C96E02241EFDD6CC004B28AC /* MenuCellSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCellSettings.swift; sourceTree = "<group>"; };
 		C9830E111EE25BFE00F683D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C98DA8D0208D686D00866D6C /* BioAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioAuthViewController.swift; sourceTree = "<group>"; };
 		C98EC1151FD796CC000BA450 /* AppleInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleInventoryViewController.swift; sourceTree = "<group>"; };
 		C98EC1171FD7A54D000BA450 /* PCInventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCInventoryViewController.swift; sourceTree = "<group>"; };
 		C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				C98EC1151FD796CC000BA450 /* AppleInventoryViewController.swift */,
 				C98EC1171FD7A54D000BA450 /* PCInventoryViewController.swift */,
 				C90663761F20073E007ADF27 /* ComputerDetailsVC.swift */,
+				C98DA8D0208D686D00866D6C /* BioAuthViewController.swift */,
 				C9EF4A9E1F034FF90091E026 /* AccountsViewController.swift */,
 				C99D3A841F0C49CF0091350F /* AddAccountViewController.swift */,
 				C90E32AC1F0DDD7D00F92ABA /* CredentialsViewController.swift */,
@@ -227,7 +230,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Casey Henderson";
 				TargetAttributes = {
 					C93E2F391EE258E800A13892 = {
@@ -364,6 +367,7 @@
 				C90E32AD1F0DDD7D00F92ABA /* CredentialsViewController.swift in Sources */,
 				C9FF1B701EFF8337004C1CB8 /* HomeViewExtension.swift in Sources */,
 				C91E630E1EE9F5EC005E7D97 /* HomeViewController.swift in Sources */,
+				C98DA8D1208D686D00866D6C /* BioAuthViewController.swift in Sources */,
 				C91E63101EE9FD9F005E7D97 /* WebViewController.swift in Sources */,
 				C9072D7F1F21D45100B9CC88 /* ImageCache.swift in Sources */,
 			);
@@ -404,6 +408,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -411,6 +416,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -460,6 +466,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -467,6 +474,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

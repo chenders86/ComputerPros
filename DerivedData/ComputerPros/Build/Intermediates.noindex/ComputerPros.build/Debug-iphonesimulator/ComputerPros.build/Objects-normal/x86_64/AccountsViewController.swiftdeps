@@ -76,6 +76,8 @@ depends-member:
 - !private ["s7CVarArgP", "NSPredicate"]
 - !private ["s7CVarArgP", "NSSortDescriptor"]
 - !private ["s7CVarArgP", "UIBarButtonItem"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "account"]
 - !private ["s7CVarArgP", "accountName"]
 - !private ["s7CVarArgP", "cellID"]
@@ -103,7 +105,6 @@ depends-member:
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "viewWillAppear"]
-- ["s7CVarArgP", ""]
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
 - !private ["12ComputerPros13CoreDataStackV", "context"]
@@ -124,6 +125,7 @@ depends-member:
 - ["12ComputerPros27CoreDataTableViewControllerC", "UITableView"]
 - ["12ComputerPros27CoreDataTableViewControllerC", "UITableViewCell"]
 - ["12ComputerPros27CoreDataTableViewControllerC", "UITableViewCellEditingStyle"]
+- ["12ComputerPros27CoreDataTableViewControllerC", ""]
 - !private ["12ComputerPros27CoreDataTableViewControllerC", "account"]
 - ["12ComputerPros27CoreDataTableViewControllerC", "cellID"]
 - !private ["12ComputerPros27CoreDataTableViewControllerC", "deinit"]
@@ -138,7 +140,6 @@ depends-member:
 - ["12ComputerPros27CoreDataTableViewControllerC", "tableView"]
 - ["12ComputerPros27CoreDataTableViewControllerC", "viewDidLoad"]
 - ["12ComputerPros27CoreDataTableViewControllerC", "viewWillAppear"]
-- ["12ComputerPros27CoreDataTableViewControllerC", ""]
 - !private ["12ComputerPros25CredentialsViewControllerC", "account"]
 - !private ["12ComputerPros25CredentialsViewControllerC", "fetchedResultsController"]
 - !private ["12ComputerPros25CredentialsViewControllerC", "navigationItem"]
@@ -148,6 +149,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "NSPredicate"]
 - !private ["s28CustomDebugStringConvertibleP", "NSSortDescriptor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "account"]
 - !private ["s28CustomDebugStringConvertibleP", "accountName"]
 - !private ["s28CustomDebugStringConvertibleP", "cellID"]
@@ -175,7 +177,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -186,6 +187,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "NSPredicate"]
 - !private ["s23CustomStringConvertibleP", "NSSortDescriptor"]
 - !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "account"]
 - !private ["s23CustomStringConvertibleP", "accountName"]
@@ -214,7 +216,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - ["s9DecodableP", "init"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
@@ -225,6 +226,7 @@ depends-member:
 - !private ["s9EquatableP", "NSPredicate"]
 - !private ["s9EquatableP", "NSSortDescriptor"]
 - !private ["s9EquatableP", "UIBarButtonItem"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "account"]
 - !private ["s9EquatableP", "accountName"]
@@ -254,7 +256,6 @@ depends-member:
 - !private ["s9EquatableP", "title"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - !private ["s9EquatableP", "viewWillAppear"]
-- ["s9EquatableP", ""]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
@@ -265,6 +266,7 @@ depends-member:
 - !private ["s8HashableP", "NSPredicate"]
 - !private ["s8HashableP", "NSSortDescriptor"]
 - !private ["s8HashableP", "UIBarButtonItem"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "account"]
 - !private ["s8HashableP", "accountName"]
@@ -294,7 +296,6 @@ depends-member:
 - !private ["s8HashableP", "title"]
 - !private ["s8HashableP", "viewDidLoad"]
 - !private ["s8HashableP", "viewWillAppear"]
-- ["s8HashableP", ""]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
@@ -304,13 +305,14 @@ depends-member:
 - !private ["So8NSCodingP", "NSPredicate"]
 - !private ["So8NSCodingP", "NSSortDescriptor"]
 - !private ["So8NSCodingP", "UIBarButtonItem"]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "account"]
 - !private ["So8NSCodingP", "cellID"]
 - !private ["So8NSCodingP", "delete"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "fetchedResultsController"]
 - !private ["So8NSCodingP", "indexPathForSelectedRow"]
-- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "navigationController"]
 - !private ["So8NSCodingP", "navigationItem"]
 - !private ["So8NSCodingP", "newAccount"]
@@ -327,8 +329,7 @@ depends-member:
 - !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So8NSCodingP", "viewWillAppear"]
-- ["So8NSCodingP", ""]
-- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "predicate"]
 - !private ["So9NSCopyingP", "sortDescriptors"]
 - ["So26NSExtensionRequestHandlingP", "CoreDataStack"]
@@ -337,6 +338,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "NSPredicate"]
 - !private ["So26NSExtensionRequestHandlingP", "NSSortDescriptor"]
 - !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
+- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "account"]
 - !private ["So26NSExtensionRequestHandlingP", "cellID"]
 - !private ["So26NSExtensionRequestHandlingP", "fetchedResultsController"]
@@ -351,7 +353,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "storyboard"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
-- ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So14NSFetchRequestC", "init"]
 - !private ["So14NSFetchRequestC", "predicate"]
 - !private ["So14NSFetchRequestC", "sortDescriptors"]
@@ -365,6 +366,7 @@ depends-member:
 - !private ["So34NSFetchedResultsControllerDelegateP", "NSPredicate"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "NSSortDescriptor"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "UIBarButtonItem"]
+- ["So34NSFetchedResultsControllerDelegateP", ""]
 - !private ["So34NSFetchedResultsControllerDelegateP", "account"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "cellID"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "fetchedResultsController"]
@@ -377,13 +379,9 @@ depends-member:
 - !private ["So34NSFetchedResultsControllerDelegateP", "storyboard"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "viewDidLoad"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "viewWillAppear"]
-- ["So34NSFetchedResultsControllerDelegateP", ""]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
 - !private ["So9NSLockingP", "delete"]
 - !private ["So15NSManagedObjectC", "accountName"]
 - !private ["So22NSManagedObjectContextC", "delete"]
-- ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "Account"]
 - !private ["So8NSObjectC", "AddAccountViewController"]
 - ["So8NSObjectC", "Bool"]
@@ -433,6 +431,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "NSPredicate"]
 - !private ["So16NSObjectProtocolP", "NSSortDescriptor"]
 - !private ["So16NSObjectProtocolP", "UIBarButtonItem"]
+- ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "account"]
 - !private ["So16NSObjectProtocolP", "accountName"]
 - !private ["So16NSObjectProtocolP", "cellID"]
@@ -440,7 +439,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "dequeueReusableCell"]
 - !private ["So16NSObjectProtocolP", "fetchedResultsController"]
 - !private ["So16NSObjectProtocolP", "indexPathForSelectedRow"]
-- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "instantiateViewController"]
 - !private ["So16NSObjectProtocolP", "managedObjectContext"]
 - !private ["So16NSObjectProtocolP", "navigationController"]
@@ -460,13 +459,11 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "title"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - !private ["So16NSObjectProtocolP", "viewWillAppear"]
-- ["So16NSObjectProtocolP", ""]
 - !private ["So24NSPersistentStoreRequestC", "predicate"]
 - !private ["So24NSPersistentStoreRequestC", "sortDescriptors"]
 - !private ["So11NSPredicateC", "init"]
-- ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "init"]
 - !private ["So16NSSortDescriptorC", "init"]
-- ["So8NSStringC", "init"]
 - ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s16RawRepresentableP", "add"]
 - !private ["s16RawRepresentableP", "delete"]
@@ -491,6 +488,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "NSPredicate"]
 - !private ["So21UIAppearanceContainerP", "NSSortDescriptor"]
 - !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
+- ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "account"]
 - !private ["So21UIAppearanceContainerP", "cellID"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
@@ -509,7 +507,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "textLabel"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
-- ["So21UIAppearanceContainerP", ""]
 - !private ["So15UIBarButtonItemC", "init"]
 - !private ["SC21UIBarButtonSystemItemO", "add"]
 - !private ["So9UIBarItemC", "init"]
@@ -519,6 +516,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "NSPredicate"]
 - !private ["So18UIContentContainerP", "NSSortDescriptor"]
 - !private ["So18UIContentContainerP", "UIBarButtonItem"]
+- ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "account"]
 - !private ["So18UIContentContainerP", "cellID"]
 - !private ["So18UIContentContainerP", "fetchedResultsController"]
@@ -533,7 +531,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "storyboard"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So18UIContentContainerP", "viewWillAppear"]
-- ["So18UIContentContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
 - !private ["So17UICoordinateSpaceP", "indexPathForSelectedRow"]
@@ -551,6 +548,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "NSPredicate"]
 - !private ["So18UIFocusEnvironmentP", "NSSortDescriptor"]
 - !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "account"]
 - !private ["So18UIFocusEnvironmentP", "cellID"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
@@ -569,7 +567,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "textLabel"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
-- ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "indexPathForSelectedRow"]
 - !private ["So11UIFocusItemP", "text"]
@@ -586,6 +583,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "NSPredicate"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSSortDescriptor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
+- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "account"]
 - !private ["So30UIPasteConfigurationSupportingP", "cellID"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
@@ -604,7 +602,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "textLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
-- ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So11UIResponderC", "Account"]
 - !private ["So11UIResponderC", "AddAccountViewController"]
 - ["So11UIResponderC", "Bool"]
@@ -644,6 +641,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "NSPredicate"]
 - !private ["So30UIResponderStandardEditActionsP", "NSSortDescriptor"]
 - !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
+- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "account"]
 - !private ["So30UIResponderStandardEditActionsP", "cellID"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
@@ -662,7 +660,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "textLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
-- ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "indexPathForSelectedRow"]
 - ["So20UIScrollViewDelegateP", "CoreDataStack"]
@@ -671,6 +668,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "NSPredicate"]
 - !private ["So20UIScrollViewDelegateP", "NSSortDescriptor"]
 - !private ["So20UIScrollViewDelegateP", "UIBarButtonItem"]
+- ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "account"]
 - !private ["So20UIScrollViewDelegateP", "cellID"]
 - !private ["So20UIScrollViewDelegateP", "fetchedResultsController"]
@@ -683,7 +681,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "storyboard"]
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
 - !private ["So20UIScrollViewDelegateP", "viewWillAppear"]
-- ["So20UIScrollViewDelegateP", ""]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "indexPathForSelectedRow"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
@@ -693,6 +690,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "NSPredicate"]
 - !private ["So16UIStateRestoringP", "NSSortDescriptor"]
 - !private ["So16UIStateRestoringP", "UIBarButtonItem"]
+- ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "account"]
 - !private ["So16UIStateRestoringP", "cellID"]
 - !private ["So16UIStateRestoringP", "fetchedResultsController"]
@@ -707,7 +705,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "storyboard"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
-- ["So16UIStateRestoringP", ""]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
 - !private ["So11UITableViewC", "dequeueReusableCell"]
 - !private ["So11UITableViewC", "indexPathForSelectedRow"]
@@ -746,6 +743,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "NSPredicate"]
 - !private ["So21UITableViewDataSourceP", "NSSortDescriptor"]
 - !private ["So21UITableViewDataSourceP", "UIBarButtonItem"]
+- ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "account"]
 - !private ["So21UITableViewDataSourceP", "cellID"]
 - !private ["So21UITableViewDataSourceP", "fetchedResultsController"]
@@ -758,13 +756,13 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "storyboard"]
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
 - !private ["So21UITableViewDataSourceP", "viewWillAppear"]
-- ["So21UITableViewDataSourceP", ""]
 - ["So19UITableViewDelegateP", "CoreDataStack"]
 - !private ["So19UITableViewDelegateP", "NSFetchRequest"]
 - !private ["So19UITableViewDelegateP", "NSFetchedResultsController"]
 - !private ["So19UITableViewDelegateP", "NSPredicate"]
 - !private ["So19UITableViewDelegateP", "NSSortDescriptor"]
 - !private ["So19UITableViewDelegateP", "UIBarButtonItem"]
+- ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "account"]
 - !private ["So19UITableViewDelegateP", "cellID"]
 - !private ["So19UITableViewDelegateP", "fetchedResultsController"]
@@ -777,13 +775,13 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "storyboard"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
 - !private ["So19UITableViewDelegateP", "viewWillAppear"]
-- ["So19UITableViewDelegateP", ""]
 - ["So18UITraitEnvironmentP", "CoreDataStack"]
 - !private ["So18UITraitEnvironmentP", "NSFetchRequest"]
 - !private ["So18UITraitEnvironmentP", "NSFetchedResultsController"]
 - !private ["So18UITraitEnvironmentP", "NSPredicate"]
 - !private ["So18UITraitEnvironmentP", "NSSortDescriptor"]
 - !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
+- ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "account"]
 - !private ["So18UITraitEnvironmentP", "cellID"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
@@ -802,7 +800,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "textLabel"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
-- ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "indexPathForSelectedRow"]
 - !private ["So6UIViewC", "text"]
@@ -836,7 +833,6 @@ depends-member:
 - ["So16UIViewControllerC", "tableView"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewWillAppear"]
-- ["s23_BidirectionalIndexableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "indexPathForSelectedRow"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
@@ -847,15 +843,13 @@ depends-member:
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- ["s14_IndexableBaseP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CoreDataStack"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSFetchRequest"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSFetchedResultsController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPredicate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSSortDescriptor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "account"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "accountName"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cellID"]
@@ -863,7 +857,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fetchedResultsController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForSelectedRow"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "managedObjectContext"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
@@ -883,10 +877,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "12ComputerPros7AccountC"
@@ -915,25 +907,21 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - "So8NSCodingP"
-- "So9NSCopyingP"
+- !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
 - !private "So14NSFetchRequestC"
 - !private "So20NSFetchRequestResultP"
 - !private "So26NSFetchedResultsControllerC"
 - "So34NSFetchedResultsControllerDelegateP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
 - !private "So9NSLockingP"
 - !private "So15NSManagedObjectC"
 - !private "So22NSManagedObjectContextC"
-- "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
 - !private "So24NSPersistentStoreRequestC"
 - !private "So11NSPredicateC"
-- "So14NSSecureCodingP"
+- !private "So14NSSecureCodingP"
 - !private "So16NSSortDescriptorC"
-- "So8NSStringC"
 - "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
 - "s8SequenceP"
@@ -975,7 +963,6 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
-- "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -983,12 +970,8 @@ depends-nominal:
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1058,4 +1041,17 @@ depends-external:
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Modules/module.modulemap"
-interface-hash: "7a05f645b2fb8b42915b0b419ac29171"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "0a25fd1eda5fe485cd9809a1e00c6feb"

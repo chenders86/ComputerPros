@@ -21,6 +21,13 @@ class AccountsViewController: CoreDataTableViewController {
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "accountName", ascending: true)]
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: stack.context, sectionNameKeyPath: nil, cacheName: nil)
+        
+//        let laContext = LAContext()
+//        
+//        if laContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+//            let bioAuthVC = self.storyboard?.instantiateViewController(withIdentifier: "bioAuthVC") as! BioAuthViewController
+//            self.present(bioAuthVC, animated: true, completion: nil)
+//        }
     }
     
     
@@ -28,7 +35,6 @@ class AccountsViewController: CoreDataTableViewController {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
-    
     
     let stack = CoreDataStack.sharedInstance()
     let cellID = "accountCell"
@@ -39,7 +45,6 @@ class AccountsViewController: CoreDataTableViewController {
 
         self.present(accountVC, animated: true, completion: nil)
     }
-    
     
     // Data Source
     

@@ -28,7 +28,7 @@ depends-top-level:
 - !private "ProCareCloudVC"
 - !private "StringLiteralType"
 - !private "UIApplication"
-- !private "UIGestureRecognizer"
+- "UIGestureRecognizer"
 - !private "UISwipeGestureRecognizer"
 - !private "UIView"
 - !private "URL"
@@ -49,6 +49,7 @@ depends-member:
 - !private ["s7CVarArgP", "UIView"]
 - !private ["s7CVarArgP", "URL"]
 - !private ["s7CVarArgP", "URLRequest"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addGestureRecognizer"]
 - !private ["s7CVarArgP", "addTarget"]
 - !private ["s7CVarArgP", "addingPercentEncoding"]
@@ -279,7 +280,7 @@ depends-member:
 - !private ["12ComputerPros18HomeViewControllerC", "NSCharacterSet"]
 - !private ["12ComputerPros18HomeViewControllerC", "ProCareCloudVC"]
 - !private ["12ComputerPros18HomeViewControllerC", "UIApplication"]
-- !private ["12ComputerPros18HomeViewControllerC", "UIGestureRecognizer"]
+- ["12ComputerPros18HomeViewControllerC", "UIGestureRecognizer"]
 - !private ["12ComputerPros18HomeViewControllerC", "UISwipeGestureRecognizer"]
 - !private ["12ComputerPros18HomeViewControllerC", "UIView"]
 - !private ["12ComputerPros18HomeViewControllerC", "URL"]
@@ -328,7 +329,6 @@ depends-member:
 - !private ["So8NSCodingP", "dismissMenu"]
 - !private ["So8NSCodingP", "handleMenuSlide"]
 - !private ["So8NSCodingP", "hiddenDismissButton"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layoutIfNeeded"]
 - !private ["So8NSCodingP", "menuLeadingEdge"]
 - !private ["So8NSCodingP", "menuView"]
@@ -341,7 +341,6 @@ depends-member:
 - !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "webRequest"]
 - !private ["So9NSCopyingP", "addingPercentEncoding"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "urlQueryAllowed"]
 - !private ["So26NSExtensionRequestHandlingP", "ControllerIdentifier"]
 - !private ["So26NSExtensionRequestHandlingP", "NSCharacterSet"]
@@ -363,12 +362,9 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "webRequest"]
 - !private ["So21NSItemProviderReadingP", "addingPercentEncoding"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "addingPercentEncoding"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So18NSLayoutConstraintC", "constant"]
 - !private ["So16NSMutableCopyingP", "addingPercentEncoding"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "urlQueryAllowed"]
 - !private ["So8NSObjectC", "AccountsViewController"]
 - !private ["So8NSObjectC", "ContactViewController"]
@@ -378,7 +374,7 @@ depends-member:
 - !private ["So8NSObjectC", "NSCharacterSet"]
 - !private ["So8NSObjectC", "ProCareCloudVC"]
 - !private ["So8NSObjectC", "UIApplication"]
-- !private ["So8NSObjectC", "UIGestureRecognizer"]
+- ["So8NSObjectC", "UIGestureRecognizer"]
 - !private ["So8NSObjectC", "UISwipeGestureRecognizer"]
 - !private ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "URL"]
@@ -453,10 +449,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "view"]
 - !private ["So16NSObjectProtocolP", "webRequest"]
 - !private ["So14NSSecureCodingP", "addingPercentEncoding"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "urlQueryAllowed"]
 - !private ["So8NSStringC", "addingPercentEncoding"]
-- !private ["So8NSStringC", "init"]
 - !private ["s9OptionSetP", "left"]
 - !private ["s26RangeReplaceableCollectionP", "addingPercentEncoding"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
@@ -666,7 +660,7 @@ depends-member:
 - !private ["So11UIResponderC", "NSCharacterSet"]
 - !private ["So11UIResponderC", "ProCareCloudVC"]
 - !private ["So11UIResponderC", "UIApplication"]
-- !private ["So11UIResponderC", "UIGestureRecognizer"]
+- ["So11UIResponderC", "UIGestureRecognizer"]
 - !private ["So11UIResponderC", "UISwipeGestureRecognizer"]
 - !private ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "URL"]
@@ -802,7 +796,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "NSCharacterSet"]
 - !private ["So16UIViewControllerC", "ProCareCloudVC"]
 - !private ["So16UIViewControllerC", "UIApplication"]
-- !private ["So16UIViewControllerC", "UIGestureRecognizer"]
+- ["So16UIViewControllerC", "UIGestureRecognizer"]
 - !private ["So16UIViewControllerC", "UISwipeGestureRecognizer"]
 - !private ["So16UIViewControllerC", "UIView"]
 - !private ["So16UIViewControllerC", "URL"]
@@ -831,8 +825,6 @@ depends-member:
 - !private ["10Foundation3URLV", "init"]
 - !private ["10Foundation10URLRequestV", "init"]
 - !private ["12ComputerPros17WebViewControllerC", "webRequest"]
-- !private ["s23_BidirectionalIndexableP", "addingPercentEncoding"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "alpha"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "animate"]
@@ -850,12 +842,7 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "addingPercentEncoding"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "addingPercentEncoding"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "urlQueryAllowed"]
-- !private ["s10_IndexableP", "addingPercentEncoding"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "addingPercentEncoding"]
-- !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ControllerIdentifier"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSCharacterSet"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
@@ -893,8 +880,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "addingPercentEncoding"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "addingPercentEncoding"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "addingPercentEncoding"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -977,7 +962,6 @@ depends-nominal:
 - !private "10Foundation3URLV"
 - !private "10Foundation10URLRequestV"
 - !private "12ComputerPros17WebViewControllerC"
-- !private "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -987,11 +971,8 @@ depends-nominal:
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -1061,4 +1042,17 @@ depends-external:
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphonesimulator/ReachabilitySwift/ReachabilitySwift.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 interface-hash: "681dc06a96c8c4025f65fc539184e381"

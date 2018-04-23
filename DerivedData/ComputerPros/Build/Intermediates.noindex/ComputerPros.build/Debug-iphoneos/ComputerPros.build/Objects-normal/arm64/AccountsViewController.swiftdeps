@@ -17,6 +17,7 @@ depends-top-level:
 - !private "AddAccountViewController"
 - !private "Array"
 - "AssignmentPrecedence"
+- !private "BioAuthViewController"
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
@@ -24,6 +25,7 @@ depends-top-level:
 - "CoreDataTableViewController"
 - !private "CredentialsViewController"
 - "IndexPath"
+- !private "LAContext"
 - !private "NSFetchRequest"
 - !private "NSFetchRequestResult"
 - !private "NSFetchedResultsController"
@@ -38,10 +40,12 @@ depends-member:
 - !private ["12ComputerPros7AccountC", "accountName"]
 - !private ["12ComputerPros22AccountsViewControllerC", "Account"]
 - !private ["12ComputerPros22AccountsViewControllerC", "AddAccountViewController"]
+- !private ["12ComputerPros22AccountsViewControllerC", "BioAuthViewController"]
 - ["12ComputerPros22AccountsViewControllerC", "Bool"]
 - ["12ComputerPros22AccountsViewControllerC", "CoreDataStack"]
 - !private ["12ComputerPros22AccountsViewControllerC", "CredentialsViewController"]
 - ["12ComputerPros22AccountsViewControllerC", "IndexPath"]
+- !private ["12ComputerPros22AccountsViewControllerC", "LAContext"]
 - !private ["12ComputerPros22AccountsViewControllerC", "NSFetchRequest"]
 - !private ["12ComputerPros22AccountsViewControllerC", "NSFetchRequestResult"]
 - !private ["12ComputerPros22AccountsViewControllerC", "NSFetchedResultsController"]
@@ -71,6 +75,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "textLabel"]
 - ["s7CVarArgP", "CoreDataStack"]
+- !private ["s7CVarArgP", "LAContext"]
 - !private ["s7CVarArgP", "NSFetchRequest"]
 - !private ["s7CVarArgP", "NSFetchedResultsController"]
 - !private ["s7CVarArgP", "NSPredicate"]
@@ -80,6 +85,7 @@ depends-member:
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "account"]
 - !private ["s7CVarArgP", "accountName"]
+- !private ["s7CVarArgP", "canEvaluatePolicy"]
 - !private ["s7CVarArgP", "cellID"]
 - !private ["s7CVarArgP", "delete"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
@@ -112,10 +118,12 @@ depends-member:
 - ["12ComputerPros13CoreDataStackV", "sharedInstance"]
 - !private ["12ComputerPros27CoreDataTableViewControllerC", "Account"]
 - !private ["12ComputerPros27CoreDataTableViewControllerC", "AddAccountViewController"]
+- !private ["12ComputerPros27CoreDataTableViewControllerC", "BioAuthViewController"]
 - ["12ComputerPros27CoreDataTableViewControllerC", "Bool"]
 - ["12ComputerPros27CoreDataTableViewControllerC", "CoreDataStack"]
 - !private ["12ComputerPros27CoreDataTableViewControllerC", "CredentialsViewController"]
 - ["12ComputerPros27CoreDataTableViewControllerC", "IndexPath"]
+- !private ["12ComputerPros27CoreDataTableViewControllerC", "LAContext"]
 - !private ["12ComputerPros27CoreDataTableViewControllerC", "NSFetchRequest"]
 - !private ["12ComputerPros27CoreDataTableViewControllerC", "NSFetchRequestResult"]
 - !private ["12ComputerPros27CoreDataTableViewControllerC", "NSFetchedResultsController"]
@@ -144,6 +152,7 @@ depends-member:
 - !private ["12ComputerPros25CredentialsViewControllerC", "fetchedResultsController"]
 - !private ["12ComputerPros25CredentialsViewControllerC", "navigationItem"]
 - ["s28CustomDebugStringConvertibleP", "CoreDataStack"]
+- !private ["s28CustomDebugStringConvertibleP", "LAContext"]
 - !private ["s28CustomDebugStringConvertibleP", "NSFetchRequest"]
 - !private ["s28CustomDebugStringConvertibleP", "NSFetchedResultsController"]
 - !private ["s28CustomDebugStringConvertibleP", "NSPredicate"]
@@ -152,6 +161,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "account"]
 - !private ["s28CustomDebugStringConvertibleP", "accountName"]
+- !private ["s28CustomDebugStringConvertibleP", "canEvaluatePolicy"]
 - !private ["s28CustomDebugStringConvertibleP", "cellID"]
 - !private ["s28CustomDebugStringConvertibleP", "delete"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
@@ -182,6 +192,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "CoreDataStack"]
+- !private ["s23CustomStringConvertibleP", "LAContext"]
 - !private ["s23CustomStringConvertibleP", "NSFetchRequest"]
 - !private ["s23CustomStringConvertibleP", "NSFetchedResultsController"]
 - !private ["s23CustomStringConvertibleP", "NSPredicate"]
@@ -191,6 +202,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "account"]
 - !private ["s23CustomStringConvertibleP", "accountName"]
+- !private ["s23CustomStringConvertibleP", "canEvaluatePolicy"]
 - !private ["s23CustomStringConvertibleP", "cellID"]
 - !private ["s23CustomStringConvertibleP", "delete"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
@@ -221,6 +233,7 @@ depends-member:
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - ["s9EncodableP", "init"]
 - ["s9EquatableP", "CoreDataStack"]
+- !private ["s9EquatableP", "LAContext"]
 - !private ["s9EquatableP", "NSFetchRequest"]
 - !private ["s9EquatableP", "NSFetchedResultsController"]
 - !private ["s9EquatableP", "NSPredicate"]
@@ -231,9 +244,11 @@ depends-member:
 - !private ["s9EquatableP", "account"]
 - !private ["s9EquatableP", "accountName"]
 - !private ["s9EquatableP", "add"]
+- !private ["s9EquatableP", "canEvaluatePolicy"]
 - !private ["s9EquatableP", "cellID"]
 - !private ["s9EquatableP", "delete"]
 - !private ["s9EquatableP", "dequeueReusableCell"]
+- !private ["s9EquatableP", "deviceOwnerAuthentication"]
 - !private ["s9EquatableP", "fetchedResultsController"]
 - !private ["s9EquatableP", "indexPathForSelectedRow"]
 - ["s9EquatableP", "init"]
@@ -261,6 +276,7 @@ depends-member:
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s8HashableP", "CoreDataStack"]
+- !private ["s8HashableP", "LAContext"]
 - !private ["s8HashableP", "NSFetchRequest"]
 - !private ["s8HashableP", "NSFetchedResultsController"]
 - !private ["s8HashableP", "NSPredicate"]
@@ -271,9 +287,11 @@ depends-member:
 - !private ["s8HashableP", "account"]
 - !private ["s8HashableP", "accountName"]
 - !private ["s8HashableP", "add"]
+- !private ["s8HashableP", "canEvaluatePolicy"]
 - !private ["s8HashableP", "cellID"]
 - !private ["s8HashableP", "delete"]
 - !private ["s8HashableP", "dequeueReusableCell"]
+- !private ["s8HashableP", "deviceOwnerAuthentication"]
 - !private ["s8HashableP", "fetchedResultsController"]
 - !private ["s8HashableP", "indexPathForSelectedRow"]
 - ["s8HashableP", "init"]
@@ -296,10 +314,14 @@ depends-member:
 - !private ["s8HashableP", "title"]
 - !private ["s8HashableP", "viewDidLoad"]
 - !private ["s8HashableP", "viewWillAppear"]
+- !private ["So9LAContextC", "canEvaluatePolicy"]
+- !private ["So9LAContextC", "init"]
+- !private ["SC8LAPolicyO", "deviceOwnerAuthentication"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", "CoreDataStack"]
+- !private ["So8NSCodingP", "LAContext"]
 - !private ["So8NSCodingP", "NSFetchRequest"]
 - !private ["So8NSCodingP", "NSFetchedResultsController"]
 - !private ["So8NSCodingP", "NSPredicate"]
@@ -333,6 +355,7 @@ depends-member:
 - !private ["So9NSCopyingP", "predicate"]
 - !private ["So9NSCopyingP", "sortDescriptors"]
 - ["So26NSExtensionRequestHandlingP", "CoreDataStack"]
+- !private ["So26NSExtensionRequestHandlingP", "LAContext"]
 - !private ["So26NSExtensionRequestHandlingP", "NSFetchRequest"]
 - !private ["So26NSExtensionRequestHandlingP", "NSFetchedResultsController"]
 - !private ["So26NSExtensionRequestHandlingP", "NSPredicate"]
@@ -361,6 +384,7 @@ depends-member:
 - !private ["So26NSFetchedResultsControllerC", "managedObjectContext"]
 - !private ["So26NSFetchedResultsControllerC", "object"]
 - ["So34NSFetchedResultsControllerDelegateP", "CoreDataStack"]
+- !private ["So34NSFetchedResultsControllerDelegateP", "LAContext"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "NSFetchRequest"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "NSFetchedResultsController"]
 - !private ["So34NSFetchedResultsControllerDelegateP", "NSPredicate"]
@@ -384,10 +408,12 @@ depends-member:
 - !private ["So22NSManagedObjectContextC", "delete"]
 - !private ["So8NSObjectC", "Account"]
 - !private ["So8NSObjectC", "AddAccountViewController"]
+- !private ["So8NSObjectC", "BioAuthViewController"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CoreDataStack"]
 - !private ["So8NSObjectC", "CredentialsViewController"]
 - ["So8NSObjectC", "IndexPath"]
+- !private ["So8NSObjectC", "LAContext"]
 - !private ["So8NSObjectC", "NSFetchRequest"]
 - !private ["So8NSObjectC", "NSFetchRequestResult"]
 - !private ["So8NSObjectC", "NSFetchedResultsController"]
@@ -399,6 +425,7 @@ depends-member:
 - ["So8NSObjectC", "UITableViewCellEditingStyle"]
 - !private ["So8NSObjectC", "account"]
 - !private ["So8NSObjectC", "accountName"]
+- !private ["So8NSObjectC", "canEvaluatePolicy"]
 - ["So8NSObjectC", "cellID"]
 - !private ["So8NSObjectC", "delete"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
@@ -426,6 +453,7 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewWillAppear"]
 - ["So16NSObjectProtocolP", "CoreDataStack"]
+- !private ["So16NSObjectProtocolP", "LAContext"]
 - !private ["So16NSObjectProtocolP", "NSFetchRequest"]
 - !private ["So16NSObjectProtocolP", "NSFetchedResultsController"]
 - !private ["So16NSObjectProtocolP", "NSPredicate"]
@@ -434,6 +462,7 @@ depends-member:
 - ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "account"]
 - !private ["So16NSObjectProtocolP", "accountName"]
+- !private ["So16NSObjectProtocolP", "canEvaluatePolicy"]
 - !private ["So16NSObjectProtocolP", "cellID"]
 - !private ["So16NSObjectProtocolP", "delete"]
 - !private ["So16NSObjectProtocolP", "dequeueReusableCell"]
@@ -467,6 +496,7 @@ depends-member:
 - ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s16RawRepresentableP", "add"]
 - !private ["s16RawRepresentableP", "delete"]
+- !private ["s16RawRepresentableP", "deviceOwnerAuthentication"]
 - ["s8SequenceP", "init"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
@@ -483,6 +513,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "textLabel"]
 - ["So21UIAppearanceContainerP", "CoreDataStack"]
+- !private ["So21UIAppearanceContainerP", "LAContext"]
 - !private ["So21UIAppearanceContainerP", "NSFetchRequest"]
 - !private ["So21UIAppearanceContainerP", "NSFetchedResultsController"]
 - !private ["So21UIAppearanceContainerP", "NSPredicate"]
@@ -511,6 +542,7 @@ depends-member:
 - !private ["SC21UIBarButtonSystemItemO", "add"]
 - !private ["So9UIBarItemC", "init"]
 - ["So18UIContentContainerP", "CoreDataStack"]
+- !private ["So18UIContentContainerP", "LAContext"]
 - !private ["So18UIContentContainerP", "NSFetchRequest"]
 - !private ["So18UIContentContainerP", "NSFetchedResultsController"]
 - !private ["So18UIContentContainerP", "NSPredicate"]
@@ -543,6 +575,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "textLabel"]
 - ["So18UIFocusEnvironmentP", "CoreDataStack"]
+- !private ["So18UIFocusEnvironmentP", "LAContext"]
 - !private ["So18UIFocusEnvironmentP", "NSFetchRequest"]
 - !private ["So18UIFocusEnvironmentP", "NSFetchedResultsController"]
 - !private ["So18UIFocusEnvironmentP", "NSPredicate"]
@@ -578,6 +611,7 @@ depends-member:
 - !private ["So16UINavigationItemC", "rightBarButtonItem"]
 - !private ["So16UINavigationItemC", "title"]
 - ["So30UIPasteConfigurationSupportingP", "CoreDataStack"]
+- !private ["So30UIPasteConfigurationSupportingP", "LAContext"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSFetchRequest"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSFetchedResultsController"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSPredicate"]
@@ -604,10 +638,12 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
 - !private ["So11UIResponderC", "Account"]
 - !private ["So11UIResponderC", "AddAccountViewController"]
+- !private ["So11UIResponderC", "BioAuthViewController"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "CoreDataStack"]
 - !private ["So11UIResponderC", "CredentialsViewController"]
 - ["So11UIResponderC", "IndexPath"]
+- !private ["So11UIResponderC", "LAContext"]
 - !private ["So11UIResponderC", "NSFetchRequest"]
 - !private ["So11UIResponderC", "NSFetchRequestResult"]
 - !private ["So11UIResponderC", "NSFetchedResultsController"]
@@ -636,6 +672,7 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewWillAppear"]
 - ["So30UIResponderStandardEditActionsP", "CoreDataStack"]
+- !private ["So30UIResponderStandardEditActionsP", "LAContext"]
 - !private ["So30UIResponderStandardEditActionsP", "NSFetchRequest"]
 - !private ["So30UIResponderStandardEditActionsP", "NSFetchedResultsController"]
 - !private ["So30UIResponderStandardEditActionsP", "NSPredicate"]
@@ -663,6 +700,7 @@ depends-member:
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "indexPathForSelectedRow"]
 - ["So20UIScrollViewDelegateP", "CoreDataStack"]
+- !private ["So20UIScrollViewDelegateP", "LAContext"]
 - !private ["So20UIScrollViewDelegateP", "NSFetchRequest"]
 - !private ["So20UIScrollViewDelegateP", "NSFetchedResultsController"]
 - !private ["So20UIScrollViewDelegateP", "NSPredicate"]
@@ -685,6 +723,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "indexPathForSelectedRow"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - ["So16UIStateRestoringP", "CoreDataStack"]
+- !private ["So16UIStateRestoringP", "LAContext"]
 - !private ["So16UIStateRestoringP", "NSFetchRequest"]
 - !private ["So16UIStateRestoringP", "NSFetchedResultsController"]
 - !private ["So16UIStateRestoringP", "NSPredicate"]
@@ -712,10 +751,12 @@ depends-member:
 - !private ["SC27UITableViewCellEditingStyleO", "delete"]
 - !private ["So21UITableViewControllerC", "Account"]
 - !private ["So21UITableViewControllerC", "AddAccountViewController"]
+- !private ["So21UITableViewControllerC", "BioAuthViewController"]
 - ["So21UITableViewControllerC", "Bool"]
 - ["So21UITableViewControllerC", "CoreDataStack"]
 - !private ["So21UITableViewControllerC", "CredentialsViewController"]
 - ["So21UITableViewControllerC", "IndexPath"]
+- !private ["So21UITableViewControllerC", "LAContext"]
 - !private ["So21UITableViewControllerC", "NSFetchRequest"]
 - !private ["So21UITableViewControllerC", "NSFetchRequestResult"]
 - !private ["So21UITableViewControllerC", "NSFetchedResultsController"]
@@ -738,6 +779,7 @@ depends-member:
 - ["So21UITableViewControllerC", "viewDidLoad"]
 - ["So21UITableViewControllerC", "viewWillAppear"]
 - ["So21UITableViewDataSourceP", "CoreDataStack"]
+- !private ["So21UITableViewDataSourceP", "LAContext"]
 - !private ["So21UITableViewDataSourceP", "NSFetchRequest"]
 - !private ["So21UITableViewDataSourceP", "NSFetchedResultsController"]
 - !private ["So21UITableViewDataSourceP", "NSPredicate"]
@@ -757,6 +799,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
 - !private ["So21UITableViewDataSourceP", "viewWillAppear"]
 - ["So19UITableViewDelegateP", "CoreDataStack"]
+- !private ["So19UITableViewDelegateP", "LAContext"]
 - !private ["So19UITableViewDelegateP", "NSFetchRequest"]
 - !private ["So19UITableViewDelegateP", "NSFetchedResultsController"]
 - !private ["So19UITableViewDelegateP", "NSPredicate"]
@@ -776,6 +819,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
 - !private ["So19UITableViewDelegateP", "viewWillAppear"]
 - ["So18UITraitEnvironmentP", "CoreDataStack"]
+- !private ["So18UITraitEnvironmentP", "LAContext"]
 - !private ["So18UITraitEnvironmentP", "NSFetchRequest"]
 - !private ["So18UITraitEnvironmentP", "NSFetchedResultsController"]
 - !private ["So18UITraitEnvironmentP", "NSPredicate"]
@@ -806,10 +850,12 @@ depends-member:
 - !private ["So6UIViewC", "textLabel"]
 - !private ["So16UIViewControllerC", "Account"]
 - !private ["So16UIViewControllerC", "AddAccountViewController"]
+- !private ["So16UIViewControllerC", "BioAuthViewController"]
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "CoreDataStack"]
 - !private ["So16UIViewControllerC", "CredentialsViewController"]
 - ["So16UIViewControllerC", "IndexPath"]
+- !private ["So16UIViewControllerC", "LAContext"]
 - !private ["So16UIViewControllerC", "NSFetchRequest"]
 - !private ["So16UIViewControllerC", "NSFetchRequestResult"]
 - !private ["So16UIViewControllerC", "NSFetchedResultsController"]
@@ -844,6 +890,7 @@ depends-member:
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CoreDataStack"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LAContext"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSFetchRequest"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSFetchedResultsController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPredicate"]
@@ -852,6 +899,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "account"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "accountName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "canEvaluatePolicy"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cellID"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delete"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
@@ -904,6 +952,8 @@ depends-nominal:
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
+- !private "So9LAContextC"
+- !private "SC8LAPolicyO"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - "So8NSCodingP"
@@ -992,6 +1042,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphoneos/ReachabilitySwift/ReachabilitySwift.framework/Headers/ReachabilitySwift-umbrella.h"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
@@ -1024,6 +1075,7 @@ depends-external:
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphoneos/ReachabilitySwift/ReachabilitySwift.framework/Headers/ReachabilitySwift-Swift.h"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
@@ -1038,6 +1090,7 @@ depends-external:
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Products/Debug-iphoneos/ReachabilitySwift/ReachabilitySwift.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"

@@ -63,18 +63,16 @@ depends-top-level:
 - !private "withUnsafePointer"
 depends-member:
 - ["s23BidirectionalCollectionP", "init"]
-- !private ["s13BinaryIntegerP", "hashValue"]
 - !private ["s13BinaryIntegerP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["s7CVarArgP", "Name"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "async"]
 - !private ["s7CVarArgP", "default"]
-- !private ["s7CVarArgP", "hashValue"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "post"]
 - ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "hashValue"]
 - ["s10ComparableP", "init"]
 - ["s28CustomDebugStringConvertibleP", "Name"]
 - !private ["s28CustomDebugStringConvertibleP", "async"]
@@ -83,12 +81,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "post"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- !private ["s17CustomReflectableP", "hashValue"]
 - ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "Name"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "async"]
 - !private ["s23CustomStringConvertibleP", "default"]
@@ -100,9 +97,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "post"]
 - ["s23CustomStringConvertibleP", "reachableViaWWAN"]
 - ["s23CustomStringConvertibleP", "reachableViaWiFi"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "hashValue"]
 - ["s9DecodableP", "init"]
 - !private ["So14DispatchObjectC", "async"]
 - !private ["So14DispatchObjectC", "main"]
@@ -110,9 +105,9 @@ depends-member:
 - ["So13DispatchQueueC", "init"]
 - !private ["So13DispatchQueueC", "main"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "hashValue"]
 - ["s9EncodableP", "init"]
 - ["s9EquatableP", "Name"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "async"]
 - !private ["s9EquatableP", "connectionOnDemand"]
@@ -136,14 +131,13 @@ depends-member:
 - ["s9EquatableP", "reachableViaWWAN"]
 - ["s9EquatableP", "reachableViaWiFi"]
 - !private ["s9EquatableP", "transientConnection"]
-- ["s9EquatableP", ""]
 - !private ["s5ErrorP", "UnableToSetCallback"]
 - !private ["s5ErrorP", "UnableToSetDispatchQueue"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
 - ["s5ErrorP", "_userInfo"]
-- ["s5ErrorP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "connectionOnDemand"]
 - !private ["s25ExpressibleByArrayLiteralP", "connectionOnTraffic"]
 - !private ["s25ExpressibleByArrayLiteralP", "connectionRequired"]
@@ -159,13 +153,12 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "transientConnection"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s17FixedWidthIntegerP", "hashValue"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - ["s8HashableP", "Name"]
+- ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "async"]
 - !private ["s8HashableP", "default"]
@@ -177,21 +170,12 @@ depends-member:
 - !private ["s8HashableP", "post"]
 - ["s8HashableP", "reachableViaWWAN"]
 - ["s8HashableP", "reachableViaWiFi"]
-- ["s8HashableP", ""]
-- !private ["Si", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "hashValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - !private ["s12MemoryLayoutO", "size"]
-- !private ["s10MirrorPathP", "hashValue"]
 - ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", "Name"]
-- ["So8NSCodingP", "init"]
 - ["So9NSCopyingP", "Name"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
 - ["So14NSNotificationC", "Name"]
 - ["So8NSObjectC", "Name"]
 - !private ["So8NSObjectC", "async"]
@@ -204,8 +188,6 @@ depends-member:
 - ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "main"]
 - !private ["So16NSObjectProtocolP", "post"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - ["So14NSNotificationC4NameV", "init"]
 - ["17ReachabilitySwift0A0C13NetworkStatusO", "String"]
 - ["17ReachabilitySwift0A0C13NetworkStatusO", "__derived_enum_equals"]
@@ -217,7 +199,6 @@ depends-member:
 - ["17ReachabilitySwift0A0C13NetworkStatusO", "reachableViaWiFi"]
 - !private ["So18NotificationCenterC", "default"]
 - !private ["So18NotificationCenterC", "post"]
-- !private ["s7NumericP", "hashValue"]
 - !private ["s7NumericP", "init"]
 - !private ["So9OS_objectC", "async"]
 - !private ["So9OS_objectC", "main"]
@@ -350,9 +331,6 @@ depends-member:
 - !private ["s10SetAlgebraP", "isWWAN"]
 - !private ["s10SetAlgebraP", "reachable"]
 - !private ["s10SetAlgebraP", "transientConnection"]
-- !private ["s13SignedIntegerP", "hashValue"]
-- !private ["s13SignedNumericP", "hashValue"]
-- !private ["s10StrideableP", "hashValue"]
 - !private ["s10StrideableP", "init"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
@@ -367,21 +345,15 @@ depends-member:
 - !private ["Sv", "init"]
 - !private ["SP", "init"]
 - !private ["s15UnsignedIntegerP", "init"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s18_BitwiseOperationsP", "hashValue"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s35_HasCustomAnyHashableRepresentationP", "Name"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- ["s14_IndexableBaseP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Name"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
@@ -389,12 +361,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "post"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s8_PointerP", "init"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "hashValue"]
-- !private ["s11_StrideableP", "init"]
 - !private ["s14_StringElementP", "init"]
 - ["s20_SwiftNewtypeWrapperP", "init"]
 - ["s16_SwiftStringViewP", "init"]
@@ -426,20 +394,14 @@ depends-nominal:
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
 - "s8HashableP"
-- !private "Si"
 - "s25LosslessStringConvertibleP"
 - !private "s12MemoryLayoutO"
 - "s10MirrorPathP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
 - "So14NSNotificationC"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - "So14NSNotificationC4NameV"
 - "17ReachabilitySwift0A0C13NetworkStatusO"
 - !private "So18NotificationCenterC"
@@ -454,8 +416,6 @@ depends-nominal:
 - !private "SC26SCNetworkReachabilityFlagsV"
 - "s8SequenceP"
 - !private "s10SetAlgebraP"
-- !private "s13SignedIntegerP"
-- !private "s13SignedNumericP"
 - !private "s10StrideableP"
 - "SS"
 - "s14StringProtocolP"
@@ -467,7 +427,6 @@ depends-nominal:
 - !private "Sv"
 - !private "SP"
 - !private "s15UnsignedIntegerP"
-- "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -477,13 +436,9 @@ depends-nominal:
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
 - "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - !private "s8_PointerP"
-- "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s14_StringElementP"
 - "s20_SwiftNewtypeWrapperP"
 - "s16_SwiftStringViewP"
@@ -505,4 +460,14 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/Pods/Target Support Files/ReachabilitySwift/ReachabilitySwift-umbrella.h"
 - "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/DerivedData/ComputerPros/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ReachabilitySwift.build/unextended-module.modulemap"
-interface-hash: "f557cee22a841c9e1202693d9e8cde37"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "79ef1f0868acc9f0bee3023bb2e9ce10"
