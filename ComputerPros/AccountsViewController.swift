@@ -22,12 +22,25 @@ class AccountsViewController: CoreDataTableViewController {
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: stack.context, sectionNameKeyPath: nil, cacheName: nil)
         
-//        let laContext = LAContext()
-//        
-//        if laContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
-//            let bioAuthVC = self.storyboard?.instantiateViewController(withIdentifier: "bioAuthVC") as! BioAuthViewController
-//            self.present(bioAuthVC, animated: true, completion: nil)
-//        }
+        let laContext = LAContext()
+        
+        if laContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
+            
+            laContext.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: "Unlock to view account info") { (success, error) in
+                
+                if success {
+                    DispatchQueue.main.async {
+                        return
+                    }
+                } else {
+                    if error != nil {
+                        DispatchQueue.main.async {
+                            self.navigationController?.popToRootViewController(animated: true)
+                        }
+                    }
+                }
+            }
+        }
     }
     
     

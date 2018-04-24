@@ -327,16 +327,6 @@ SWIFT_CLASS("_TtC12ComputerPros18AppleTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIVisualEffectView;
-
-SWIFT_CLASS("_TtC12ComputerPros21BioAuthViewController")
-@interface BioAuthViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIVisualEffectView * _Null_unspecified visualEffectView;
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 SWIFT_CLASS("_TtC12ComputerPros19ComputerDetailsCell")
 @interface ComputerDetailsCell : UICollectionViewCell

@@ -1,10 +1,10 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "13b7d781089a99e945e25236f15ed902"
-build_time: [1524453831, 985700000]
+build_time: [1524524216, 977889000]
 inputs:
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/Account+CoreDataProperties.swift": [1499314193, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/AppDelegate.swift": [1512025521, 0]
-  "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/AccountsViewController.swift": [1524453780, 0]
+  "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/AccountsViewController.swift": [1524503773, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/LoginCredentials+CoreDataClass.swift": [1499314019, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/AddAccountViewController.swift": [1510798398, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/LoginCredentials+CoreDataProperties.swift": [1499313866, 0]
@@ -14,7 +14,7 @@ inputs:
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/MenuCell.swift": [1522212066, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/ComputerInformation.swift": [1522213650, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/ProCareCloud.swift": [1512021988, 0]
-  "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/CoreDataTableViewController.swift": [1522692984, 0]
+  "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/CoreDataTableViewController.swift": [1524454058, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/ComputerDetailsVC.swift": [1524437306, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/AppleInventoryViewController.swift": [1522213928, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/Account+CoreDataClass.swift": [1499314018, 0]
@@ -28,6 +28,6 @@ inputs:
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/CredentialsViewController.swift": [1513184694, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/HomeViewExtension.swift": [1512952624, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/HomeViewController.swift": [1511973494, 0]
-  "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/BioAuthViewController.swift": [1524453652, 0]
+  "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/BioAuthViewController.swift": [1524524216, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/WebViewController.swift": [1501609512, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/ImageCache.swift": [1512967632, 0]
