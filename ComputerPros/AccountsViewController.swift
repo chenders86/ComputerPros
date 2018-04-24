@@ -23,6 +23,7 @@ class AccountsViewController: CoreDataTableViewController {
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: stack.context, sectionNameKeyPath: nil, cacheName: nil)
         
         let laContext = LAContext()
+        laContext.touchIDAuthenticationAllowableReuseDuration = 10
         
         if laContext.canEvaluatePolicy(.deviceOwnerAuthentication, error: nil) {
             
@@ -42,7 +43,6 @@ class AccountsViewController: CoreDataTableViewController {
             }
         }
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)

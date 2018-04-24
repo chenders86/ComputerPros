@@ -1,12 +1,12 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "321e7a55b2118ec0402003aaa2c2b7c0"
-build_time: [1524529525, 299953000]
+build_time: [1524542613, 136788000]
 inputs:
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/Account+CoreDataProperties.swift": [1499314193, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/AppDelegate.swift": [1512025521, 0]
-  "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/AccountsViewController.swift": [1524529472, 0]
+  "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/AccountsViewController.swift": [1524542612, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/LoginCredentials+CoreDataClass.swift": [1499314019, 0]
-  "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/AddAccountViewController.swift": [1510798398, 0]
+  "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/AddAccountViewController.swift": [1524541386, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/LoginCredentials+CoreDataProperties.swift": [1499313866, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/InventoryTabBarController.swift": [1512974802, 0]
   "/Users/Casey 1/Coding/Udacity/iOSND Master/Projects/ComputerPros/ComputerPros/CoreDataStack.swift": [1524453818, 0]
